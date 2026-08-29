@@ -83,6 +83,21 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Seraphon — two boxes (added 2026-08-29)
+
+Sunblooded Prowlers (`eng_01-04_aos_spearhead_seraphon_sunblooded_prowlers`, in print) and Starscale
+Warhost (`eng_aos_faction_pack_seraphon_dec_24`, pages 39-44, no longer in print).
+
+Third case of one unit with two warscrolls, and the first where the difference is in the keywords:
+Saurus Warriors carry Infantry and Saurus in Sunblooded Prowlers, and Infantry alone in Starscale
+Warhost. The ability and the weapon are identical. A keyword is a rule here, so the rows stay
+separate like every other.
+
+Sunblooded Prowlers is the largest gap so far between the inventory's model count and the pack's:
+31 against 27. The four are tokens the pack names as tokens — one Venomites and three Sun Acolytes.
+
+Its general is a **unit of three models**, which the pack itself flags in a designer's note.
+
 ### Lumineth Realm-Lords — two boxes (added 2026-08-29)
 
 Glittering Phalanx (`eng_01-04_aos_spearhead_lumineth_realmlords_glittering_phalanx`, no longer in

@@ -186,6 +186,12 @@
     <categoryEntry id="sph-faction::lumineth-realm-lords" name="Lumineth Realm-Lords" hidden="false" />
     <categoryEntry id="sph-kw::monster" name="Monster" hidden="false" />
     <categoryEntry id="sph-kw::ward-5" name="Ward (5+)" hidden="false" />
+    <categoryEntry id="sph-cat::starscale-warhost" name="Spearhead: Seraphon (Starscale Warhost)" hidden="false" />
+    <categoryEntry id="sph-cat::sunblooded-prowlers" name="Spearhead: Seraphon (Sunblooded Prowlers)" hidden="false" />
+    <categoryEntry id="sph-faction::seraphon" name="Seraphon" hidden="false" />
+    <categoryEntry id="sph-kw::beast" name="Beast" hidden="false" />
+    <categoryEntry id="sph-kw::saurus" name="Saurus" hidden="false" />
+    <categoryEntry id="sph-kw::skink" name="Skink" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -227,6 +233,12 @@
         <categoryLink id="cbd4a49b" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" />
         <categoryLink id="970c6376" name="Monster" hidden="false" targetId="sph-kw::monster" />
         <categoryLink id="8b99e9ea" name="Ward (5+)" hidden="false" targetId="sph-kw::ward-5" />
+        <categoryLink id="e78f63b1" name="Spearhead: Seraphon (Starscale Warhost)" hidden="false" targetId="sph-cat::starscale-warhost" />
+        <categoryLink id="a85c0161" name="Spearhead: Seraphon (Sunblooded Prowlers)" hidden="false" targetId="sph-cat::sunblooded-prowlers" />
+        <categoryLink id="3e6aecd9" name="Seraphon" hidden="false" targetId="sph-faction::seraphon" />
+        <categoryLink id="eb0229e6" name="Beast" hidden="false" targetId="sph-kw::beast" />
+        <categoryLink id="66719144" name="Saurus" hidden="false" targetId="sph-kw::saurus" />
+        <categoryLink id="c0b847df" name="Skink" hidden="false" targetId="sph-kw::skink" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>
