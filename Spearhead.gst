@@ -178,6 +178,9 @@
     <categoryEntry id="sph-cat::akhelian-tide-guard" name="Spearhead: Idoneth Deepkin (Akhelian Tide Guard)" hidden="false" />
     <categoryEntry id="sph-cat::soulraid-hunt" name="Spearhead: Idoneth Deepkin (Soulraid Hunt)" hidden="false" />
     <categoryEntry id="sph-faction::idoneth-deepkin" name="Idoneth Deepkin" hidden="false" />
+    <categoryEntry id="sph-cat::grundstok-trailblazers" name="Spearhead: Kharadron Overlords (Grundstok Trailblazers)" hidden="false" />
+    <categoryEntry id="sph-cat::skyhammer-task-force" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" />
+    <categoryEntry id="sph-faction::kharadron-overlords" name="Kharadron Overlords" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -211,6 +214,9 @@
         <categoryLink id="e6f85903" name="Spearhead: Idoneth Deepkin (Akhelian Tide Guard)" hidden="false" targetId="sph-cat::akhelian-tide-guard" />
         <categoryLink id="734b2f3b" name="Spearhead: Idoneth Deepkin (Soulraid Hunt)" hidden="false" targetId="sph-cat::soulraid-hunt" />
         <categoryLink id="ff50933f" name="Idoneth Deepkin" hidden="false" targetId="sph-faction::idoneth-deepkin" />
+        <categoryLink id="97cdd88e" name="Spearhead: Kharadron Overlords (Grundstok Trailblazers)" hidden="false" targetId="sph-cat::grundstok-trailblazers" />
+        <categoryLink id="b6027245" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" targetId="sph-cat::skyhammer-task-force" />
+        <categoryLink id="17276999" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>

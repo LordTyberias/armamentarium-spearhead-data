@@ -83,6 +83,19 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Kharadron Overlords — two boxes (added 2026-08-29)
+
+Skyhammer Task Force (`eng_jun25_aos_factionpack_kharadron_overlords`, pages 21-27, no longer in
+print) and Grundstok Trailblazers (`eng_01-04_..._grundstok_trailblazers`, in print).
+
+Skyhammer Task Force contains **two Arkanaut Company units with different loadouts** under one
+warscroll: one has 4 Privateer Pistols with Arkanaut Cutters and 1 Skypike, the other 3 pistols with
+cutters, 1 Aethermatic Volley Gun and 1 Light Skyhook. Two rows, two sets of weapon children, one
+set of profiles — which is what the format is shaped for.
+
+Where a warscroll's own text lists which model carries what, that text is carried as a rule of its
+own rather than left to be reconstructed from the weapon rows.
+
 ### Idoneth Deepkin — two boxes (added 2026-08-29)
 
 Soulraid Hunt (`eng_01-04_aos_spearhead_idoneth_deepkin_soulraid_hunt`, no longer in print) and

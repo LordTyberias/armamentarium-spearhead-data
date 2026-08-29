@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="sph-catalogue::kharadron-overlords" name="Kharadron Overlords" gameSystemId="sph1-6c4a-2e97-0001" revision="1" battleScribeVersion="2.03" authorName="Armamentarium" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="sph::skyhammer-task-force::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="5528efa3" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="de82a098" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="fed0899e" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" targetId="sph-cat::skyhammer-task-force" primary="true" />
+        <categoryLink id="1750b16d" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" primary="false" />
+        <categoryLink id="5bc46634" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="7c28085f" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="b5dd4d70" name="Ply the Skies" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Reaction: You declared a non-Charge Move ability for an Arkanaut Frigate</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Pick a friendly Infantry unit that is wholly within the combat range of that Arkanaut Frigate and not in combat to be transported. Remove that Infantry unit from the battlefield. Then, when the Arkanaut Frigate ends its move, set up the Infantry unit on the battlefield again, wholly within the combat range of the Arkanaut Frigate and not in combat. A unit cannot use Charge abilities if it was transported in the same turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b">The Arkanaut Frigate that is using that Move ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="82df6151" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6a77587d" name="Assault Boat" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Your Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit that was transported this turn to use this ability.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">That unit can still use Charge abilities later in the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="10b1f2b5" name="Disengage" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Your Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly Arkanaut Frigate to use this ability.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">If that unit uses a Retreat ability this phase, no mortal damage is inflicted on it and it can still use Shoot abilities later in the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c782272f" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3f2854cb" name="Masterwrought Armour" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Your general has Ward (6+).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5d45aa6d" name="Flask of Vintage Gorogna" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Any Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Heal (D6) your general.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1ec80cac" name="There's No Reward Without Risk" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Reaction: You declared a Charge ability for a unit wholly within 12&quot; of your general</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">You can re-roll the charge roll for that Charge ability.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a951ea0e" name="Leave No Duardin Behind" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly Arkanaut Company unit wholly within 12&quot; of your general and roll a dice for each slain model from that unit.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">For each 4+, you can return 1 slain model to that unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::skyhammer-task-force::01-arkanaut-admiral" name="Arkanaut Admiral" type="unit" hidden="false">
+      <constraints>
+        <constraint id="ca623aa5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="65797789" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="04c8d420" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" targetId="sph-cat::skyhammer-task-force" primary="true" />
+        <categoryLink id="1ffe7144" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" primary="false" />
+        <categoryLink id="783127ef" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="7c403e56" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="bc2b2f21" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="42174227" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="d0cec71b" name="Arkanaut Admiral" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">4&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">6</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fd4e064f" name="Masterwork Volley Pistol" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">10&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">3</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">2</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="71404855" name="Skalfhammer" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">2+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">3</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7a5f2f1f" name="Always Take What You Are Owed" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly Arkanaut Company unit wholly within 12&quot; of this unit to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Add D6 to the target's control score until the start of your next turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::skyhammer-task-force::01-arkanaut-admiral::masterwork-volley-pistol" name="Masterwork Volley Pistol" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="825c4f17" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="5cd97d00" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::skyhammer-task-force::01-arkanaut-admiral::skalfhammer" name="Skalfhammer" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="ecfd2767" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="c2f54aa8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::skyhammer-task-force::02-arkanaut-company" name="Arkanaut Company" type="unit" hidden="false">
+      <constraints>
+        <constraint id="7078899e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="b71a860b" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d4bd6237" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" targetId="sph-cat::skyhammer-task-force" primary="true" />
+        <categoryLink id="ae9b1eea" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" primary="false" />
+        <categoryLink id="76ad7074" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="a2878452" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="f2172051" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="7d1aa764" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="92d1b63e" name="Arkanaut Company" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">4&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8834195f" name="Privateer Pistol" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">10&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">4+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">-</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="157389c7" name="Aethermatic Volley Gun" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">15&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2D6</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">4+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">-</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5f9a0236" name="Light Skyhook" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">15&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">1</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">4+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">2</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">D3</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6e6cf524" name="Arkanaut Cutter" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="50dbfd84" name="Gun Butt" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">1</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">5+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b31c73ca" name="Skypike" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Mortal)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="26afa59d" name="Glory-seekers" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to hit rolls for attacks made by this unit that target a unit contesting an objective.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::skyhammer-task-force::02-arkanaut-company::privateer-pistol" name="Privateer Pistol" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="b7ad0dab" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="db6b587c" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::skyhammer-task-force::02-arkanaut-company::arkanaut-cutter" name="Arkanaut Cutter" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="17b43d82" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="5e81d97e" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::skyhammer-task-force::02-arkanaut-company::skypike" name="Skypike" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="f360cba3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="682c18c4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::skyhammer-task-force::03-arkanaut-company" name="Arkanaut Company" type="unit" hidden="false">
+      <constraints>
+        <constraint id="ba6d4bc9" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="8ce05a3f" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7c40cc54" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" targetId="sph-cat::skyhammer-task-force" primary="true" />
+        <categoryLink id="4a53f553" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" primary="false" />
+        <categoryLink id="385226d7" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="81d1b03d" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="6aa07383" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="266c9e3e" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="47c14eb9" name="Arkanaut Company" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">4&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3aaadd50" name="Privateer Pistol" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">10&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">4+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">-</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f967b4fe" name="Aethermatic Volley Gun" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">15&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2D6</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">4+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">-</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bc19b5f6" name="Light Skyhook" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">15&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">1</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">4+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">2</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">D3</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1017eee2" name="Arkanaut Cutter" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2e648272" name="Gun Butt" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">1</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">5+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b93154e9" name="Skypike" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Mortal)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c3b10e2c" name="Glory-seekers" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to hit rolls for attacks made by this unit that target a unit contesting an objective.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::skyhammer-task-force::03-arkanaut-company::privateer-pistol" name="Privateer Pistol" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="244a37f2" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="3ffc127b" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::skyhammer-task-force::03-arkanaut-company::arkanaut-cutter" name="Arkanaut Cutter" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="6ec78fae" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="02306f71" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::skyhammer-task-force::03-arkanaut-company::aethermatic-volley-gun" name="Aethermatic Volley Gun" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="4a97e6fa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="56da81f0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::skyhammer-task-force::03-arkanaut-company::light-skyhook" name="Light Skyhook" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="11353a3e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="be603733" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::skyhammer-task-force::03-arkanaut-company::gun-butt" name="Gun Butt" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="8c648be0" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="e6c989bc" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::skyhammer-task-force::04-skywardens" name="Skywardens" type="unit" hidden="false">
+      <constraints>
+        <constraint id="cb00271e" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a9124284" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e2c5e25b" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" targetId="sph-cat::skyhammer-task-force" primary="true" />
+        <categoryLink id="b06b6b0d" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" primary="false" />
+        <categoryLink id="02581ecd" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="21834a15" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="722ed74d" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="cfd31d4a" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="72f66d58" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="dc5d2ef6" name="Skywardens" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">12&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b8bbff50" name="Vulcaniser Pistol" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">10&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">3</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a83514ac" name="Aethermatic Volley Gun" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">15&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2D6</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">4+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">-</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="568abc3e" name="Skypike" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Mortal)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="08f5c62e" name="Gun Butt" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">1</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">5+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d7a6d1b5" name="Unit Composition" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">This unit has 2 Skywardens armed with a Vulcaniser Pistol and Skypike, and 1 Skywarden armed with an Aethermatic Volley Gun and Gun Butt.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="06d5fa75" name="Timed Charges" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit in combat with this unit to be the target, then roll a dice.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 2+, inflict 1 mortal damage on the target, and this unit can immediately use the 'Retreat' ability without any mortal damage being inflicted on it.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::skyhammer-task-force::04-skywardens::vulcaniser-pistol" name="Vulcaniser Pistol" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="bf22dc34" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="b3b9d8bc" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::skyhammer-task-force::04-skywardens::skypike" name="Skypike" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="2d7c9e1d" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="9ded855a" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::skyhammer-task-force::04-skywardens::aethermatic-volley-gun" name="Aethermatic Volley Gun" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="558c5fb9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="b742ab87" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::skyhammer-task-force::04-skywardens::gun-butt" name="Gun Butt" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="ce414cfa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="5b3c6b63" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::skyhammer-task-force::05-arkanaut-frigate" name="Arkanaut Frigate" type="unit" hidden="false">
+      <constraints>
+        <constraint id="5ab64cff" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="83ae4594" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="65076c2b" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" targetId="sph-cat::skyhammer-task-force" primary="true" />
+        <categoryLink id="df9ab3f1" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" primary="false" />
+        <categoryLink id="c9e9e047" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="1ac2a8a6" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="bafe84a4" name="War Machine" hidden="false" targetId="sph-kw::war-machine" primary="false" />
+        <categoryLink id="db9d0dab" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="859add24" name="Arkanaut Frigate" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">12&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">15</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="099462bf" name="Heavy Skyhook" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">24&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">4+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">2</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">D6</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="563d26fe" name="Aethershot Carbines" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">12&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">4</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">2</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="603b8770" name="Crew's Boarding Weapons" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">8</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5bf76bbd" name="Battle Damaged" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">While this unit has 10 or more damage points, the Attacks characteristic of its Heavy Skyhook is 1.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b8e9bfac" name="Bomb Racks" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Your Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit that this unit passed across this phase to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Inflict D3+1 mortal damage on the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::skyhammer-task-force::05-arkanaut-frigate::heavy-skyhook" name="Heavy Skyhook" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="bdf8dee0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="36a23159" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::skyhammer-task-force::05-arkanaut-frigate::aethershot-carbines" name="Aethershot Carbines" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="f3adce0d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="97f605b5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::skyhammer-task-force::05-arkanaut-frigate::crew-s-boarding-weapons" name="Crew's Boarding Weapons" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="46c2110d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="bd78a102" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::grundstok-trailblazers::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="9ab87488" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6a49cd30" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="625c222b" name="Spearhead: Kharadron Overlords (Grundstok Trailblazers)" hidden="false" targetId="sph-cat::grundstok-trailblazers" primary="true" />
+        <categoryLink id="eacb6556" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" primary="false" />
+        <categoryLink id="9413df2f" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="ec9c8e46" name="Gunhauler Escort" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Subtract 1 from hit rolls for attacks that target friendly Kharadron Overlords Infantry units while they are wholly within 6&quot; of a friendly Grundstok Gunhauler.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="994122b7" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="18639e11" name="Rapid Relocation" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle (Army), Your Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit with Fly to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Remove the target from the battlefield and set it up again anywhere on the battlefield more than 6&quot; from all enemy units. The target cannot use Charge abilities this turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bb31b467" name="Propeller Downdraught" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Subtract 1 from charge rolls for enemy units while they are within 9&quot; of a friendly Grundstok Gunhauler.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c323657b" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="62ed12ed" name="Emergency Fuel Injection Pods" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle (Army), Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Your general has Strike-first for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3f2c9511" name="Prospector and Pioneer" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 2 to your general's control score.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4d682fb8" name="Celestium-burst Bomblets" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit in combat with your general to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 3+, ward rolls cannot be made for the target for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3d23c6c8" name="Extraction Fail-safes" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Subtract 1 from the number of damage points inflicted on this unit when it uses a Retreat ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::grundstok-trailblazers::01-endrinmaster-with-dirigible-suit" name="Endrinmaster with Dirigible Suit" type="unit" hidden="false">
+      <constraints>
+        <constraint id="598b1d79" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="84c1cdb1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ce5db7a3" name="Spearhead: Kharadron Overlords (Grundstok Trailblazers)" hidden="false" targetId="sph-cat::grundstok-trailblazers" primary="true" />
+        <categoryLink id="85ced3a3" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" primary="false" />
+        <categoryLink id="0cfab933" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="44369e87" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="4e4f5116" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="5c3bbd9f" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="df5043f0" name="Endrinmaster with Dirigible Suit" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">12&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">8</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a53c6868" name="Aethercannon" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">18&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">1</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">2</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">3</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="75e755fa" name="Dirigible Suit Weapon Battery" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">12&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">6</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6fa50682" name="Upgraded Aethermatic Saw" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">4</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">2</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="26a87c8f" name="Endrinmaster Extraordinaire" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit with the Fly keyword that is wholly within 12&quot; of this unit to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a D3. On a 2+, Heal (X) the target where X is equal to the roll.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::grundstok-trailblazers::01-endrinmaster-with-dirigible-suit::aethercannon" name="Aethercannon" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="2165347b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="5d3920a4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::grundstok-trailblazers::01-endrinmaster-with-dirigible-suit::dirigible-suit-weapon-battery" name="Dirigible Suit Weapon Battery" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="d3685255" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="37dfa2a5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::grundstok-trailblazers::01-endrinmaster-with-dirigible-suit::upgraded-aethermatic-saw" name="Upgraded Aethermatic Saw" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="cac95cea" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="4b214de6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::grundstok-trailblazers::02-grundstok-thunderers" name="Grundstok Thunderers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="6457a326" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="1da0d651" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ffa5d277" name="Spearhead: Kharadron Overlords (Grundstok Trailblazers)" hidden="false" targetId="sph-cat::grundstok-trailblazers" primary="true" />
+        <categoryLink id="63201e98" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" primary="false" />
+        <categoryLink id="48b25450" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="4b0e6b65" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="e2326a51" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="3a55b114" name="Grundstok Thunderers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">4&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="baccffca" name="Aethershot Rifle" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">18&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b7b75894" name="Aetheric Fumigator or Decksweeper" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">10&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">5</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">-</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dcc9e9d2" name="Grundstok Mortar or Aethercannon" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">18&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">4+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">2</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bd4a85c4" name="Gun Butt" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">1</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">5+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="33a911be" name="Unit Composition" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">1 model is armed with an Aethershot Rifle. 1 model is armed with an Aetheric Fumigator. 1 model is armed with a Decksweeper. 1 model is armed with a Grundstok Mortar. 1 model is armed with an Aethercannon. Every model is also armed with a Gun Butt.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a2fb6835" name="Bewilderblast Rounds" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle (Army), Any Shooting Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit that had any damage points allocated to it this phase by this unit's shooting attacks to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Subtract D6 from the target's control score for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::grundstok-trailblazers::02-grundstok-thunderers::aethershot-rifle" name="Aethershot Rifle" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="6ace7359" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="18cbe603" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::grundstok-trailblazers::02-grundstok-thunderers::aetheric-fumigator-or-decksweeper" name="Aetheric Fumigator or Decksweeper" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="4627e3eb" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="28cb5f33" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::grundstok-trailblazers::02-grundstok-thunderers::grundstok-mortar-or-aethercannon" name="Grundstok Mortar or Aethercannon" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="a3653249" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="c1f0333c" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::grundstok-trailblazers::02-grundstok-thunderers::gun-butt" name="Gun Butt" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="039639d3" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="0dce7c71" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::grundstok-trailblazers::03-grundstok-gunhauler" name="Grundstok Gunhauler" type="unit" hidden="false">
+      <constraints>
+        <constraint id="3d6b1ab6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="31873c3c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6da118ea" name="Spearhead: Kharadron Overlords (Grundstok Trailblazers)" hidden="false" targetId="sph-cat::grundstok-trailblazers" primary="true" />
+        <categoryLink id="a944e006" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" primary="false" />
+        <categoryLink id="9631772f" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="8c0e469a" name="War Machine" hidden="false" targetId="sph-kw::war-machine" primary="false" />
+        <categoryLink id="0ef8ecd7" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="4b77647a" name="Grundstok Gunhauler" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">14&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">10</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">2+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4f442f4e" name="Sky Ordnance" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">15&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">3</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">4+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">2</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">3</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="59899773" name="Boarding Weapons" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">4</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9871a9f2" name="Gunhauler Overwatch" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit that charged this turn and is in combat with this unit to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::grundstok-trailblazers::03-grundstok-gunhauler::sky-ordnance" name="Sky Ordnance" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="491406a8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="a8a78998" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::grundstok-trailblazers::03-grundstok-gunhauler::boarding-weapons" name="Boarding Weapons" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="bdc348f2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="ebf3c264" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::grundstok-trailblazers::04-endrinriggers" name="Endrinriggers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c2e4df16" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="df4df9dd" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0bd058a2" name="Spearhead: Kharadron Overlords (Grundstok Trailblazers)" hidden="false" targetId="sph-cat::grundstok-trailblazers" primary="true" />
+        <categoryLink id="a55f54e1" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" primary="false" />
+        <categoryLink id="7eee2546" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="450115f4" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="ba972a35" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="413219d1" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="fdfe13f0" name="Endrinriggers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">12&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8ff3e941" name="Rapid Fire Rivet Gun" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">10&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">3</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a31f7a2b" name="Aethermatic Volley Gun" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">15&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2D6</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">4+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">-</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Crit (2 Hits)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="57d51825" name="Skyrigger Heavy Weapon" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">15&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">1</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">4+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">D3</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Anti-Monster (+1 Rend)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="317f1aad" name="Aethermatic Saw" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Anti-charge (+1 Rend)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="776473a1" name="Gun Butt" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">1</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">5+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a10e2bd0" name="Unit Composition" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">1 model is armed with a Rapid Fire Rivet Gun and Aethermatic Saw. 1 model is armed with an Aethermatic Volley Gun and Gun Butt. 1 model is armed with a Skyrigger Heavy Weapon (Grapnel Launcher, Skyhook or Drill Launcher) and Gun Butt.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8536b1d6" name="Cloudweaving Skyfarers" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Enemy Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 3+, this unit can use the 'Normal Move' ability as if it were your movement phase.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::grundstok-trailblazers::04-endrinriggers::rapid-fire-rivet-gun" name="Rapid Fire Rivet Gun" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="7487c3ae" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="bc5dc640" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::grundstok-trailblazers::04-endrinriggers::aethermatic-saw" name="Aethermatic Saw" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="f75fe6fa" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="8e69bae1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::grundstok-trailblazers::04-endrinriggers::aethermatic-volley-gun" name="Aethermatic Volley Gun" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="a74c93c6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="b96d28ad" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::grundstok-trailblazers::04-endrinriggers::skyrigger-heavy-weapon" name="Skyrigger Heavy Weapon" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="a5335560" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="7ff6fcae" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::grundstok-trailblazers::04-endrinriggers::gun-butt" name="Gun Butt" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="942e1bc6" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="bfc841d1" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
