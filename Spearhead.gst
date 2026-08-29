@@ -173,6 +173,8 @@
     <categoryEntry id="sph-cat::heartflayer-troupe" name="Spearhead: Daughters of Khaine (Heartflayer Troupe)" hidden="false" />
     <categoryEntry id="sph-cat::khainite-shadow-coven" name="Spearhead: Daughters of Khaine (Khainite Shadow Coven)" hidden="false" />
     <categoryEntry id="sph-faction::daughters-of-khaine" name="Daughters of Khaine" hidden="false" />
+    <categoryEntry id="sph-cat::saga-axeband" name="Spearhead: Fyreslayers (Saga Axeband)" hidden="false" />
+    <categoryEntry id="sph-faction::fyreslayers" name="Fyreslayers" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -201,6 +203,8 @@
         <categoryLink id="849d5e94" name="Spearhead: Daughters of Khaine (Heartflayer Troupe)" hidden="false" targetId="sph-cat::heartflayer-troupe" />
         <categoryLink id="a357dae5" name="Spearhead: Daughters of Khaine (Khainite Shadow Coven)" hidden="false" targetId="sph-cat::khainite-shadow-coven" />
         <categoryLink id="02035d33" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" />
+        <categoryLink id="a350ac29" name="Spearhead: Fyreslayers (Saga Axeband)" hidden="false" targetId="sph-cat::saga-axeband" />
+        <categoryLink id="267e3f93" name="Fyreslayers" hidden="false" targetId="sph-faction::fyreslayers" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>

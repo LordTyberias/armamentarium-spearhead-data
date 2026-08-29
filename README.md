@@ -83,6 +83,19 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Fyreslayers — Saga Axeband (added 2026-08-29)
+
+From `fyreslayers_nov_24_eng_27`, pages 29-34. **This one is not a Spearhead pack but the faction's
+full pack for the regular game**, 34 pages, with the Spearhead section at its end. The linked
+document differs from box to box; only its Spearhead pages are read.
+
+Its battle trait is a table of four ur-gold runes with a standard and an enhanced effect each,
+carried as one rule for the same reason as Blood Rites: split into separate profiles, the standard
+and enhanced halves would lose which rune they belong to.
+
+The box holds the same unit four times (Vulkite Berzerkers), which is why entry ids number the rows
+rather than name them alone.
+
 ### Daughters of Khaine — two boxes (added 2026-08-29)
 
 Heartflayer Troupe (`eng_01-04_aos_spearhead_daughters_of_khaine_heartflayer_troupe`, no longer in
