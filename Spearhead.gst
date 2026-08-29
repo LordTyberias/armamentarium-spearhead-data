@@ -159,6 +159,9 @@
     <categoryEntry id="sph-kw::infantry" name="Infantry" hidden="false" />
     <categoryEntry id="sph-kw::fly" name="Fly" hidden="false" />
     <categoryEntry id="sph-kw::reinforcements" name="Reinforcements" hidden="false" />
+    <categoryEntry id="sph-cat::yndrastas-spearhead" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" />
+    <categoryEntry id="sph-kw::ward-6" name="Ward (6+)" hidden="false" />
+    <categoryEntry id="sph-kw::war-machine" name="War Machine" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -173,6 +176,9 @@
         <categoryLink id="51ada155" name="Infantry" hidden="false" targetId="sph-kw::infantry" />
         <categoryLink id="d0f7d77d" name="Fly" hidden="false" targetId="sph-kw::fly" />
         <categoryLink id="53ec8137" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" />
+        <categoryLink id="5da2ee3b" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" targetId="sph-cat::yndrastas-spearhead" />
+        <categoryLink id="572a0249" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" />
+        <categoryLink id="e1b7a682" name="War Machine" hidden="false" targetId="sph-kw::war-machine" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>

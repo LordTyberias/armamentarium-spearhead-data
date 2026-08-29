@@ -6,9 +6,8 @@ BattleScribe catalogue data for the fixed Spearhead boxes of Age of Sigmar, read
 - `Spearhead.gst` — the game system: profile types, the categories, one force entry.
 - one `.cat` file per faction, each holding the units of that faction's Spearheads.
 
-**This repository is not complete.** It currently carries a single box — Stormcast Eternals,
-Vigilant Brotherhood — as the sample that proves the format against the reader. The remaining
-50 are collected separately (ARMAM-275).
+**This repository is not complete.** It is being filled one Grand Alliance at a time
+(ARMAM-275); Order is the first stage.
 
 ## What this is, and what it is not
 
@@ -31,6 +30,16 @@ differ from an ordinary BattleScribe catalogue, and they are deliberate:
 Each unit row is its own root `selectionEntry`; which box it belongs to is a category, alongside
 its faction, its Grand Alliance and — where applicable — a `Legends` marker for a box that is no
 longer in print.
+
+- **A box's rules ride on a row of their own.** A faction pack prints battle traits, regiment
+  abilities and enhancements beside the warscrolls; they belong to the box rather than to any unit
+  in it, and a category cannot carry rules in this format. Each box therefore opens with an entry
+  `sph::<box-slug>::00-battle-traits`, named `Battle Traits`, that states `min = max = 0` — it is
+  not a model — and carries the rules as profiles of the `Ability (…)` types the game system already
+  declares. It carries the same categories as the units of its box, minus the keywords: a page of
+  rules prints none. The printed group headings (`Regiment Abilities`, `Enhancements`) are carried
+  as profiles of their own, because the reader otherwise cannot tell an enhancement from a battle
+  trait — and because they are printed text rather than an invention. Units then start at `01-`.
 
 ## The category ids are a contract
 
@@ -74,6 +83,19 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Yndrasta's Spearhead — Stormcast Eternals (added 2026-08-29)
+
+Transcribed from the same faction pack as the box below, pages 1-8. The box is no longer in print
+and carries `sph-flag::legends`.
+
+It contains the same unit twice — two units of 5 Vanquishers — which is why a unit row is
+identified by its id rather than by its name: `04-vanquishers` and `05-vanquishers` are two rows
+with one name.
+
+Its box-rules row is the first written under the rule above. Nothing on pages 2 and 3 was
+summarised: the battle trait's own lead-in sentence, both regiment abilities and all four
+enhancements are carried, in the order they are printed.
+
 ### Vigilant Brotherhood — Stormcast Eternals (added 2026-08-29)
 
 Transcribed from the official faction pack published by Games Workshop at
@@ -92,9 +114,9 @@ Two things measured while transcribing, recorded here because the next reader wi
   Prosecutors and 5 Liberators, which is **10**. The Lord-Veritant's Gryph-crow is a token rather
   than a model. The catalogue carries the counts the faction pack prints; the eleventh model is not
   invented here to make the two agree.
-- **Battle traits, regiment abilities and enhancements are not in this catalogue.** The faction pack
-  prints them (pages 10 and 11), and how they map onto a catalogue's rule and profile shapes is an
-  open question rather than an oversight.
+- Its **box rules** were added later, with the Order stage: battle traits, regiment abilities and
+  enhancements from pages 10 and 11, on the box-rules row described above. They were left out at
+  first because how they map onto a catalogue's shapes was still open.
 
 ## Licence
 
