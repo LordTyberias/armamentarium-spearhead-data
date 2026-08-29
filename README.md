@@ -83,6 +83,19 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Lumineth Realm-Lords — two boxes (added 2026-08-29)
+
+Glittering Phalanx (`eng_01-04_aos_spearhead_lumineth_realmlords_glittering_phalanx`, no longer in
+print) and Hurakan Vanguard (`eng_04-02_aos_spearhead_lumineth_realmlords`, in print).
+
+The second case of one unit with two different warscrolls: Vanari Auralan Wardens appear in both
+boxes with the same characteristics, a differently named weapon (Warden's Pike against Warden Pike
+and Blade) and a different ability.
+
+The Vanari Bladelords warscroll prints one weapon row whose Hit, Wound, Rend and Damage cells are
+replaced by a single "See below" spanning all four. Every one of those four cells carries that text
+here — there is no other honest way to record a cell that is not a value.
+
 ### Kharadron Overlords — two boxes (added 2026-08-29)
 
 Skyhammer Task Force (`eng_jun25_aos_factionpack_kharadron_overlords`, pages 21-27, no longer in

@@ -181,6 +181,11 @@
     <categoryEntry id="sph-cat::grundstok-trailblazers" name="Spearhead: Kharadron Overlords (Grundstok Trailblazers)" hidden="false" />
     <categoryEntry id="sph-cat::skyhammer-task-force" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" />
     <categoryEntry id="sph-faction::kharadron-overlords" name="Kharadron Overlords" hidden="false" />
+    <categoryEntry id="sph-cat::glittering-phalanx" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" />
+    <categoryEntry id="sph-cat::hurakan-vanguard" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" />
+    <categoryEntry id="sph-faction::lumineth-realm-lords" name="Lumineth Realm-Lords" hidden="false" />
+    <categoryEntry id="sph-kw::monster" name="Monster" hidden="false" />
+    <categoryEntry id="sph-kw::ward-5" name="Ward (5+)" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -217,6 +222,11 @@
         <categoryLink id="97cdd88e" name="Spearhead: Kharadron Overlords (Grundstok Trailblazers)" hidden="false" targetId="sph-cat::grundstok-trailblazers" />
         <categoryLink id="b6027245" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" targetId="sph-cat::skyhammer-task-force" />
         <categoryLink id="17276999" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" />
+        <categoryLink id="bb70910d" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" />
+        <categoryLink id="8dc5ca16" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" />
+        <categoryLink id="cbd4a49b" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" />
+        <categoryLink id="970c6376" name="Monster" hidden="false" targetId="sph-kw::monster" />
+        <categoryLink id="8b99e9ea" name="Ward (5+)" hidden="false" targetId="sph-kw::ward-5" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>
