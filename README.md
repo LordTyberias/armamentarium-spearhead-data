@@ -83,6 +83,18 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Idoneth Deepkin — two boxes (added 2026-08-29)
+
+Soulraid Hunt (`eng_01-04_aos_spearhead_idoneth_deepkin_soulraid_hunt`, no longer in print) and
+Akhelian Tide Guard (`eng_aos4_idoneth_deepkin_spearhead_rules`, in print).
+
+**The same unit can carry different rules in two boxes of the same faction.** Akhelian Morrsarr
+Guard appears in both, with identical characteristics and weapons — and with two different versions
+of its Biovoltaic Blast ability: in Soulraid Hunt each 4-5 inflicts 1 mortal damage and each 6+
+inflicts D3, in Akhelian Tide Guard each 3+ inflicts 1. Both are printed as Spearhead warscrolls.
+This is the clearest case so far for why a unit row belongs to its box rather than to its faction,
+and why no row here may be shared between boxes.
+
 ### Fyreslayers — Saga Axeband (added 2026-08-29)
 
 From `fyreslayers_nov_24_eng_27`, pages 29-34. **This one is not a Spearhead pack but the faction's
