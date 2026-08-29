@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="sph-catalogue::daughters-of-khaine" name="Daughters of Khaine" gameSystemId="sph1-6c4a-2e97-0001" revision="1" battleScribeVersion="2.03" authorName="Armamentarium" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="sph::heartflayer-troupe::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="b72bd750" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a3169823" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b3c59db8" name="Spearhead: Daughters of Khaine (Heartflayer Troupe)" hidden="false" targetId="sph-cat::heartflayer-troupe" primary="true" />
+        <categoryLink id="e5f1eb4b" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" primary="false" />
+        <categoryLink id="407ad28e" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="549b95e1" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="d7869016" name="Blood Rites" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">At the start of each battle round, all friendly units gain the Blood Rites passive ability that corresponds to the current battle round number, as shown below (units keep all Blood Rites abilities gained in previous battle rounds). Battle round 1, Quickening Bloodlust: Add 1 to run rolls for this unit. Battle round 2, Headlong Fury: Add 1 to charge rolls for this unit. Battle round 3, Zealot's Rage: Add 1 to hit rolls for combat attacks made by this unit. Battle round 4, Slaughterer's Strength: Add 1 to wound rolls for combat attacks made by this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c3a4095d" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5c7ebec4" name="Murderous Epiphany" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">All friendly units gain the Blood Rites passive ability they would have gained at the start of the next battle round (they keep this ability for the rest of the battle, but they do not gain it for a second time at the start of the next battle round).</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0dcc8b30" name="Blessing of Khaine" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit wholly within 12&quot; of your general. You cannot pick your general.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Add 1 to ward rolls for that unit this phase.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="36b3d3e6" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ca06c30f" name="Bathed in Blood" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Each time a model is slain by your general, Heal (1) your general.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5fd690ee" name="Fuelled by Revenge" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to the Rend characteristic of melee weapons used by friendly Blood Stalkers units while they are wholly within 12&quot; of your general.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bbcc9ed8" name="Flask of Shademist" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Until the end of the phase, subtract 1 from hit rolls for attacks that target friendly units while they are wholly within 12&quot; of your general.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d7dec724" name="Zealous Orator" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit wholly within 9&quot; of your general that is not in combat. Roll a dice for each slain model from that unit.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">For each 5+, you can return 1 slain model to that unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::heartflayer-troupe::01-melusai-ironscale" name="Melusai Ironscale" type="unit" hidden="false">
+      <constraints>
+        <constraint id="55e3fd02" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ca5db1b9" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="933f58ee" name="Spearhead: Daughters of Khaine (Heartflayer Troupe)" hidden="false" targetId="sph-cat::heartflayer-troupe" primary="true" />
+        <categoryLink id="1780add3" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" primary="false" />
+        <categoryLink id="33fc9cf0" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="e6d53b76" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="c123c2c6" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="7471f4c1" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="4d4db656" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="1ce716b8" name="Melusai Ironscale" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">6</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b6636b2d" name="Keldrisaith" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">12&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">D3</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="db0df1f1" name="Keldrisaith" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">6</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="43420a3c" name="All-Out Slaughter" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit wholly within 12&quot; of this unit to be the target. You cannot pick this unit.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Add 1 to the Attacks characteristic of the target's melee weapons for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d07a5b89" name="Turned to Crystal" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit within 1&quot; of this unit to be the target and roll a dice.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 2+, inflict 1 mortal damage on the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::heartflayer-troupe::01-melusai-ironscale::keldrisaith" name="Keldrisaith" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="2073188c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="a8cfea87" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::heartflayer-troupe::02-witch-aelves" name="Witch Aelves" type="unit" hidden="false">
+      <constraints>
+        <constraint id="38712552" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="aaf8f48c" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="97329164" name="Spearhead: Daughters of Khaine (Heartflayer Troupe)" hidden="false" targetId="sph-cat::heartflayer-troupe" primary="true" />
+        <categoryLink id="2505bc3a" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" primary="false" />
+        <categoryLink id="69e5de5c" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="55e63604" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="4628af0c" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="b64a4415" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+        <categoryLink id="24aa6b12" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="4fb47fe6" name="Witch Aelves" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="800bba73" name="Paired Sciansá" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="373ea4c4" name="Frenzied Fervour" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to the Rend characteristic of this unit's melee weapons if it charged in the same turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::heartflayer-troupe::02-witch-aelves::paired-scians" name="Paired Sciansá" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="8e98d726" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="c05db7e9" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::heartflayer-troupe::03-witch-aelves" name="Witch Aelves" type="unit" hidden="false">
+      <constraints>
+        <constraint id="277f900a" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="daa815d4" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="026964de" name="Spearhead: Daughters of Khaine (Heartflayer Troupe)" hidden="false" targetId="sph-cat::heartflayer-troupe" primary="true" />
+        <categoryLink id="df79d0bf" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" primary="false" />
+        <categoryLink id="abae3248" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="0ac32f97" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="d55ba753" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="bc4fb195" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+        <categoryLink id="b2af7ad6" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f7dd40a7" name="Witch Aelves" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cd7a456e" name="Paired Sciansá" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a99bf29d" name="Frenzied Fervour" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to the Rend characteristic of this unit's melee weapons if it charged in the same turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::heartflayer-troupe::03-witch-aelves::paired-scians" name="Paired Sciansá" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="d705864e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="ee1d3d6e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::heartflayer-troupe::04-doomfire-warlocks" name="Doomfire Warlocks" type="unit" hidden="false">
+      <constraints>
+        <constraint id="748cbc35" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="5e5584bc" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9dc53ca5" name="Spearhead: Daughters of Khaine (Heartflayer Troupe)" hidden="false" targetId="sph-cat::heartflayer-troupe" primary="true" />
+        <categoryLink id="3d2057f2" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" primary="false" />
+        <categoryLink id="8a36d275" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="740453b7" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="eadd348a" name="Cavalry" hidden="false" targetId="sph-kw::cavalry" primary="false" />
+        <categoryLink id="10ca265e" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f504307a" name="Doomfire Warlocks" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">14&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">3</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="17232a18" name="Doomfire Crossbow" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">10&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">-</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44963381" name="Cursed Scimitar" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2c8cd401" name="Dark Steed's Vicious Bite" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">5+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e1351ac2" name="Doomfire" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible enemy unit within 12&quot; of this unit to be the target, then make a casting roll of 2D6.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 6+, inflict D3 mortal damage on the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::heartflayer-troupe::04-doomfire-warlocks::doomfire-crossbow" name="Doomfire Crossbow" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="a62134b8" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="4c3d1df8" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::heartflayer-troupe::04-doomfire-warlocks::cursed-scimitar" name="Cursed Scimitar" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="633bafd7" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="2ca20840" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::heartflayer-troupe::04-doomfire-warlocks::dark-steed-s-vicious-bite" name="Dark Steed's Vicious Bite" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="238cbf92" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="5c0e3e45" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::heartflayer-troupe::05-blood-stalkers" name="Blood Stalkers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="af115f76" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9b3307c5" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5d6816fa" name="Spearhead: Daughters of Khaine (Heartflayer Troupe)" hidden="false" targetId="sph-cat::heartflayer-troupe" primary="true" />
+        <categoryLink id="c3c44346" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" primary="false" />
+        <categoryLink id="f2fe4ab5" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="0d34fac0" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="882a4c8c" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="89b8fac6" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="37735d7f" name="Blood Stalkers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9d58bd98" name="Heartseeker Bow" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">18&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">3</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6d5490fc" name="Scianlar" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="134d77ab" name="Heartseekers" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Shooting attacks made by this unit score critical hits on unmodified hit rolls of 5+ if this unit did not use a Move ability in the same turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::heartflayer-troupe::05-blood-stalkers::heartseeker-bow" name="Heartseeker Bow" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="678c8f98" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="4a426cf0" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::heartflayer-troupe::05-blood-stalkers::scianlar" name="Scianlar" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="f1396036" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="09fe9184" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::khainite-shadow-coven::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="d3b867ad" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="79ef92bf" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a76274bc" name="Spearhead: Daughters of Khaine (Khainite Shadow Coven)" hidden="false" targetId="sph-cat::khainite-shadow-coven" primary="true" />
+        <categoryLink id="10be38f6" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" primary="false" />
+        <categoryLink id="bf5ffbd2" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="9b3eba5d" name="Shadowmasked" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn, Any Charge Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly Infantry unit that is in combat and did not charge this turn to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Subtract 1 from hit rolls and wound rolls for combat attacks that target that friendly unit for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="08b6fbf6" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="da221e97" name="Bleed Them Pale" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly Infantry unit that is in combat and did not charge this turn to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">The target can move 6&quot; but cannot end that move in combat.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1482d643" name="Murderous Strike" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to the Rend characteristic of melee weapons used by friendly Infantry units that charged in the same turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="631580ba" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7b29c0fb" name="Shadow Avatar" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Your Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Add 1 to the Rend characteristic of your general's melee weapons for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7922c090" name="Frenzied Exhortations" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible friendly unit wholly within 12&quot; of your general to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 3+, add 1 to ward rolls for the target for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0e771f0e" name="Boiling Blood" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Shooting Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible enemy unit within 12&quot; of your general to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. If the roll equals or exceeds the target's Save characteristic, halve the target's Move characteristic until the start of your next turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c8645b40" name="Bladed Impact" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Charge Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">If your general charged this phase, pick an enemy unit within 1&quot; of them to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a D3. On a 2+, inflict an amount of mortal damage on the target equal to the roll.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::khainite-shadow-coven::01-slaughter-queen-on-cauldron-of-blood" name="Slaughter Queen on Cauldron of Blood" type="unit" hidden="false">
+      <constraints>
+        <constraint id="a6666485" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6d80ac4b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="bcb7fade" name="Spearhead: Daughters of Khaine (Khainite Shadow Coven)" hidden="false" targetId="sph-cat::khainite-shadow-coven" primary="true" />
+        <categoryLink id="992d19ee" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" primary="false" />
+        <categoryLink id="df2ae1d1" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="a2288dc6" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="bf9dfe3b" name="Priest" hidden="false" targetId="sph-kw::priest" primary="false" />
+        <categoryLink id="4d884d10" name="War Machine" hidden="false" targetId="sph-kw::war-machine" primary="false" />
+        <categoryLink id="41d9b261" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="1016c433" name="Slaughter Queen on Cauldron of Blood" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">12</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eb01d15f" name="Shrine Guardians' Blades" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">9</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4eb47b3e" name="Consecrated Revulsion" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible friendly Infantry unit wholly within 12&quot; of this unit to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 3+, add 1 to save rolls for the target until the start of your next turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::khainite-shadow-coven::01-slaughter-queen-on-cauldron-of-blood::shrine-guardians-blades" name="Shrine Guardians' Blades" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="6c09411f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="e94c5cc2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::khainite-shadow-coven::02-hag-queen" name="Hag Queen" type="unit" hidden="false">
+      <constraints>
+        <constraint id="add2eaeb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="acbe973f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c3e5df7f" name="Spearhead: Daughters of Khaine (Khainite Shadow Coven)" hidden="false" targetId="sph-cat::khainite-shadow-coven" primary="true" />
+        <categoryLink id="6762ecc5" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" primary="false" />
+        <categoryLink id="a364ae93" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="07a13164" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="c3449503" name="Priest" hidden="false" targetId="sph-kw::priest" primary="false" />
+        <categoryLink id="937454e4" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="6e32f3e8" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="b9e09cda" name="Hag Queen" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ed13c82b" name="Blade of Khaine" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="91e719cb" name="Bloody Incitement" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible friendly unit wholly within 12&quot; of this unit to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">If this unit is in combat, the target's melee weapons have Crit (Auto-wound) for the rest of the turn. If this unit is not in combat, roll a dice. On a 3+, the target's melee weapons have Crit (Auto-wound) for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::khainite-shadow-coven::02-hag-queen::blade-of-khaine" name="Blade of Khaine" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="6c41603d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="1dd17965" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::khainite-shadow-coven::03-bloodwrack-medusa" name="Bloodwrack Medusa" type="unit" hidden="false">
+      <constraints>
+        <constraint id="1ed9b8d2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="4373718f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="dfd256cd" name="Spearhead: Daughters of Khaine (Khainite Shadow Coven)" hidden="false" targetId="sph-cat::khainite-shadow-coven" primary="true" />
+        <categoryLink id="e5e74064" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" primary="false" />
+        <categoryLink id="444ef46a" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="07efe0ef" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="8aef7cc2" name="Wizard" hidden="false" targetId="sph-kw::wizard" primary="false" />
+        <categoryLink id="cebdc1d5" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="30539233" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="9f1d9938" name="Bloodwrack Medusa" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">6</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1abad5f2" name="Bloodwrack Spear" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="266eb950" name="Exsanguinating Glare" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Shooting Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">If this unit is in combat, pick an enemy unit in combat with it to be the target. Otherwise, pick a visible enemy unit within 12&quot; of it to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 3+, inflict 1 mortal damage on the target. Then, if any enemy models were slain by that mortal damage, inflict an additional 1 mortal damage on the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::khainite-shadow-coven::03-bloodwrack-medusa::bloodwrack-spear" name="Bloodwrack Spear" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="04a2ce8c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="0d87749c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::khainite-shadow-coven::04-khainite-shadowstalkers" name="Khainite Shadowstalkers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="7201b743" field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="f418cc7b" field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9e50e08b" name="Spearhead: Daughters of Khaine (Khainite Shadow Coven)" hidden="false" targetId="sph-cat::khainite-shadow-coven" primary="true" />
+        <categoryLink id="6b1fc3bd" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" primary="false" />
+        <categoryLink id="0b6c7550" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="38054a0f" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="0d53e33f" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f04b6c42" name="Khainite Shadowstalkers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="79c175a8" name="Cursed Bolts and Missiles" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">10&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ed2d0be4" name="Blades of Murder" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="63c51b88" name="Shadow Leap" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Your Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Remove this unit from the battlefield and set it up again on the battlefield more than 6&quot; from all enemy units.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::khainite-shadow-coven::04-khainite-shadowstalkers::cursed-bolts-and-missiles" name="Cursed Bolts and Missiles" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="70f4d21b" field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="555eaf92" field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::khainite-shadow-coven::04-khainite-shadowstalkers::blades-of-murder" name="Blades of Murder" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="94ec29e6" field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="bab79039" field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::khainite-shadow-coven::05-sisters-of-slaughter" name="Sisters of Slaughter" type="unit" hidden="false">
+      <constraints>
+        <constraint id="5a0c3a99" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="262e367b" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b7f2a3c3" name="Spearhead: Daughters of Khaine (Khainite Shadow Coven)" hidden="false" targetId="sph-cat::khainite-shadow-coven" primary="true" />
+        <categoryLink id="cf77be66" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" primary="false" />
+        <categoryLink id="725e623a" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="a8f04391" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="13e31457" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+        <categoryLink id="7c871495" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="9c2919e6" name="Sisters of Slaughter" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="30578dcc" name="Kruiplash" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="346aad31" name="Dance of Death" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), Enemy Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">If this unit is in combat, it can move 2D6&quot;. It can move through the combat ranges of enemy units but must end that move in combat.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::khainite-shadow-coven::05-sisters-of-slaughter::kruiplash" name="Kruiplash" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="badc2f7c" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="596e4ad8" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::khainite-shadow-coven::06-sisters-of-slaughter" name="Sisters of Slaughter" type="unit" hidden="false">
+      <constraints>
+        <constraint id="7ea6d255" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="adff62d9" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5af91c87" name="Spearhead: Daughters of Khaine (Khainite Shadow Coven)" hidden="false" targetId="sph-cat::khainite-shadow-coven" primary="true" />
+        <categoryLink id="0d362e99" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" primary="false" />
+        <categoryLink id="ffaaf689" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="a7d6fdf3" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="fae58b29" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+        <categoryLink id="b63aeb13" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="99a7a5e8" name="Sisters of Slaughter" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a5956f1f" name="Kruiplash" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c2bb0535" name="Dance of Death" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), Enemy Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">If this unit is in combat, it can move 2D6&quot;. It can move through the combat ranges of enemy units but must end that move in combat.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::khainite-shadow-coven::06-sisters-of-slaughter::kruiplash" name="Kruiplash" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="273b79a7" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="300deb53" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

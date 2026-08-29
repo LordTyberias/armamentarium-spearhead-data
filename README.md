@@ -83,6 +83,19 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Daughters of Khaine — two boxes (added 2026-08-29)
+
+Heartflayer Troupe (`eng_01-04_aos_spearhead_daughters_of_khaine_heartflayer_troupe`, no longer in
+print) and Khainite Shadow Coven (`eng_25-03_..._khainite_shadow_coven`, in print).
+
+**The two boxes of one faction do not share their battle traits.** Heartflayer Troupe carries Blood
+Rites, Khainite Shadow Coven carries Shadowmasked; neither pack prints the other. The box rules are
+per box, not per faction, and the format follows that.
+
+Blood Rites is printed as a table of battle round against ability rather than as a list of
+abilities. It is carried as a single rule whose text names each round with its ability, because
+four separate profiles would keep the abilities and lose the round they belong to.
+
 ### Cities of Sigmar — four boxes (added 2026-08-29)
 
 | Box | Faction pack | In print |

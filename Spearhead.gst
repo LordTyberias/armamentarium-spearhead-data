@@ -170,6 +170,9 @@
     <categoryEntry id="sph-kw::castelite" name="Castelite" hidden="false" />
     <categoryEntry id="sph-kw::wizard" name="Wizard" hidden="false" />
     <categoryEntry id="sph-kw::ward-4" name="Ward (4+)" hidden="false" />
+    <categoryEntry id="sph-cat::heartflayer-troupe" name="Spearhead: Daughters of Khaine (Heartflayer Troupe)" hidden="false" />
+    <categoryEntry id="sph-cat::khainite-shadow-coven" name="Spearhead: Daughters of Khaine (Khainite Shadow Coven)" hidden="false" />
+    <categoryEntry id="sph-faction::daughters-of-khaine" name="Daughters of Khaine" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -195,6 +198,9 @@
         <categoryLink id="2114cbcc" name="Castelite" hidden="false" targetId="sph-kw::castelite" />
         <categoryLink id="b2f7fd7a" name="Wizard" hidden="false" targetId="sph-kw::wizard" />
         <categoryLink id="103fb822" name="Ward (4+)" hidden="false" targetId="sph-kw::ward-4" />
+        <categoryLink id="849d5e94" name="Spearhead: Daughters of Khaine (Heartflayer Troupe)" hidden="false" targetId="sph-cat::heartflayer-troupe" />
+        <categoryLink id="a357dae5" name="Spearhead: Daughters of Khaine (Khainite Shadow Coven)" hidden="false" targetId="sph-cat::khainite-shadow-coven" />
+        <categoryLink id="02035d33" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>
