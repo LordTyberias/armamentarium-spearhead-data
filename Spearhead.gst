@@ -162,6 +162,14 @@
     <categoryEntry id="sph-cat::yndrastas-spearhead" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" />
     <categoryEntry id="sph-kw::ward-6" name="Ward (6+)" hidden="false" />
     <categoryEntry id="sph-kw::war-machine" name="War Machine" hidden="false" />
+    <categoryEntry id="sph-cat::fusil-platoon" name="Spearhead: Cities of Sigmar (Fusil Platoon)" hidden="false" />
+    <categoryEntry id="sph-cat::castellite-company" name="Spearhead: Cities of Sigmar (Castellite Company)" hidden="false" />
+    <categoryEntry id="sph-cat::sentinels-of-embergard" name="Spearhead: Cities of Sigmar (Sentinels of Embergard)" hidden="false" />
+    <categoryEntry id="sph-cat::zenestras-zealots" name="Spearhead: Cities of Sigmar (Zenestra's Zealots)" hidden="false" />
+    <categoryEntry id="sph-faction::cities-of-sigmar" name="Cities of Sigmar" hidden="false" />
+    <categoryEntry id="sph-kw::castelite" name="Castelite" hidden="false" />
+    <categoryEntry id="sph-kw::wizard" name="Wizard" hidden="false" />
+    <categoryEntry id="sph-kw::ward-4" name="Ward (4+)" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -179,6 +187,14 @@
         <categoryLink id="5da2ee3b" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" targetId="sph-cat::yndrastas-spearhead" />
         <categoryLink id="572a0249" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" />
         <categoryLink id="e1b7a682" name="War Machine" hidden="false" targetId="sph-kw::war-machine" />
+        <categoryLink id="6240f34c" name="Spearhead: Cities of Sigmar (Fusil Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" />
+        <categoryLink id="1adf4ae5" name="Spearhead: Cities of Sigmar (Castellite Company)" hidden="false" targetId="sph-cat::castellite-company" />
+        <categoryLink id="d3420274" name="Spearhead: Cities of Sigmar (Sentinels of Embergard)" hidden="false" targetId="sph-cat::sentinels-of-embergard" />
+        <categoryLink id="1ea85b57" name="Spearhead: Cities of Sigmar (Zenestra's Zealots)" hidden="false" targetId="sph-cat::zenestras-zealots" />
+        <categoryLink id="8951ac12" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" />
+        <categoryLink id="2114cbcc" name="Castelite" hidden="false" targetId="sph-kw::castelite" />
+        <categoryLink id="b2f7fd7a" name="Wizard" hidden="false" targetId="sph-kw::wizard" />
+        <categoryLink id="103fb822" name="Ward (4+)" hidden="false" targetId="sph-kw::ward-4" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>

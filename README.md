@@ -83,6 +83,32 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Cities of Sigmar — four boxes (added 2026-08-29)
+
+| Box | Faction pack | In print |
+|---|---|---|
+| Fusil Platoon | `eng_01-04_aos_spearhead_cities_of_sigmar_fusil_platoon` | no |
+| Castellite Company | `eng_01-04_aos_spearhead_cities_of_sigmar_castelite_company` | no |
+| Sentinels of Embergard | `eng_15-04_aos_spearhead_city_of_ash_gaming_pack` | yes |
+| Zenestra's Zealots | `eng_13-05_aos_spearhead_cities_of_sigmar_zenestra-s_zealots` | yes |
+
+Four things measured while transcribing these:
+
+- **A pack can hold boxes of two different Grand Alliances.** The City of Ash gaming pack carries
+  Sentinels of Embergard on pages 1-4 and a Skaven box on pages 5-8. Only the first is Order.
+- **The reference inventory and the faction pack disagree about which unit is the general.** For
+  Zenestra's Zealots the inventory names Pontifex Zenestra; the pack names the Freeguild Marshal
+  and Relic Envoy. The catalogue follows the pack, as it does for every other value.
+- **The model counts differ by one wherever a box contains a token**, and always in the same
+  direction: the inventory counts the token as a model. Fusil Platoon 24 against 23 (Blackpowder
+  Squire), Sentinels of Embergard 18 against 17 (Thexa), Zenestra's Zealots 19 against 18 (Relic
+  Envoy). The catalogue carries the pack's counts.
+- **Where a unit's weapons are split across its models, the carrier counts follow the printed
+  wording rather than a guess.** Wildercorps Hunters print "4/11 models are Trailhounds and are
+  armed with a Trailhound's Ferocious Bite instead of any other weapons" and "the Wildercorps
+  Warden is armed with a Trailhound's Ferocious Bite in addition to their other weapons", which
+  gives 7 crossbows, 7 hunting weapons and 5 bites.
+
 ### Yndrasta's Spearhead — Stormcast Eternals (added 2026-08-29)
 
 Transcribed from the same faction pack as the box below, pages 1-8. The box is no longer in print
