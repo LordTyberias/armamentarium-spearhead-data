@@ -1,0 +1,105 @@
+# armamentarium-spearhead-data
+
+BattleScribe catalogue data for the fixed Spearhead boxes of Age of Sigmar, read by the
+[Armamentarium](https://github.com/LordTyberias/Armamentarium) project.
+
+- `Spearhead.gst` — the game system: profile types, the categories, one force entry.
+- one `.cat` file per faction, each holding the units of that faction's Spearheads.
+
+**This repository is not complete.** It currently carries a single box — Stormcast Eternals,
+Vigilant Brotherhood — as the sample that proves the format against the reader. The remaining
+50 are collected separately (ARMAM-275).
+
+## What this is, and what it is not
+
+A Spearhead is a fixed box: it is chosen, not built. That shapes the data in four ways that
+differ from an ordinary BattleScribe catalogue, and they are deliberate:
+
+- **No points.** Every box has a points value in the regular game — between 410 and 830 — and it
+  is deliberately **not** written here. Spearhead is not played to a points limit, so that figure
+  says nothing about this mode; written as a `costs` element it would put a number on a list that
+  has no limit and invite every reader, and every export, to treat it as one.
+- **The model count sits on the entry.** There is no `selectionEntryGroup` to pick a number from,
+  because nothing is picked — each unit entry states `min = max = <model count>` directly.
+- **Profiles keep their printed order.** The order abilities and weapons are listed in is content,
+  not incidental.
+- **Spearhead warscrolls are their own warscrolls.** They carry the same base characteristics as
+  their matched-play counterparts but are simplified for this mode and printed under a "Spearhead
+  Warscroll" heading. The regular warscroll of the same unit is a different document and is never
+  a substitute for one here.
+
+Each unit row is its own root `selectionEntry`; which box it belongs to is a category, alongside
+its faction, its Grand Alliance and — where applicable — a `Legends` marker for a box that is no
+longer in print.
+
+## The category ids are a contract
+
+The reader tells those kinds of membership apart by the **id prefix**, never by the name — a
+faction name, a Grand Alliance name and a unit keyword can be the same word. The counterpart in
+the application is `SpearheadCategoryIds` in `Armamentarium.Application`, and neither side can
+change one of these alone.
+
+| Prefix | Meaning |
+|---|---|
+| `sph-cat::<box-slug>` | the Spearhead the entry belongs to; the slug repeats in the entry id |
+| `sph-faction::<slug>` | the faction the units belong to |
+| `sph-alliance::<slug>` | Order / Chaos / Death / Destruction |
+| `sph-flag::legends` | the one flag, not a prefix: the box is no longer in print |
+| `sph-kw::<slug>` | a unit keyword — everything the warscroll prints under "Keywords" |
+
+Unit entry ids are `sph::<box-slug>::NN-<unit-slug>`, and a fixed weapon is a mandatory child
+entry under `<entry-id>::<slug>` whose `min = max` states how many models carry it. **Those ids
+end up in users' saved army lists**, so changing one strands the list that carries it.
+
+Nothing in this repository enforces any of it. A prefix or an id that drifts produces no build
+error and no failing file — it produces an empty box list in the application, which is why it is
+written down here rather than left to be inferred from the data.
+
+## The profile types are Age of Sigmar's own
+
+`Spearhead.gst` carries the twelve profile types of `BSData/age-of-sigmar-4th` verbatim — the same
+names, the same characteristic names, in the same order. That is not tidiness: the application
+resolves a datasheet cell by its **column name**, and a renamed characteristic renders a fully
+labelled, entirely empty table without any error.
+
+## This is not meant for other BattleScribe tools
+
+**It is not expected to be usable in the BattleScribe Data Editor, in New Recruit, or in any other
+roster builder, and that is deliberate rather than an oversight.** The reasons are the ones above:
+a self-declared game system, entries without costs, and no selection groups to choose from. An
+editor built for assembling a roster will load these files and find nothing to assemble.
+
+What the format buys is not interoperability. It is that the data lives outside the application,
+in its own repository, in plain XML that any text or XML tool can edit, on its own release cadence.
+
+## Provenance
+
+### Vigilant Brotherhood — Stormcast Eternals (added 2026-08-29)
+
+Transcribed from the official faction pack published by Games Workshop at
+`assets.warhammer-community.com/eng_aos_spearhead_stormcast_eternals_dec_24-jyo1gqr2pm-0e3gf5ydzh.pdf`
+(15 pages, December 2024 edition), pages 9 and 12–15. Every value was read off the rendered page
+rather than off an extracted text layer, because the extraction reversed the printed order of the
+abilities on the Prosecutors warscroll and splits the statline labels from their values.
+
+Nothing was derived from the regular Age of Sigmar warscrolls of the same units, and nothing was
+invented.
+
+Two things measured while transcribing, recorded here because the next reader will hit them:
+
+- The public reference inventory this project uses to enumerate the boxes gives this one a **model
+  count of 11**. The faction pack lists 1 Lord-Vigilant on Gryph-stalker, 1 Lord-Veritant, 3
+  Prosecutors and 5 Liberators, which is **10**. The Lord-Veritant's Gryph-crow is a token rather
+  than a model. The catalogue carries the counts the faction pack prints; the eleventh model is not
+  invented here to make the two agree.
+- **Battle traits, regiment abilities and enhancements are not in this catalogue.** The faction pack
+  prints them (pages 10 and 11), and how they map onto a catalogue's rule and profile shapes is an
+  open question rather than an oversight.
+
+## Licence
+
+MIT, see `LICENSE`.
+
+Age of Sigmar and Spearhead are trademarks of Games Workshop Limited. This repository is unofficial
+and unaffiliated; it contains no Games Workshop artwork and claims no rights in their intellectual
+property.
