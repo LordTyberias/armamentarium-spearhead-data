@@ -192,6 +192,9 @@
     <categoryEntry id="sph-kw::beast" name="Beast" hidden="false" />
     <categoryEntry id="sph-kw::saurus" name="Saurus" hidden="false" />
     <categoryEntry id="sph-kw::skink" name="Skink" hidden="false" />
+    <categoryEntry id="sph-cat::bitterbark-copse" name="Spearhead: Sylvaneth (Bitterbark Copse)" hidden="false" />
+    <categoryEntry id="sph-cat::spitewing-flight" name="Spearhead: Sylvaneth (Spitewing Flight)" hidden="false" />
+    <categoryEntry id="sph-faction::sylvaneth" name="Sylvaneth" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -239,6 +242,9 @@
         <categoryLink id="eb0229e6" name="Beast" hidden="false" targetId="sph-kw::beast" />
         <categoryLink id="66719144" name="Saurus" hidden="false" targetId="sph-kw::saurus" />
         <categoryLink id="c0b847df" name="Skink" hidden="false" targetId="sph-kw::skink" />
+        <categoryLink id="7ecec3b4" name="Spearhead: Sylvaneth (Bitterbark Copse)" hidden="false" targetId="sph-cat::bitterbark-copse" />
+        <categoryLink id="cdc5eb6f" name="Spearhead: Sylvaneth (Spitewing Flight)" hidden="false" targetId="sph-cat::spitewing-flight" />
+        <categoryLink id="270a43d8" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>

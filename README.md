@@ -83,6 +83,13 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Sylvaneth — two boxes (added 2026-08-29)
+
+Bitterbark Copse (`eng_aos_faction_sylvaneth_apr_25`, pages 32-38, no longer in print) and Spitewing
+Flight (`eng_25-03_aos_spearhead_spitewing_flight_sylvaneth`, in print).
+
+Both model counts agree with the inventory: 10 and 12. Neither box contains a token.
+
 ### Seraphon — two boxes (added 2026-08-29)
 
 Sunblooded Prowlers (`eng_01-04_aos_spearhead_seraphon_sunblooded_prowlers`, in print) and Starscale
