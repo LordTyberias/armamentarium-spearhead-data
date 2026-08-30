@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="sph-catalogue::slaves-to-darkness" name="Slaves to Darkness" gameSystemId="sph1-6c4a-2e97-0001" revision="1" battleScribeVersion="2.03" authorName="Armamentarium" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="sph::darkoath-raiders::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2ccb32ba" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="f89ae85d" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="bb1654dc" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" targetId="sph-cat::darkoath-raiders" primary="true" />
+        <categoryLink id="b0d1be87" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" primary="false" />
+        <categoryLink id="44f53042" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="fb3f6e6b" name="Oaths of Darkness" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">You can reveal 1 battle tactic card in your hand to your opponent. If you do so, that battle tactic card becomes your oath for the rest of the turn. While this battle tactic card is your oath, you can still use the command on it, or attempt to score the battle tactic on it, as normal. If you score the battle tactic on your oath this turn, your oath is fulfilled. Instead of discarding the card, it is placed to one side but you can still use the command on it. Once you do so, the card is discarded as normal. Fulfilled oaths placed to one side in this way do not count towards the 3 battle tactic cards you can have in your hand. If you use the command on your oath before it is scored, it is discarded as normal. At the end of the turn, if the oath is still in your hand and that oath has not been fulfilled, it ceases to be your oath.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b72c0dce" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="feab041b" name="Rage of Arkhar" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit in combat to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">For the rest of the turn, add 1 to the Attacks and Rend characteristics of the target's melee weapons. Designer's Note: This does not affect Companion weapons.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7ceecfab" name="Fearless Invaders" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), Your Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit in combat to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">If the target uses a Retreat ability this turn, no mortal damage is inflicted on it and it can still use Charge abilities later in the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb990c5d" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dfc388d0" name="Bloodthirsty Blade" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">The Rend characteristic of your general's Rune-etched Axe is 2.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="77326c22" name="Godshadow Talisman" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Your general has Ward (4+).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="76eac340" name="Champion of Raids" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Charge Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick another friendly unit wholly within 12&quot; of your general to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">The target can re-roll charge rolls for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a2cc83f3" name="Fell Ritualist" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Each time you draw battle tactic cards, if your general is on the battlefield, you can choose to draw 1 additional battle tactic card, then put 1 of your battle tactic cards in your hand back at the bottom of your battle tactic deck.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::darkoath-raiders::01-darkoath-warqueen" name="Darkoath Warqueen" type="unit" hidden="false">
+      <constraints>
+        <constraint id="42377218" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="c7e3c69a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="38224be0" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" targetId="sph-cat::darkoath-raiders" primary="true" />
+        <categoryLink id="491f5cbf" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" primary="false" />
+        <categoryLink id="0ae0e06f" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="efe4ed1e" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="8bf94a2a" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="27fca8be" name="Ward (5+)" hidden="false" targetId="sph-kw::ward-5" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="cc1b6df6" name="Darkoath Warqueen" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="081f08ec" name="Rune-etched Axe" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Mortal)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a8ddc95b" name="Oath of Supremacy" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit wholly within 12&quot; of your general to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Until the start of your next turn, add 1 to hit rolls for attacks made by the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::darkoath-raiders::01-darkoath-warqueen::rune-etched-axe" name="Rune-etched Axe" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="72018c7e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="e56eedad" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::darkoath-raiders::02-darkoath-savagers" name="Darkoath Savagers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="b677f4a0" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="ecdc8339" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="39019f41" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" targetId="sph-cat::darkoath-raiders" primary="true" />
+        <categoryLink id="ce0c1cbd" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" primary="false" />
+        <categoryLink id="61276301" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="60dc090d" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="7da8f584" name="Darkoath Savagers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8e5f38d1" name="Darkoath Weapons" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Mortal)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="574cbc6d" name="Unit Composition" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">1 model in this unit is a Godspeaker.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a1a121de" name="Visions of Glory" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">If this unit includes a Godspeaker, roll 8 dice. For each 4+, until the start of your next turn, you can re-roll 1 hit roll, 1 wound roll, 1 run roll or 1 save roll for this unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::darkoath-raiders::02-darkoath-savagers::darkoath-weapons" name="Darkoath Weapons" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="37a5499b" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="89229d89" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::darkoath-raiders::03-darkoath-fellriders" name="Darkoath Fellriders" type="unit" hidden="false">
+      <constraints>
+        <constraint id="30fa9817" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9766875b" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="cb6476c1" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" targetId="sph-cat::darkoath-raiders" primary="true" />
+        <categoryLink id="c1567381" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" primary="false" />
+        <categoryLink id="de0b73e1" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="dbbc0012" name="Cavalry" hidden="false" targetId="sph-kw::cavalry" primary="false" />
+        <categoryLink id="7878a627" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="e682ea6f" name="Darkoath Fellriders" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">12&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">3</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5f3bcff3" name="Fellrider Blades" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Charge (+1 Damage)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b71f85e7" name="Warsteed's Hooves" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">5+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9fc4571a" name="Swift Attackers" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Subtract 1 from hit rolls for shooting attacks that target this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::darkoath-raiders::03-darkoath-fellriders::fellrider-blades" name="Fellrider Blades" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="b3a94a62" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="17882456" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::darkoath-raiders::03-darkoath-fellriders::warsteeds-hooves" name="Warsteed's Hooves" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="01036f9d" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="741bf7f1" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::darkoath-raiders::04-darkoath-marauders" name="Darkoath Marauders" type="unit" hidden="false">
+      <constraints>
+        <constraint id="39f2685f" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="47f811bc" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9685409a" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" targetId="sph-cat::darkoath-raiders" primary="true" />
+        <categoryLink id="113b0d3a" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" primary="false" />
+        <categoryLink id="1e741cea" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="1863e163" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="eb902d18" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="55ba2b16" name="Darkoath Marauders" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9b5742b4" name="Raider Weapons" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fab56456" name="Glorious Death" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Each time a model in this unit is slain by a combat attack and that model was in combat with the attacking unit, roll a dice. On a 5+, inflict 1 mortal damage on the attacking unit after the Fight ability has been resolved.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::darkoath-raiders::04-darkoath-marauders::raider-weapons" name="Raider Weapons" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="1cb4b0db" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="c4f41694" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::bloodwind-legion::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="4c598064" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="d2a3ba62" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="eee556e6" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" targetId="sph-cat::bloodwind-legion" primary="true" />
+        <categoryLink id="09c36944" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" primary="false" />
+        <categoryLink id="b578866b" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="15165694" name="Eye of the Gods" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn, End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick one of the following friendly units to use this ability: A unit that is contesting an objective not controlled by your opponent and is not in combat. A unit that destroyed an enemy unit this turn.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll once on the Eye of the Gods table for that unit. That unit gains the Eye of the Gods passive ability that corresponds to the roll (the unit keeps all Eye of the Gods abilities gained in previous turns). If the same unit gains the same ability more than once in the battle, the effects are not cumulative. 1 Snubbed by the Gods: No effect. 2 Ward of Tzeentch: This unit has Ward (6+). 3 Grace of Slaanesh: Add 1 to run rolls for this unit. 4 Blessing of Nurgle: Subtract 1 from wound rolls for attacks that target this unit. 5 Fury of Khorne: Add 1 to the Rend characteristic of this unit's melee weapons. 6 Champion of Chaos: Pick any ability from the table.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2440a151" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ca31ea75" name="The Dread Banner" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Start of the First Battle Round</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly Chaos Warriors or Chaos Knights unit.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">You can immediately roll on the Eye of the Gods table for that unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="930ed54e" name="Fierce Conquerors" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 3 to the control scores of friendly Chaos Warriors units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a5dcad04" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7152ca28" name="Mark of Khorne" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to the Rend characteristic of your general's melee weapons if they charged in the same turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="68568a4b" name="Mark of Tzeentch" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Your Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit on the battlefield. You cannot pick your general.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Remove that unit from the battlefield and set it up again wholly within 6&quot; of your general and more than 6&quot; from all enemy units. It cannot use Move abilities for the rest of the phase.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="03bf67e5" name="Mark of Nurgle" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Subtract 1 from wound rolls for combat attacks that target your general.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="801da440" name="Mark of Slaanesh" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Your general has Strike-first.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::bloodwind-legion::01-chaos-lord" name="Chaos Lord" type="unit" hidden="false">
+      <constraints>
+        <constraint id="895aec18" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="af0518ed" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="fc082d6f" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" targetId="sph-cat::bloodwind-legion" primary="true" />
+        <categoryLink id="5b278306" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" primary="false" />
+        <categoryLink id="db8c583c" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="ab42ac8b" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="b8914e16" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="26cc372d" name="Chaos Lord" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">6</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="00b2ed59" name="Reaperblade" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Mortal)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="39e7d2f0" name="Favoured of the Pantheon" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 4+, you can roll on the Eye of the Gods table for this unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0ae6530f" name="Iron-willed Champion" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit wholly within 12&quot; of this unit to be the target and roll a dice. You cannot pick this unit.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 2+, add 1 to hit rolls for attacks made by the target unit this phase.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bloodwind-legion::01-chaos-lord::reaperblade" name="Reaperblade" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="cfbe5d97" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="fe6630e8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::bloodwind-legion::02-chaos-chariot" name="Chaos Chariot" type="unit" hidden="false">
+      <constraints>
+        <constraint id="9a6a7f8b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="4c728263" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5d2c05b1" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" targetId="sph-cat::bloodwind-legion" primary="true" />
+        <categoryLink id="c289c6ec" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" primary="false" />
+        <categoryLink id="86adc35f" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="39c6e714" name="War Machine" hidden="false" targetId="sph-kw::war-machine" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="7721eeb5" name="Chaos Chariot" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">10&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">7</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1ece48a8" name="Chaos War-flail" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">6</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2fb771c8" name="Driver's Lashing Whip" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="de856a98" name="Warhorses' Trampling Hooves" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">4</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">5+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="769574cd" name="Swift Death" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Charge Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">If this unit charged this phase, pick an enemy unit within 1&quot; of it to be the target and roll a dice.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 2+, inflict D3 mortal damage on the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bloodwind-legion::02-chaos-chariot::chaos-war-flail" name="Chaos War-flail" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="1389deb8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="1ba2bb45" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::bloodwind-legion::02-chaos-chariot::drivers-lashing-whip" name="Driver's Lashing Whip" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="d14337d8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="0d779875" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::bloodwind-legion::02-chaos-chariot::warhorses-trampling-hooves" name="Warhorses' Trampling Hooves" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="620fa35d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="290d7254" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::bloodwind-legion::03-chaos-warriors" name="Chaos Warriors" type="unit" hidden="false">
+      <constraints>
+        <constraint id="ddcace9b" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="1591f8cc" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="437f4b95" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" targetId="sph-cat::bloodwind-legion" primary="true" />
+        <categoryLink id="a6e00e12" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" primary="false" />
+        <categoryLink id="fe073791" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="9f4a7d04" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="242a1b4e" name="Chaos Warriors" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ab0e2a02" name="Rune-etched Halberd" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f95e727c" name="Bringers of Desolation" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to wound rolls for combat attacks made by this unit that target an enemy unit that is contesting an objective you do not control.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bloodwind-legion::03-chaos-warriors::rune-etched-halberd" name="Rune-etched Halberd" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="92b27be6" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="fbe90117" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::bloodwind-legion::04-chaos-warriors" name="Chaos Warriors" type="unit" hidden="false">
+      <constraints>
+        <constraint id="1330ec2f" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="7237e59b" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="08dff1a2" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" targetId="sph-cat::bloodwind-legion" primary="true" />
+        <categoryLink id="8bcfc3ed" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" primary="false" />
+        <categoryLink id="449a75de" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="24fac16c" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="d4cb545c" name="Chaos Warriors" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2dd0cb77" name="Rune-etched Halberd" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="daabf988" name="Bringers of Desolation" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to wound rolls for combat attacks made by this unit that target an enemy unit that is contesting an objective you do not control.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bloodwind-legion::04-chaos-warriors::rune-etched-halberd" name="Rune-etched Halberd" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="1cd2b720" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="814adad3" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::bloodwind-legion::05-chaos-knights" name="Chaos Knights" type="unit" hidden="false">
+      <constraints>
+        <constraint id="8a847dfc" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="d08e7a9c" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1890935c" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" targetId="sph-cat::bloodwind-legion" primary="true" />
+        <categoryLink id="10c7972b" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" primary="false" />
+        <categoryLink id="d81ee338" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="da13e900" name="Cavalry" hidden="false" targetId="sph-kw::cavalry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="7cf5fac2" name="Chaos Knights" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">10&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">4</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="450ff79a" name="Cursed Lance" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Charge (+1 Damage)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b40bd7b0" name="Chaos Steed's Trampling Hooves" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">5+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="422aea71" name="Impaling Charge" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to the Rend characteristic of this unit's Cursed Lances if it charged in the same turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bloodwind-legion::05-chaos-knights::cursed-lance" name="Cursed Lance" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="5032ff8e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="9e8cccf5" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::bloodwind-legion::05-chaos-knights::chaos-steeds-trampling-hooves" name="Chaos Steed's Trampling Hooves" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="845350f2" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="ad43634b" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

@@ -214,6 +214,9 @@
     <categoryEntry id="sph-cat::warpspark-clawpack" name="Spearhead: Skaven (Warpspark Clawpack)" hidden="false" />
     <categoryEntry id="sph-cat::crixxits-kill-pack" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" />
     <categoryEntry id="sph-faction::skaven" name="Skaven" hidden="false" />
+    <categoryEntry id="sph-cat::darkoath-raiders" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" />
+    <categoryEntry id="sph-cat::bloodwind-legion" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" />
+    <categoryEntry id="sph-faction::slaves-to-darkness" name="Slaves to Darkness" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -283,6 +286,9 @@
         <categoryLink id="652afcfe" name="Spearhead: Skaven (Warpspark Clawpack)" hidden="false" targetId="sph-cat::warpspark-clawpack" />
         <categoryLink id="1a809160" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" />
         <categoryLink id="b8798889" name="Skaven" hidden="false" targetId="sph-faction::skaven" />
+        <categoryLink id="48384df6" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" targetId="sph-cat::darkoath-raiders" />
+        <categoryLink id="ee70a668" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" targetId="sph-cat::bloodwind-legion" />
+        <categoryLink id="663c267b" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>
