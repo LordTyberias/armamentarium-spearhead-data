@@ -91,6 +91,30 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Ossiarch Bonereapers — three boxes (added 2026-08-30)
+
+Kavalos Vanguard (`eng_18-02_aos_spearhead_ossiarch_bonereapers_kavalos_vanguard`, 4 pages, in print),
+Mortisan Elite (`eng_jun25_aos_spearhead_ossiarchbr_rules`, 4 pages, no longer in print) and
+Tithe-Reaper Echelon (`eng_aos_ossiarch_bonereapers_dec24`, 36 pages, no longer in print; the Spearhead
+part is on pages 30-36). 19, 9 and 27 models, all three agreeing with the inventory. Mortisan Elite is
+the smallest box of the collection so far at nine models across four units.
+
+**Kavalos Deathriders appear in two of the three boxes and are not the same warscroll.** Same statline
+(10" / 3 / 4+ / 1) and the same mount, but in Kavalos Vanguard they carry a `Kavalos Blade` (3/3+/4+/1/1)
+and can `Wheel About` after charging, while in Tithe-Reaper Echelon they carry a `Nadirite Spear`
+(3/3+/4+/1/1, Charge +1 Damage) and form a `Deathrider Wedge`. The clearest measurement yet that a
+warscroll belongs to its box and not to its faction — this time inside a single faction pack's own
+publisher.
+
+Both `Reserve Contingent` (Tithe-Reaper Echelon) and `Heralds of Nagash` (Mortisan Elite) are named
+headings **inside** the battle traits with a paragraph of their own, under which a single ability sits;
+they are carried as passive profiles, as `Spectral Procession` is in Nighthaunt. `Heralds of Nagash` is
+also the name of a Morghast Archai ability in the same box — a name is not an identity here either.
+
+Tithe-Reaper Echelon is the first box whose army rule mints a resource of its own (`Ossiarch Commands`,
+2 points per battle round), and four of its abilities carry `Ossiarch Command` in their Keywords field.
+Kavalos Vanguard, from the same faction, has no such rule at all.
+
 ### Nighthaunt — two boxes (added 2026-08-30)
 
 Slasher Host (`eng_aos_nighthaunt_dec24`, 43 pages, no longer in print; the Spearhead part is on pages

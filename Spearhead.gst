@@ -226,6 +226,10 @@
     <categoryEntry id="sph-faction::nighthaunt" name="Nighthaunt" hidden="false" />
     <categoryEntry id="sph-cat::cursed-shacklehorde" name="Spearhead: Nighthaunt (Cursed Shacklehorde)" hidden="false" />
     <categoryEntry id="sph-cat::slasher-host" name="Spearhead: Nighthaunt (Slasher Host)" hidden="false" />
+    <categoryEntry id="sph-faction::ossiarch-bonereapers" name="Ossiarch Bonereapers" hidden="false" />
+    <categoryEntry id="sph-cat::kavalos-vanguard" name="Spearhead: Ossiarch Bonereapers (Kavalos Vanguard)" hidden="false" />
+    <categoryEntry id="sph-cat::mortisan-elite" name="Spearhead: Ossiarch Bonereapers (Mortisan Elite)" hidden="false" />
+    <categoryEntry id="sph-cat::tithe-reaper-echelon" name="Spearhead: Ossiarch Bonereapers (Tithe-Reaper Echelon)" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
