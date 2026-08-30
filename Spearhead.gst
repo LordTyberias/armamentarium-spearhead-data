@@ -202,6 +202,9 @@
     <categoryEntry id="sph-cat::fluxblade-coven" name="Spearhead: Disciples of Tzeentch (Fluxblade Coven)" hidden="false" />
     <categoryEntry id="sph-cat::tzaangor-warflock" name="Spearhead: Disciples of Tzeentch (Tzaangor Warflock)" hidden="false" />
     <categoryEntry id="sph-faction::disciples-of-tzeentch" name="Disciples of Tzeentch" hidden="false" />
+    <categoryEntry id="sph-cat::blades-of-the-lurid-dream" name="Spearhead: Hedonites of Slaanesh (Blades of the Lurid Dream)" hidden="false" />
+    <categoryEntry id="sph-cat::epicurean-revellers" name="Spearhead: Hedonites of Slaanesh (Epicurean Revellers)" hidden="false" />
+    <categoryEntry id="sph-faction::hedonites-of-slaanesh" name="Hedonites of Slaanesh" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -259,6 +262,9 @@
         <categoryLink id="b3d30d0a" name="Spearhead: Disciples of Tzeentch (Fluxblade Coven)" hidden="false" targetId="sph-cat::fluxblade-coven" />
         <categoryLink id="2946c687" name="Spearhead: Disciples of Tzeentch (Tzaangor Warflock)" hidden="false" targetId="sph-cat::tzaangor-warflock" />
         <categoryLink id="4cdddec5" name="Disciples of Tzeentch" hidden="false" targetId="sph-faction::disciples-of-tzeentch" />
+        <categoryLink id="864788d8" name="Spearhead: Hedonites of Slaanesh (Blades of the Lurid Dream)" hidden="false" targetId="sph-cat::blades-of-the-lurid-dream" />
+        <categoryLink id="4bdb0d58" name="Spearhead: Hedonites of Slaanesh (Epicurean Revellers)" hidden="false" targetId="sph-cat::epicurean-revellers" />
+        <categoryLink id="4ca5d0c8" name="Hedonites of Slaanesh" hidden="false" targetId="sph-faction::hedonites-of-slaanesh" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>
