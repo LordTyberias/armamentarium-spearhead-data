@@ -195,6 +195,28 @@
     <categoryEntry id="sph-cat::bitterbark-copse" name="Spearhead: Sylvaneth (Bitterbark Copse)" hidden="false" />
     <categoryEntry id="sph-cat::spitewing-flight" name="Spearhead: Sylvaneth (Spitewing Flight)" hidden="false" />
     <categoryEntry id="sph-faction::sylvaneth" name="Sylvaneth" hidden="false" />
+    <categoryEntry id="sph-cat::bloodbound-gore-pilgrims" name="Spearhead: Blades of Khorne (Bloodbound Gore Pilgrims)" hidden="false" />
+    <categoryEntry id="sph-cat::fangs-of-the-blood-god" name="Spearhead: Blades of Khorne (Fangs of the Blood God)" hidden="false" />
+    <categoryEntry id="sph-faction::blades-of-khorne" name="Blades of Khorne" hidden="false" />
+    <categoryEntry id="sph-alliance::chaos" name="Chaos" hidden="false" />
+    <categoryEntry id="sph-cat::fluxblade-coven" name="Spearhead: Disciples of Tzeentch (Fluxblade Coven)" hidden="false" />
+    <categoryEntry id="sph-cat::tzaangor-warflock" name="Spearhead: Disciples of Tzeentch (Tzaangor Warflock)" hidden="false" />
+    <categoryEntry id="sph-faction::disciples-of-tzeentch" name="Disciples of Tzeentch" hidden="false" />
+    <categoryEntry id="sph-cat::blades-of-the-lurid-dream" name="Spearhead: Hedonites of Slaanesh (Blades of the Lurid Dream)" hidden="false" />
+    <categoryEntry id="sph-cat::epicurean-revellers" name="Spearhead: Hedonites of Slaanesh (Epicurean Revellers)" hidden="false" />
+    <categoryEntry id="sph-faction::hedonites-of-slaanesh" name="Hedonites of Slaanesh" hidden="false" />
+    <categoryEntry id="sph-cat::helforge-host" name="Spearhead: Helsmiths of Hashut (Helforge Host)" hidden="false" />
+    <categoryEntry id="sph-faction::helsmiths-of-hashut" name="Helsmiths of Hashut" hidden="false" />
+    <categoryEntry id="sph-cat::bleak-host" name="Spearhead: Maggotkin of Nurgle (Bleak Host)" hidden="false" />
+    <categoryEntry id="sph-cat::bubonic-cell" name="Spearhead: Maggotkin of Nurgle (Bubonic Cell)" hidden="false" />
+    <categoryEntry id="sph-faction::maggotkin-of-nurgle" name="Maggotkin of Nurgle" hidden="false" />
+    <categoryEntry id="sph-cat::gnawfeast-clawpack" name="Spearhead: Skaven (Gnawfeast Clawpack)" hidden="false" />
+    <categoryEntry id="sph-cat::warpspark-clawpack" name="Spearhead: Skaven (Warpspark Clawpack)" hidden="false" />
+    <categoryEntry id="sph-cat::crixxits-kill-pack" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" />
+    <categoryEntry id="sph-faction::skaven" name="Skaven" hidden="false" />
+    <categoryEntry id="sph-cat::darkoath-raiders" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" />
+    <categoryEntry id="sph-cat::bloodwind-legion" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" />
+    <categoryEntry id="sph-faction::slaves-to-darkness" name="Slaves to Darkness" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -245,6 +267,28 @@
         <categoryLink id="7ecec3b4" name="Spearhead: Sylvaneth (Bitterbark Copse)" hidden="false" targetId="sph-cat::bitterbark-copse" />
         <categoryLink id="cdc5eb6f" name="Spearhead: Sylvaneth (Spitewing Flight)" hidden="false" targetId="sph-cat::spitewing-flight" />
         <categoryLink id="270a43d8" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" />
+        <categoryLink id="f5bda857" name="Spearhead: Blades of Khorne (Bloodbound Gore Pilgrims)" hidden="false" targetId="sph-cat::bloodbound-gore-pilgrims" />
+        <categoryLink id="ef479a9e" name="Spearhead: Blades of Khorne (Fangs of the Blood God)" hidden="false" targetId="sph-cat::fangs-of-the-blood-god" />
+        <categoryLink id="b7f10120" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" />
+        <categoryLink id="f0be801c" name="Chaos" hidden="false" targetId="sph-alliance::chaos" />
+        <categoryLink id="b3d30d0a" name="Spearhead: Disciples of Tzeentch (Fluxblade Coven)" hidden="false" targetId="sph-cat::fluxblade-coven" />
+        <categoryLink id="2946c687" name="Spearhead: Disciples of Tzeentch (Tzaangor Warflock)" hidden="false" targetId="sph-cat::tzaangor-warflock" />
+        <categoryLink id="4cdddec5" name="Disciples of Tzeentch" hidden="false" targetId="sph-faction::disciples-of-tzeentch" />
+        <categoryLink id="864788d8" name="Spearhead: Hedonites of Slaanesh (Blades of the Lurid Dream)" hidden="false" targetId="sph-cat::blades-of-the-lurid-dream" />
+        <categoryLink id="4bdb0d58" name="Spearhead: Hedonites of Slaanesh (Epicurean Revellers)" hidden="false" targetId="sph-cat::epicurean-revellers" />
+        <categoryLink id="4ca5d0c8" name="Hedonites of Slaanesh" hidden="false" targetId="sph-faction::hedonites-of-slaanesh" />
+        <categoryLink id="15be41ee" name="Spearhead: Helsmiths of Hashut (Helforge Host)" hidden="false" targetId="sph-cat::helforge-host" />
+        <categoryLink id="9034ea1c" name="Helsmiths of Hashut" hidden="false" targetId="sph-faction::helsmiths-of-hashut" />
+        <categoryLink id="79e80562" name="Spearhead: Maggotkin of Nurgle (Bleak Host)" hidden="false" targetId="sph-cat::bleak-host" />
+        <categoryLink id="cc290ce4" name="Spearhead: Maggotkin of Nurgle (Bubonic Cell)" hidden="false" targetId="sph-cat::bubonic-cell" />
+        <categoryLink id="b189d1f6" name="Maggotkin of Nurgle" hidden="false" targetId="sph-faction::maggotkin-of-nurgle" />
+        <categoryLink id="d5e09374" name="Spearhead: Skaven (Gnawfeast Clawpack)" hidden="false" targetId="sph-cat::gnawfeast-clawpack" />
+        <categoryLink id="652afcfe" name="Spearhead: Skaven (Warpspark Clawpack)" hidden="false" targetId="sph-cat::warpspark-clawpack" />
+        <categoryLink id="1a809160" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" />
+        <categoryLink id="b8798889" name="Skaven" hidden="false" targetId="sph-faction::skaven" />
+        <categoryLink id="48384df6" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" targetId="sph-cat::darkoath-raiders" />
+        <categoryLink id="ee70a668" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" targetId="sph-cat::bloodwind-legion" />
+        <categoryLink id="663c267b" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>

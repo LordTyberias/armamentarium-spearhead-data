@@ -7,7 +7,7 @@ BattleScribe catalogue data for the fixed Spearhead boxes of Age of Sigmar, read
 - one `.cat` file per faction, each holding the units of that faction's Spearheads.
 
 **This repository is not complete.** It is being filled one Grand Alliance at a time
-(ARMAM-275); Order is the first stage.
+(ARMAM-275); Order and Chaos are done, Death and Destruction are not.
 
 ## What this is, and what it is not
 
@@ -40,6 +40,11 @@ longer in print.
   rules prints none. The printed group headings (`Regiment Abilities`, `Enhancements`) are carried
   as profiles of their own, because the reader otherwise cannot tell an enhancement from a battle
   trait — and because they are printed text rather than an invention. Units then start at `01-`.
+- **A printed loadout line rides on a profile named `Unit Composition`.** Where a warscroll states
+  which of its models carries what — or that one of them is a Godspeaker, or that its Gong Carrier is
+  a token — that sentence is a rule, carried verbatim as a passive profile of that name, in the place
+  the warscroll prints it. The weapon child entries state the same split as numbers; the sentence is
+  what the pack actually says, and the two are not the same thing.
 
 ## The category ids are a contract
 
@@ -82,6 +87,110 @@ What the format buys is not interoperability. It is that the data lives outside 
 in its own repository, in plain XML that any text or XML tool can edit, on its own release cadence.
 
 ## Provenance
+
+### Slaves to Darkness — two boxes (added 2026-08-30)
+
+Darkoath Raiders (`eng_01-04_aos_spearhead_slaves_to_darkness_darkoath_raiders`, 4 pages) and
+Bloodwind Legion (`eng_spearhead_slaves_to_darkness.27`, 7 pages). Both in print, both model counts
+agree with the inventory: 26 and 17.
+
+Darkoath Savagers is the only unit in this stage whose `Unit Composition` line names a role rather
+than a weapon — *1 model in this unit is a Godspeaker* — and its ability is conditional on that model
+being present. The Chaos Warriors of Bloodwind Legion appear twice with identical warscrolls.
+
+Bloodwind Legion's battle trait is a D6 table (`Eye of the Gods`), carried in one profile the way
+Fyreslayers' `Ur-gold Runes` was in stage 1.
+
+### Skaven — three boxes (added 2026-08-30)
+
+The largest faction of the stage, and the only one so far whose three boxes come from three
+differently shaped documents.
+
+Gnawfeast Clawpack and Warpspark Clawpack **share one PDF**
+(`eng_01-04_aos_spearhead_skaven_gnawfeast_clawpack`, 15 pages: Gnawfeast on 1-8, Warpspark on
+9-15) — the inventory links Warpspark to a second file
+(`rules-downloads/.../eng_skaven_spearhead.pdf`) that was not needed. Crixxit's Kill Pack sits on
+pages 5-8 of the City of Ash gaming pack, whose pages 1-4 are the Order box Sentinels of Embergard
+read in stage 1: **one gaming pack, two Grand Alliances**, as recorded there.
+
+Model counts: 26 and 25 agree with the inventory. Crixxit's Kill Pack does not — 22 against the
+inventory's 24 — and the pack says why in its own army list: *Each unit of Gutter Runners has 1 Bomb
+Rat token*. Two tokens, two models of difference. The catalogue carries 22.
+
+Grey Seer and Clanrats appear in both Clawpacks with **identical** warscrolls, which is worth
+recording next to the four boxes where the same unit differed: sameness across boxes happens, it is
+just not something a reader may assume.
+
+Warp Lightning Cannon prints `See below` spanning its Wound, Rend and Damage cells; all three carry
+that text, as the Vanari Bladelords row does in stage 1.
+
+### Maggotkin of Nurgle — two boxes (added 2026-08-30)
+
+Bleak Host (`eng_01-04_aos_spearhead_maggotkin_of_nurgle_bleak_host`, 7 pages, no longer in print)
+and Bubonic Cell (`eng_14-01_aos_spearhead_maggotkin_of_nurgle_bubonic_cell`, 4 pages, in print).
+Both 18 models, both agreeing with the inventory.
+
+First boxes of the collection whose ability boxes print a **Keywords** value of their own — `Core`
+on Bleak Host's `Daemonic Summoning`, `Deploy` and `Core` in Skaven, and `Cycle` on all four of
+Bubonic Cell's rotating battle traits. Those go in the profile's Keywords characteristic, which had
+been empty in every row until now.
+
+Bubonic Cell's `Cycle of Corruption` prints its running order as a diagram rather than as text; the
+four names and their numbers are carried in the profile, because a rotation without its order is not
+a rule.
+
+### Helsmiths of Hashut — one box (added 2026-08-30)
+
+Helforge Host (`eng_01-04_aos_spearhead_helsmiths_of_hashut_helforge_host`, 4 pages, in print).
+
+**13 models against the inventory's 14**, and the pack names the difference itself: the Infernal
+Cohort ability `Strike the Gongs` states that *This unit's Gong Carrier (if any) is a token*. Fifth
+measured case of the inventory counting tokens as models, and the first where a warscroll says so in
+as many words.
+
+### Hedonites of Slaanesh — two boxes (added 2026-08-30)
+
+Blades of the Lurid Dream (`eng_01-04_aos_spearhead_hedonites_of_slaanesh_blades_of_the_lurid_dream`,
+7 pages) and Epicurean Revellers (`eng_17-06_aos_spearhead_hedonites_of_slaanesh_epicurean_revellers`,
+4 pages). Both out of print. 20 and 31 models, both agreeing with the inventory.
+
+The two Blissbarb Archers units of Blades of the Lurid Dream differ by one model: one carries a
+Blissbrew Homonculus, the other does not, and the Homonculus carries a Sybarite Blade but no bow.
+The weapon child entries state 5 bows against 6 blades for the first unit and 5 against 5 for the
+second — the only place in this stage where two units of the same warscroll carry different numbers
+of the same weapon.
+
+**Thricefold Discord is a unit of three models and the warscroll does not say so.** Its Health is 3,
+its own ability treats *each model in this unit* as an individual unit, the army list gives no count
+for the general, and 31 less the other four units leaves 3. Second case after Seraphon in stage 1 of
+a general that is not one model; unlike that one, no designer's note states it.
+
+### Disciples of Tzeentch — two boxes (added 2026-08-30)
+
+Fluxblade Coven (`eng_01-04_aos_spearhead_disciples_of_tzeentch_fluxblade_coven`, 14 pages — a full
+art page before each warscroll, so the warscrolls are on the even pages) and Tzaangor Warflock
+(`eng_04-02_aos_spearhead_disciples_of_tzeentch`, 4 pages). 27 and 17 models, both agreeing with the
+inventory.
+
+**Fourth measured case of one unit with two warscrolls, and the widest divergence so far.** Tzaangors
+appear in both boxes and differ in every part but their characteristics: the weapon is named `Savage
+Blade and Vicious Beak` against `Savage Blades and Vicious Beak`, it has 2 attacks at Rend `-`
+against 3 at Rend 1, the ability is `Long-planned Strike` against `Eldritch Raiders`, and one row
+carries the Reinforcements keyword while the other does not.
+
+Tzaangor Warflock's battle traits open with a sentence that has no box of its own, explaining that
+the Tzaangor Enlightened are not deployed. It is carried as a profile named `Battle Traits` — the
+same treatment the printed group headings get.
+
+### Blades of Khorne — two boxes (added 2026-08-30)
+
+Bloodbound Gore Pilgrims (`eng_01-04_aos_spearhead_blades_of_khorne_bloodbound_gore_pilgrims`,
+7 pages, no longer in print) and Fangs of the Blood God
+(`eng_01-04_aos_spearhead_blades_of_khorne_fangs_of_the_blood_god`, 4 pages, in print). 24 and 19
+models, both agreeing with the inventory.
+
+Each box contains one warscroll twice — Blood Warriors and Flesh Hounds — with no difference between
+the two units. They are still two rows, numbered `02-` and `03-`, because the box contains two units.
 
 ### Sylvaneth — two boxes (added 2026-08-29)
 
