@@ -205,6 +205,8 @@
     <categoryEntry id="sph-cat::blades-of-the-lurid-dream" name="Spearhead: Hedonites of Slaanesh (Blades of the Lurid Dream)" hidden="false" />
     <categoryEntry id="sph-cat::epicurean-revellers" name="Spearhead: Hedonites of Slaanesh (Epicurean Revellers)" hidden="false" />
     <categoryEntry id="sph-faction::hedonites-of-slaanesh" name="Hedonites of Slaanesh" hidden="false" />
+    <categoryEntry id="sph-cat::helforge-host" name="Spearhead: Helsmiths of Hashut (Helforge Host)" hidden="false" />
+    <categoryEntry id="sph-faction::helsmiths-of-hashut" name="Helsmiths of Hashut" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -265,6 +267,8 @@
         <categoryLink id="864788d8" name="Spearhead: Hedonites of Slaanesh (Blades of the Lurid Dream)" hidden="false" targetId="sph-cat::blades-of-the-lurid-dream" />
         <categoryLink id="4bdb0d58" name="Spearhead: Hedonites of Slaanesh (Epicurean Revellers)" hidden="false" targetId="sph-cat::epicurean-revellers" />
         <categoryLink id="4ca5d0c8" name="Hedonites of Slaanesh" hidden="false" targetId="sph-faction::hedonites-of-slaanesh" />
+        <categoryLink id="15be41ee" name="Spearhead: Helsmiths of Hashut (Helforge Host)" hidden="false" targetId="sph-cat::helforge-host" />
+        <categoryLink id="9034ea1c" name="Helsmiths of Hashut" hidden="false" targetId="sph-faction::helsmiths-of-hashut" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>
