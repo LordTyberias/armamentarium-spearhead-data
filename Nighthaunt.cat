@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="sph-catalogue::nighthaunt" name="Nighthaunt" gameSystemId="sph1-6c4a-2e97-0001" revision="1" battleScribeVersion="2.03" authorName="Armamentarium" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="sph::cursed-shacklehorde::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f984e55c" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="87062bdb" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="864ecb52" name="Spearhead: Nighthaunt (Cursed Shacklehorde)" hidden="false" targetId="sph-cat::cursed-shacklehorde" primary="true" />
+        <categoryLink id="976f8177" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="591e921e" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="73a7b83e" name="Spectral Procession" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">1 of your Bladegheist Revenants units and 1 of your Dreadscythe Harridans units start the battle in reserve. From the second battle round onwards, you can use the following ability:</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="da9308d1" name="Cackling Arrival" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), Your Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick 1 of your units in reserve.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Set up that unit anywhere on the battlefield more than 6&quot; from all enemy units.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ca8b6a4a" name="Ethereal" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Ignore negative modifiers to save rolls for friendly units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ae517f1" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ad5b7090" name="Discorporate" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), Any Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 3+, add 1 to save rolls for the target for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="52e1d437" name="Mounting Dread" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 2+, subtract the current battle round number from the control scores of enemy units while they are in combat with the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4756cadd" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a1b745fd" name="Unholy Visage" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible enemy unit within 6&quot; of your general to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 3+, the target must immediately use a Retreat ability as if it were the enemy movement phase.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3c1bf2bf" name="Tales of Horror" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy Infantry or Cavalry unit within 6&quot; of your general to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">For the rest of the battle, if the target is replaced using the 'Call for Reinforcements' ability, halve the number of models in the replacement unit, rounding up.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7ead719c" name="Deathly Possessor" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy Hero within 12&quot; of your general to be the target, then pick another enemy unit within the target's combat range to be the victim.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a D3. On a 2+, pick one: Inflict mortal damage on the target equal to the roll. Inflict mortal damage on the victim equal to the roll.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a4b9dd27" name="Spectral Howl" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Any Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit within 12&quot; of your general to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">For the rest of the turn, subtract 1 from the number of dice rolled when making charge rolls for the target, to a minimum of 1.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::cursed-shacklehorde::01-spirit-torment" name="Spirit Torment" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c04b1a5f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="b9e8d041" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="355328e3" name="Spearhead: Nighthaunt (Cursed Shacklehorde)" hidden="false" targetId="sph-cat::cursed-shacklehorde" primary="true" />
+        <categoryLink id="6b1dcae0" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="3d945f5e" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="c849fe9a" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="811248d0" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="7bd4e4d6" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="7d2278b6" name="Ward (5+)" hidden="false" targetId="sph-kw::ward-5" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="121bc925" name="Spirit Torment" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6496350b" name="Shacklegheist Chains" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d3a685eb" name="Captured Soul Energy" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit wholly within 12&quot; of this unit to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 3+, add 1 to wound rolls for the target's combat attacks for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::cursed-shacklehorde::01-spirit-torment::shacklegheist-chains" name="Shacklegheist Chains" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="81e7ec27" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="8d6023dd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::cursed-shacklehorde::02-chainghasts" name="Chainghasts" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2d7f3500" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="3f4b9a03" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="32d4b772" name="Spearhead: Nighthaunt (Cursed Shacklehorde)" hidden="false" targetId="sph-cat::cursed-shacklehorde" primary="true" />
+        <categoryLink id="5dc23849" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="a4c928fb" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="8bb02820" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="f8341567" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="dd8f869a" name="Ward (5+)" hidden="false" targetId="sph-kw::ward-5" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="7854aede" name="Chainghasts" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">3</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7ff70658" name="Ghastflails" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">12&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">4+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">2</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1696d219" name="Ghastflails" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">2</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="45cb0560" name="Another Link in the Chain" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. Add 1 to the roll if this unit is wholly within 12&quot; of any friendly Spirit Torments. On a 3+, for the rest of the turn, add 1 to hit rolls for combat attacks made by friendly units while they are wholly within 12&quot; of this unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::cursed-shacklehorde::02-chainghasts::ghastflails" name="Ghastflails" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="d1449e0a" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="27986bbd" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::cursed-shacklehorde::03-bladegheist-revenants" name="Bladegheist Revenants" type="unit" hidden="false">
+      <constraints>
+        <constraint id="8a2dd000" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="cfbdcaf1" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a0f71273" name="Spearhead: Nighthaunt (Cursed Shacklehorde)" hidden="false" targetId="sph-cat::cursed-shacklehorde" primary="true" />
+        <categoryLink id="63222235" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="3d17cefe" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="73f961c4" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="07b94c36" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="43756ce5" name="Ward (5+)" hidden="false" targetId="sph-kw::ward-5" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="b83e1b01" name="Bladegheist Revenants" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a26e96d7" name="Tomb Greatblade" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c8caa23d" name="Thrashing Desperation" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">While this unit contests an objective you control, enemy units cannot end a charge move within ½&quot; of this unit unless the unmodified charge roll was 5 or more.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::cursed-shacklehorde::03-bladegheist-revenants::tomb-greatblade" name="Tomb Greatblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c52229e8" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="502c6ad9" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::cursed-shacklehorde::04-bladegheist-revenants" name="Bladegheist Revenants" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2453b36d" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="59be8c7c" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="eb1deff6" name="Spearhead: Nighthaunt (Cursed Shacklehorde)" hidden="false" targetId="sph-cat::cursed-shacklehorde" primary="true" />
+        <categoryLink id="e42c6824" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="3edc33f9" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="297d68f0" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="898df990" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="d1280cb3" name="Ward (5+)" hidden="false" targetId="sph-kw::ward-5" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="0099dade" name="Bladegheist Revenants" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="666dd3d8" name="Tomb Greatblade" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="93680fc4" name="Thrashing Desperation" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">While this unit contests an objective you control, enemy units cannot end a charge move within ½&quot; of this unit unless the unmodified charge roll was 5 or more.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::cursed-shacklehorde::04-bladegheist-revenants::tomb-greatblade" name="Tomb Greatblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3787538f" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="635b0088" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::cursed-shacklehorde::05-dreadscythe-harridans" name="Dreadscythe Harridans" type="unit" hidden="false">
+      <constraints>
+        <constraint id="e33587ce" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="fc5fffed" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c76000b8" name="Spearhead: Nighthaunt (Cursed Shacklehorde)" hidden="false" targetId="sph-cat::cursed-shacklehorde" primary="true" />
+        <categoryLink id="ce9add60" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="018a7776" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="e066f69a" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="44d45236" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="1e26aa28" name="Ward (5+)" hidden="false" targetId="sph-kw::ward-5" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="451645e2" name="Dreadscythe Harridans" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="abd245c1" name="Scythed Limbs" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="70eeae7f" name="Harrowing Shrieks" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Enemy units cannot be healed or have slain models returned to them while they are in combat with this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::cursed-shacklehorde::05-dreadscythe-harridans::scythed-limbs" name="Scythed Limbs" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="38ce962e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="70c07fe7" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::cursed-shacklehorde::06-dreadscythe-harridans" name="Dreadscythe Harridans" type="unit" hidden="false">
+      <constraints>
+        <constraint id="ecddab18" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="5f795a24" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="87a720cf" name="Spearhead: Nighthaunt (Cursed Shacklehorde)" hidden="false" targetId="sph-cat::cursed-shacklehorde" primary="true" />
+        <categoryLink id="7ce6825e" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="f4d0906f" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="bca326a8" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="0e1043f5" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="1bcc513a" name="Ward (5+)" hidden="false" targetId="sph-kw::ward-5" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="a79819ea" name="Dreadscythe Harridans" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="72e579f5" name="Scythed Limbs" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1e24e1c6" name="Harrowing Shrieks" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Enemy units cannot be healed or have slain models returned to them while they are in combat with this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::cursed-shacklehorde::06-dreadscythe-harridans::scythed-limbs" name="Scythed Limbs" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="2b7f2a04" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="42c8bda7" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::cursed-shacklehorde::07-dreadblade-harrows" name="Dreadblade Harrows" type="unit" hidden="false">
+      <constraints>
+        <constraint id="096a4931" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="3ceabd8b" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="54ecb680" name="Spearhead: Nighthaunt (Cursed Shacklehorde)" hidden="false" targetId="sph-cat::cursed-shacklehorde" primary="true" />
+        <categoryLink id="d17a69c3" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="ed801d85" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="0ef6fccf" name="Cavalry" hidden="false" targetId="sph-kw::cavalry" primary="false" />
+        <categoryLink id="d1835ddf" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="8b3fdfb5" name="Ward (5+)" hidden="false" targetId="sph-kw::ward-5" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="52375c91" name="Dreadblade Harrows" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">12&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">3</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a66b3153" name="Dreadblade" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">4</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="76fb3086" name="Ethereal Steed's Ghostly Hooves and Teeth" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">5+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound), Companion</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="053bd809" name="Phantasmal Discorporation" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Your Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Remove this unit from the battlefield and set it up again on the battlefield more than 6&quot; from all enemy units.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::cursed-shacklehorde::07-dreadblade-harrows::dreadblade" name="Dreadblade" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="c43c0e8a" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="2f3354ab" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::cursed-shacklehorde::07-dreadblade-harrows::ethereal-steeds-ghostly-hooves-and-teeth" name="Ethereal Steed's Ghostly Hooves and Teeth" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="4c613e59" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="5fb346cf" field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::slasher-host::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="df01e15f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="912317d8" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="43a64d80" name="Spearhead: Nighthaunt (Slasher Host)" hidden="false" targetId="sph-cat::slasher-host" primary="true" />
+        <categoryLink id="7c3128c5" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="727167d9" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="d32f2d39" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="982bf2cb" name="Wave of Terror" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Charge Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit to use this ability if it charged this phase and the charge roll was 10+. Then, pick an enemy unit within 1&quot; of it to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">The target has Strike-last this turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fe5a3a48" name="Ethereal" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Ignore all modifiers to save rolls for friendly units (positive and negative).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1915b000" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fa45a9b6" name="Death Stalkers" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Start of the First Battle Round</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit on the battlefield.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Add 1 to the Rend characteristic of melee weapons used for attacks that target that unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e469a6fe" name="Chorus of Terror" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Subtract 1 from hit rolls for combat attacks that target a friendly unit that charged in the same turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8bc97623" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f7200ecd" name="Soulfire Ring" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">If any models were slain by your general this turn, Heal (D6) your general.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="495dfb14" name="Cloaked in Shadow" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">No more than 1 enemy unit can target your general with attacks (shooting or combat) per phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="42cd1b95" name="Beacon of Nagashizzar" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Return 1 slain model to each friendly unit on the battlefield.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d9095c98" name="Shadow's Edge" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Your general's Sword of Stolen Hours has Crit (Mortal).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::slasher-host::01-knight-of-shrouds" name="Knight of Shrouds" type="unit" hidden="false">
+      <constraints>
+        <constraint id="0b03a15b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="c5554c5b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="035736e5" name="Spearhead: Nighthaunt (Slasher Host)" hidden="false" targetId="sph-cat::slasher-host" primary="true" />
+        <categoryLink id="e44d741f" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="b6e6b8d7" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="2a5ac883" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="25bc3f3f" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="7ea27460" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="11ddb561" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="9931de72" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="e6cdcfb8" name="Knight of Shrouds" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0a2da3c3" name="Sword of Stolen Hours" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c04eb0fc" name="Discorporate" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit wholly within 9&quot; of this unit to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Until the start of your next turn, the target has Ward (5+).</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::slasher-host::01-knight-of-shrouds::sword-of-stolen-hours" name="Sword of Stolen Hours" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="b3322836" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="47eceac4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::slasher-host::02-spirit-hosts" name="Spirit Hosts" type="unit" hidden="false">
+      <constraints>
+        <constraint id="5c68f35b" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="20e17d1b" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7d662e67" name="Spearhead: Nighthaunt (Slasher Host)" hidden="false" targetId="sph-cat::slasher-host" primary="true" />
+        <categoryLink id="a86099be" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="8a0a20cf" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="b122e4e2" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="04de2ba2" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="87dd50a6" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="2393d672" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="3e6a8d26" name="Spirit Hosts" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">3</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e15c3299" name="Spectral Claws and Daggers" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">6</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f1610356" name="Drawn to War" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Your general has Ward (4+) while they are within 1&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::slasher-host::02-spirit-hosts::spectral-claws-and-daggers" name="Spectral Claws and Daggers" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3fc217af" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="4d5acea9" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::slasher-host::03-grimghast-reapers" name="Grimghast Reapers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="8a706f5f" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="536e1b58" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="817113b3" name="Spearhead: Nighthaunt (Slasher Host)" hidden="false" targetId="sph-cat::slasher-host" primary="true" />
+        <categoryLink id="574368ea" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="31982dfd" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="c4e75a7a" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="a3ad43d9" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="e89deb63" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="a42dfa2a" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="f55950be" name="Grimghast Reapers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6e7623c9" name="Slasher Scythe" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ad3c004" name="Reaped Like Corn" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Combat attacks made by this unit score critical hits on unmodified hit rolls of 5+ if the target unit has 5 or more models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::slasher-host::03-grimghast-reapers::slasher-scythe" name="Slasher Scythe" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="2d501826" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="d1503110" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::slasher-host::04-grimghast-reapers" name="Grimghast Reapers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f4b6a805" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="e3e95e84" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="54d1f0fa" name="Spearhead: Nighthaunt (Slasher Host)" hidden="false" targetId="sph-cat::slasher-host" primary="true" />
+        <categoryLink id="9d636cd3" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="985f579a" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="ca298ffb" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="86a0f7a6" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="ddf1cb22" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="396bae3c" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="3b8db4a7" name="Grimghast Reapers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="caee071a" name="Slasher Scythe" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e42564d8" name="Reaped Like Corn" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Combat attacks made by this unit score critical hits on unmodified hit rolls of 5+ if the target unit has 5 or more models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::slasher-host::04-grimghast-reapers::slasher-scythe" name="Slasher Scythe" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="f8582e4e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="e74a9cad" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::slasher-host::05-chainrasps" name="Chainrasps" type="unit" hidden="false">
+      <constraints>
+        <constraint id="a51c6260" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="5850b0de" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1f4f38bd" name="Spearhead: Nighthaunt (Slasher Host)" hidden="false" targetId="sph-cat::slasher-host" primary="true" />
+        <categoryLink id="97868fc2" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="e6954d9e" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="37ac5bf1" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="a911fc54" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="4e920aff" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="a2f36812" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+        <categoryLink id="9120076f" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="b05b1959" name="Chainrasps" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8c7946ac" name="Malignant Weapon" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">5+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="34653bb9" name="Chilling Horde" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to wound rolls for combat attacks made by this unit if it charged in the same turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::slasher-host::05-chainrasps::malignant-weapon" name="Malignant Weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="3d02627d" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="954fabea" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::slasher-host::06-chainrasps" name="Chainrasps" type="unit" hidden="false">
+      <constraints>
+        <constraint id="a42cc4bb" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="16380d0c" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="89cbbf39" name="Spearhead: Nighthaunt (Slasher Host)" hidden="false" targetId="sph-cat::slasher-host" primary="true" />
+        <categoryLink id="3ff7b252" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" primary="false" />
+        <categoryLink id="85ac825d" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
+        <categoryLink id="b715ac1f" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="ccec78a4" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="00920bfd" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="36c0b37f" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+        <categoryLink id="ef4079c8" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="cc31f00e" name="Chainrasps" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="eb20d64e" name="Malignant Weapon" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">5+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1fc43904" name="Chilling Horde" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to wound rolls for combat attacks made by this unit if it charged in the same turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::slasher-host::06-chainrasps::malignant-weapon" name="Malignant Weapon" type="upgrade" hidden="false">
+          <constraints>
+            <constraint id="2b7c3bb2" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+            <constraint id="f4826356" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

@@ -63,7 +63,10 @@ change one of these alone.
 
 Unit entry ids are `sph::<box-slug>::NN-<unit-slug>`, and a fixed weapon is a mandatory child
 entry under `<entry-id>::<slug>` whose `min = max` states how many models carry it. **Those ids
-end up in users' saved army lists**, so changing one strands the list that carries it.
+end up in users' saved army lists**, so changing one strands the list that carries it. A weapon the
+warscroll prints as **both** a ranged and a melee profile is one item and gets **one** child entry,
+not two — Chainghasts' `Ghastflails` is the first of them, and two entries would have collided on
+the same id.
 
 Nothing in this repository enforces any of it. A prefix or an id that drifts produces no build
 error and no failing file — it produces an empty box list in the application, which is why it is
@@ -87,6 +90,32 @@ What the format buys is not interoperability. It is that the data lives outside 
 in its own repository, in plain XML that any text or XML tool can edit, on its own release cadence.
 
 ## Provenance
+
+### Nighthaunt — two boxes (added 2026-08-30)
+
+Slasher Host (`eng_aos_nighthaunt_dec24`, 43 pages, no longer in print; the Spearhead part is on pages
+37-43) and Cursed Shacklehorde (`eng_29-04_aos_spearhead_nighthaunt_cursed_shacklehorde`, 4 pages, in
+print). 34 and 25 models, both agreeing with the inventory. Slasher Host is the largest box of the
+collection so far, and it reaches that size by fielding four warscrolls across six units: two units of
+Grimghast Reapers and two of Chainrasps, each pair identical.
+
+**The same ability name means different rules in different boxes.** Both boxes carry a battle trait
+called `Ethereal`: Cursed Shacklehorde's ignores *negative* modifiers to save rolls, Slasher Host's
+ignores *all* modifiers, positive and negative. A box's rules are its own down to the wording, and the
+name is no more an identity here than it is anywhere else in this format.
+
+Cursed Shacklehorde prints a named heading **inside** its battle traits — `SPECTRAL PROCESSION`, with a
+paragraph of its own, under which `Cackling Arrival` sits. It is carried as a passive profile like the
+`Regiment Abilities` and `Enhancements` headings are, for the same reason: without it, the reserve rule
+its ability depends on is nowhere in the data.
+
+Chainghasts carry `Ghastflails` as a ranged **and** a melee profile under one name; see the note on
+weapon child entries above.
+
+The text layer of the Spearhead PDF put the Move, Health, Save and Control values of the three
+warscrolls sharing page 4 in one undifferentiated run, in an order that follows neither the printed
+sequence of the warscrolls nor a single reading direction. Every statline of both boxes was read off
+the rendered page.
 
 ### Flesh-Eater Courts — two boxes (added 2026-08-30)
 

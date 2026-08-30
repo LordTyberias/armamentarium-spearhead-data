@@ -223,6 +223,9 @@
     <categoryEntry id="sph-cat::charnel-watch" name="Spearhead: Flesh-Eater Courts (Charnel Watch)" hidden="false" />
     <categoryEntry id="sph-kw::serfs" name="Serfs" hidden="false" />
     <categoryEntry id="sph-kw::knights" name="Knights" hidden="false" />
+    <categoryEntry id="sph-faction::nighthaunt" name="Nighthaunt" hidden="false" />
+    <categoryEntry id="sph-cat::cursed-shacklehorde" name="Spearhead: Nighthaunt (Cursed Shacklehorde)" hidden="false" />
+    <categoryEntry id="sph-cat::slasher-host" name="Spearhead: Nighthaunt (Slasher Host)" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
