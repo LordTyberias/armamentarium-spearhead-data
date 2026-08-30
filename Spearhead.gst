@@ -238,6 +238,11 @@
     <categoryEntry id="sph-cat::bad-moon-madmob" name="Spearhead: Gloomspite Gitz (Bad Moon Madmob)" hidden="false" />
     <categoryEntry id="sph-cat::snarlpack-huntaz" name="Spearhead: Gloomspite Gitz (Snarlpack Huntaz)" hidden="false" />
     <categoryEntry id="sph-faction::gloomspite-gitz" name="Gloomspite Gitz" hidden="false" />
+    <categoryEntry id="sph-cat::scrapglutt" name="Spearhead: Ogor Mawtribes (Scrapglutt)" hidden="false" />
+    <categoryEntry id="sph-cat::tyrants-bellow" name="Spearhead: Ogor Mawtribes (Tyrant's Bellow)" hidden="false" />
+    <categoryEntry id="sph-cat::warglutt-marauders" name="Spearhead: Ogor Mawtribes (Warglutt Marauders)" hidden="false" />
+    <categoryEntry id="sph-cat::mawseeker-mob" name="Spearhead: Ogor Mawtribes (Mawseeker Mob)" hidden="false" />
+    <categoryEntry id="sph-faction::ogor-mawtribes" name="Ogor Mawtribes" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -314,6 +319,11 @@
         <categoryLink id="83270144" name="Spearhead: Gloomspite Gitz (Bad Moon Madmob)" hidden="false" targetId="sph-cat::bad-moon-madmob" />
         <categoryLink id="cb9675f7" name="Spearhead: Gloomspite Gitz (Snarlpack Huntaz)" hidden="false" targetId="sph-cat::snarlpack-huntaz" />
         <categoryLink id="e5e38786" name="Gloomspite Gitz" hidden="false" targetId="sph-faction::gloomspite-gitz" />
+        <categoryLink id="9bf1746b" name="Spearhead: Ogor Mawtribes (Scrapglutt)" hidden="false" targetId="sph-cat::scrapglutt" />
+        <categoryLink id="52125731" name="Spearhead: Ogor Mawtribes (Tyrant's Bellow)" hidden="false" targetId="sph-cat::tyrants-bellow" />
+        <categoryLink id="f4a49abd" name="Spearhead: Ogor Mawtribes (Warglutt Marauders)" hidden="false" targetId="sph-cat::warglutt-marauders" />
+        <categoryLink id="ca0c4cb2" name="Spearhead: Ogor Mawtribes (Mawseeker Mob)" hidden="false" targetId="sph-cat::mawseeker-mob" />
+        <categoryLink id="70c693a2" name="Ogor Mawtribes" hidden="false" targetId="sph-faction::ogor-mawtribes" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>

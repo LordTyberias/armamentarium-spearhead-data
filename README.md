@@ -91,6 +91,48 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Ogor Mawtribes — four boxes (added 2026-08-30)
+
+Scrapglutt (`eng_01-04_aos_spearhead_ogor_mawtribes_scrapglutt`, 4 pages, no longer in print),
+Tyrant's Bellow (`eng_aos_faction_pack_ogor_mawtribes_feb_25`, 40 pages, no longer in print; the
+Spearhead part is on pages 33-40), Warglutt Marauders (`eng_15-07_aos_spearhead_ogor_mawtribes_
+warglutt_marauders`, pages 1-4, in print) and Mawseeker Mob (the same PDF, pages 5-8, no longer in
+print). Three documents for four boxes.
+
+**The inventory misspells one of them.** It lists `Warglutt Maruders`; the pack prints `WARGLUTT
+MARAUDERS` on its own title page. The catalogue carries the pack's spelling, as it carries the pack's
+numbers.
+
+**Two of the four disagree with the inventory, and neither pack explains it.** Warglutt Marauders
+(11) and Mawseeker Mob (12) agree. Scrapglutt's army list reads Mantrappers + 2 + 2 + 4 Ironguts +
+12 Gnoblars + 1 Gnoblar Scraplauncher = 22 against the inventory's 31, and Tyrant's Bellow reads
+Tyrant + 2 Mournfang Pack + 3 + 3 Ogor Gluttons + 4 Leadbelchers + 1 Ironblaster = 14 against 18.
+Scrapglutt's tokens (3 Gnoblar, 1 Frost Sabre, 1 Trap) account for five of the first gap and nothing
+of the second. The catalogue carries 22 and 14.
+
+**A general can have no number at all.** Scrapglutt's army list names its general `Mantrappers with
+3 Gnoblar tokens, 1 Frost Sabre token and 1 Trap token` — no count. The warscroll settles it: a
+single Hero model whose companions are tokens, so the entry states one model. Its `Staying Useful`
+ability spends those tokens as ward saves, which is why they are on the army list at all.
+
+**The same unit in two boxes of one faction, and this time the statline moves too.** `Tyrant` stands
+in Warglutt Marauders at 6"/8/4+/**3** with Tyrant's Meatcleavers and `Roaring Warlord`, and in
+Tyrant's Bellow at 6"/8/4+/**5** with Ogor Pistols, a Thundermace, a Beastskewer Glaive and `Bully of
+the First Degree`. `Ironguts` stands in Warglutt Marauders at save **4+** with `Stomping Marauders`
+and in Scrapglutt at save **5+** with `Down to the Ironguts`. Stages 1 to 3 measured differing
+weapons, abilities and keywords; this is the first box pair where a characteristic differs.
+
+`Gluttons` (Warglutt Marauders) and `Ogor Gluttons` (Tyrant's Bellow) are not even named alike, share
+a statline, and differ in weapon name and ability. The entry carries each warscroll's own name.
+
+The faction pack's text layer drops the `h` of every `Th` ligature — it reads `Tundermace`, `Te`,
+`Tis` — on top of the usual scrambling of the statline. Every value here comes from the rendered
+image.
+
+Three printed typos are carried verbatim, because the pack is the source: `Add 2 to the this unit's
+control score` (Stomping Marauders), `add 3 the Attacks characteristic` (Frenzied Artillery) and
+`Roll a dice On a 3+` (No Slacking!).
+
 ### Gloomspite Gitz — two boxes (added 2026-08-30)
 
 Bad Moon Madmob (`eng_01-04_aos_spearhead_gloomspite_gitz_bad_moon_madmob`, 8 pages, no longer in
