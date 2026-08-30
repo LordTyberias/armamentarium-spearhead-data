@@ -243,6 +243,10 @@
     <categoryEntry id="sph-cat::warglutt-marauders" name="Spearhead: Ogor Mawtribes (Warglutt Marauders)" hidden="false" />
     <categoryEntry id="sph-cat::mawseeker-mob" name="Spearhead: Ogor Mawtribes (Mawseeker Mob)" hidden="false" />
     <categoryEntry id="sph-faction::ogor-mawtribes" name="Ogor Mawtribes" hidden="false" />
+    <categoryEntry id="sph-cat::ironjawz-bigmob" name="Spearhead: Orruk Warclans (Ironjawz Bigmob)" hidden="false" />
+    <categoryEntry id="sph-cat::swampskulka-gang" name="Spearhead: Orruk Warclans (Swampskulka Gang)" hidden="false" />
+    <categoryEntry id="sph-faction::orruk-warclans" name="Orruk Warclans" hidden="false" />
+    <categoryEntry id="sph-kw::brute" name="Brute" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -324,6 +328,9 @@
         <categoryLink id="f4a49abd" name="Spearhead: Ogor Mawtribes (Warglutt Marauders)" hidden="false" targetId="sph-cat::warglutt-marauders" />
         <categoryLink id="ca0c4cb2" name="Spearhead: Ogor Mawtribes (Mawseeker Mob)" hidden="false" targetId="sph-cat::mawseeker-mob" />
         <categoryLink id="70c693a2" name="Ogor Mawtribes" hidden="false" targetId="sph-faction::ogor-mawtribes" />
+        <categoryLink id="26f2c6dc" name="Spearhead: Orruk Warclans (Ironjawz Bigmob)" hidden="false" targetId="sph-cat::ironjawz-bigmob" />
+        <categoryLink id="b97e0cf1" name="Spearhead: Orruk Warclans (Swampskulka Gang)" hidden="false" targetId="sph-cat::swampskulka-gang" />
+        <categoryLink id="f19931fe" name="Orruk Warclans" hidden="false" targetId="sph-faction::orruk-warclans" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>

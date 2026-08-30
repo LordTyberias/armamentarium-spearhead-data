@@ -91,6 +91,26 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Orruk Warclans — two boxes (added 2026-08-30)
+
+Ironjawz Bigmob (`eng_aos_spearhead_orruk_warclans_ironjawz_bigmob_jan25`, 4 pages, in print) and
+Swampskulka Gang (`eng_aos_faction_orruk_warclans_dec_24`, 50 pages, in print; the Spearhead part is
+on pages 43-50). 19 and 16 models, both agreeing with the inventory.
+
+The two boxes belong to different sub-factions of one faction — Ironjawz and Kruleboyz — and share
+nothing: not a unit, not a battle trait, not an enhancement. They sit in one catalogue because the
+inventory and the game system both call the faction Orruk Warclans.
+
+Ironjawz Bigmob prints the **second untitled lead-in paragraph** of the collection, after Bad Moon
+Madmob's: `Your Brutes are not set up during the deployment phase…`, with no heading, immediately
+before `'ERE WE GO!`. It is carried the same way — a passive profile under the name of the ability it
+sets up, so `'Ere We Go!` appears twice in printed order.
+
+`Killaboss on Great Gnashtoof` is printed as a title and a subtitle on two lines (`KILLABOSS` over
+`ON GREAT GNASHTOOF`). The entry carries the whole name, which is also the one the army list prints.
+
+One printed typo is carried verbatim: `if has not used a Move ability` (Pick 'Em Off).
+
 ### Ogor Mawtribes — four boxes (added 2026-08-30)
 
 Scrapglutt (`eng_01-04_aos_spearhead_ogor_mawtribes_scrapglutt`, 4 pages, no longer in print),
