@@ -199,6 +199,9 @@
     <categoryEntry id="sph-cat::fangs-of-the-blood-god" name="Spearhead: Blades of Khorne (Fangs of the Blood God)" hidden="false" />
     <categoryEntry id="sph-faction::blades-of-khorne" name="Blades of Khorne" hidden="false" />
     <categoryEntry id="sph-alliance::chaos" name="Chaos" hidden="false" />
+    <categoryEntry id="sph-cat::fluxblade-coven" name="Spearhead: Disciples of Tzeentch (Fluxblade Coven)" hidden="false" />
+    <categoryEntry id="sph-cat::tzaangor-warflock" name="Spearhead: Disciples of Tzeentch (Tzaangor Warflock)" hidden="false" />
+    <categoryEntry id="sph-faction::disciples-of-tzeentch" name="Disciples of Tzeentch" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -253,6 +256,9 @@
         <categoryLink id="ef479a9e" name="Spearhead: Blades of Khorne (Fangs of the Blood God)" hidden="false" targetId="sph-cat::fangs-of-the-blood-god" />
         <categoryLink id="b7f10120" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" />
         <categoryLink id="f0be801c" name="Chaos" hidden="false" targetId="sph-alliance::chaos" />
+        <categoryLink id="b3d30d0a" name="Spearhead: Disciples of Tzeentch (Fluxblade Coven)" hidden="false" targetId="sph-cat::fluxblade-coven" />
+        <categoryLink id="2946c687" name="Spearhead: Disciples of Tzeentch (Tzaangor Warflock)" hidden="false" targetId="sph-cat::tzaangor-warflock" />
+        <categoryLink id="4cdddec5" name="Disciples of Tzeentch" hidden="false" targetId="sph-faction::disciples-of-tzeentch" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>
