@@ -230,6 +230,10 @@
     <categoryEntry id="sph-cat::kavalos-vanguard" name="Spearhead: Ossiarch Bonereapers (Kavalos Vanguard)" hidden="false" />
     <categoryEntry id="sph-cat::mortisan-elite" name="Spearhead: Ossiarch Bonereapers (Mortisan Elite)" hidden="false" />
     <categoryEntry id="sph-cat::tithe-reaper-echelon" name="Spearhead: Ossiarch Bonereapers (Tithe-Reaper Echelon)" hidden="false" />
+    <categoryEntry id="sph-faction::soulblight-gravelords" name="Soulblight Gravelords" hidden="false" />
+    <categoryEntry id="sph-cat::bloodcrave-hunt" name="Spearhead: Soulblight Gravelords (Bloodcrave Hunt)" hidden="false" />
+    <categoryEntry id="sph-kw::vampire" name="Vampire" hidden="false" />
+    <categoryEntry id="sph-cat::deathrattle-tomb-host" name="Spearhead: Soulblight Gravelords (Deathrattle Tomb Host)" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">

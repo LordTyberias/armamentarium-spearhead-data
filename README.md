@@ -7,7 +7,7 @@ BattleScribe catalogue data for the fixed Spearhead boxes of Age of Sigmar, read
 - one `.cat` file per faction, each holding the units of that faction's Spearheads.
 
 **This repository is not complete.** It is being filled one Grand Alliance at a time
-(ARMAM-275); Order and Chaos are done, Death and Destruction are not.
+(ARMAM-275); Order, Chaos and Death are done, Destruction is not.
 
 ## What this is, and what it is not
 
@@ -90,6 +90,26 @@ What the format buys is not interoperability. It is that the data lives outside 
 in its own repository, in plain XML that any text or XML tool can edit, on its own release cadence.
 
 ## Provenance
+
+### Soulblight Gravelords — two boxes (added 2026-08-30)
+
+Deathrattle Tomb Host (`eng_01-04_aos_spearhead_soulblight_gravelords_deathrattle_tomb_host`, 4 pages,
+in print) and Bloodcrave Hunt (`eng_01-04_aos_spearhead_soulblight_gravelords_bloodcrave_hunt`, 7 pages,
+no longer in print). Both boxes have a Spearhead PDF of their own.
+
+**Both disagree with the inventory, and both by exactly four models.** The Tomb Host's army list reads
+Wight King + 10 Barrow Guard + 5 Barrow Knights + 10 + 10 Deathrattle Skeletons = 36 against the
+inventory's 40; the Bloodcrave Hunt's reads Vampire Lord + 10 + 10 Deathrattle Skeletons + 5 Blood
+Knights + 3 Vargheists = 29 against 33. Unlike the token cases recorded in stages 1 and 2, neither pack
+says anything that would account for the difference — no token, no marker, no unnumbered model. The
+catalogue carries the packs' numbers, 36 and 29, and the discrepancy is left standing here rather than
+resolved by a guess.
+
+Deathrattle Skeletons stand in both boxes with identical characteristics and an identically named
+ability, `Skeleton Legion`, that does different things: in the Tomb Host it is an End of Any Turn
+ability returning D3 slain models, in the Bloodcrave Hunt it is a Your Combat Phase ability rolling a
+legion roll of D6 per slain model and returning one for each 6. The second box's `Grave-sand Shard`
+enhancement is written against that legion roll, so the two versions are not interchangeable.
 
 ### Ossiarch Bonereapers — three boxes (added 2026-08-30)
 
