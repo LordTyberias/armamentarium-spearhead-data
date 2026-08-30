@@ -207,6 +207,9 @@
     <categoryEntry id="sph-faction::hedonites-of-slaanesh" name="Hedonites of Slaanesh" hidden="false" />
     <categoryEntry id="sph-cat::helforge-host" name="Spearhead: Helsmiths of Hashut (Helforge Host)" hidden="false" />
     <categoryEntry id="sph-faction::helsmiths-of-hashut" name="Helsmiths of Hashut" hidden="false" />
+    <categoryEntry id="sph-cat::bleak-host" name="Spearhead: Maggotkin of Nurgle (Bleak Host)" hidden="false" />
+    <categoryEntry id="sph-cat::bubonic-cell" name="Spearhead: Maggotkin of Nurgle (Bubonic Cell)" hidden="false" />
+    <categoryEntry id="sph-faction::maggotkin-of-nurgle" name="Maggotkin of Nurgle" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -269,6 +272,9 @@
         <categoryLink id="4ca5d0c8" name="Hedonites of Slaanesh" hidden="false" targetId="sph-faction::hedonites-of-slaanesh" />
         <categoryLink id="15be41ee" name="Spearhead: Helsmiths of Hashut (Helforge Host)" hidden="false" targetId="sph-cat::helforge-host" />
         <categoryLink id="9034ea1c" name="Helsmiths of Hashut" hidden="false" targetId="sph-faction::helsmiths-of-hashut" />
+        <categoryLink id="79e80562" name="Spearhead: Maggotkin of Nurgle (Bleak Host)" hidden="false" targetId="sph-cat::bleak-host" />
+        <categoryLink id="cc290ce4" name="Spearhead: Maggotkin of Nurgle (Bubonic Cell)" hidden="false" targetId="sph-cat::bubonic-cell" />
+        <categoryLink id="b189d1f6" name="Maggotkin of Nurgle" hidden="false" targetId="sph-faction::maggotkin-of-nurgle" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>
