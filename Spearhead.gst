@@ -217,6 +217,23 @@
     <categoryEntry id="sph-cat::darkoath-raiders" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" />
     <categoryEntry id="sph-cat::bloodwind-legion" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" />
     <categoryEntry id="sph-faction::slaves-to-darkness" name="Slaves to Darkness" hidden="false" />
+    <categoryEntry id="sph-alliance::death" name="Death" hidden="false" />
+    <categoryEntry id="sph-faction::flesh-eater-courts" name="Flesh-Eater Courts" hidden="false" />
+    <categoryEntry id="sph-cat::carrion-retainers" name="Spearhead: Flesh-Eater Courts (Carrion Retainers)" hidden="false" />
+    <categoryEntry id="sph-cat::charnel-watch" name="Spearhead: Flesh-Eater Courts (Charnel Watch)" hidden="false" />
+    <categoryEntry id="sph-kw::serfs" name="Serfs" hidden="false" />
+    <categoryEntry id="sph-kw::knights" name="Knights" hidden="false" />
+    <categoryEntry id="sph-faction::nighthaunt" name="Nighthaunt" hidden="false" />
+    <categoryEntry id="sph-cat::cursed-shacklehorde" name="Spearhead: Nighthaunt (Cursed Shacklehorde)" hidden="false" />
+    <categoryEntry id="sph-cat::slasher-host" name="Spearhead: Nighthaunt (Slasher Host)" hidden="false" />
+    <categoryEntry id="sph-faction::ossiarch-bonereapers" name="Ossiarch Bonereapers" hidden="false" />
+    <categoryEntry id="sph-cat::kavalos-vanguard" name="Spearhead: Ossiarch Bonereapers (Kavalos Vanguard)" hidden="false" />
+    <categoryEntry id="sph-cat::mortisan-elite" name="Spearhead: Ossiarch Bonereapers (Mortisan Elite)" hidden="false" />
+    <categoryEntry id="sph-cat::tithe-reaper-echelon" name="Spearhead: Ossiarch Bonereapers (Tithe-Reaper Echelon)" hidden="false" />
+    <categoryEntry id="sph-faction::soulblight-gravelords" name="Soulblight Gravelords" hidden="false" />
+    <categoryEntry id="sph-cat::bloodcrave-hunt" name="Spearhead: Soulblight Gravelords (Bloodcrave Hunt)" hidden="false" />
+    <categoryEntry id="sph-kw::vampire" name="Vampire" hidden="false" />
+    <categoryEntry id="sph-cat::deathrattle-tomb-host" name="Spearhead: Soulblight Gravelords (Deathrattle Tomb Host)" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">

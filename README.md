@@ -7,7 +7,7 @@ BattleScribe catalogue data for the fixed Spearhead boxes of Age of Sigmar, read
 - one `.cat` file per faction, each holding the units of that faction's Spearheads.
 
 **This repository is not complete.** It is being filled one Grand Alliance at a time
-(ARMAM-275); Order and Chaos are done, Death and Destruction are not.
+(ARMAM-275); Order, Chaos and Death are done, Destruction is not.
 
 ## What this is, and what it is not
 
@@ -63,7 +63,10 @@ change one of these alone.
 
 Unit entry ids are `sph::<box-slug>::NN-<unit-slug>`, and a fixed weapon is a mandatory child
 entry under `<entry-id>::<slug>` whose `min = max` states how many models carry it. **Those ids
-end up in users' saved army lists**, so changing one strands the list that carries it.
+end up in users' saved army lists**, so changing one strands the list that carries it. A weapon the
+warscroll prints as **both** a ranged and a melee profile is one item and gets **one** child entry,
+not two — Chainghasts' `Ghastflails` is the first of them, and two entries would have collided on
+the same id.
 
 Nothing in this repository enforces any of it. A prefix or an id that drifts produces no build
 error and no failing file — it produces an empty box list in the application, which is why it is
@@ -87,6 +90,98 @@ What the format buys is not interoperability. It is that the data lives outside 
 in its own repository, in plain XML that any text or XML tool can edit, on its own release cadence.
 
 ## Provenance
+
+### Soulblight Gravelords — two boxes (added 2026-08-30)
+
+Deathrattle Tomb Host (`eng_01-04_aos_spearhead_soulblight_gravelords_deathrattle_tomb_host`, 4 pages,
+in print) and Bloodcrave Hunt (`eng_01-04_aos_spearhead_soulblight_gravelords_bloodcrave_hunt`, 7 pages,
+no longer in print). Both boxes have a Spearhead PDF of their own.
+
+**Both disagree with the inventory, and both by exactly four models.** The Tomb Host's army list reads
+Wight King + 10 Barrow Guard + 5 Barrow Knights + 10 + 10 Deathrattle Skeletons = 36 against the
+inventory's 40; the Bloodcrave Hunt's reads Vampire Lord + 10 + 10 Deathrattle Skeletons + 5 Blood
+Knights + 3 Vargheists = 29 against 33. Unlike the token cases recorded in stages 1 and 2, neither pack
+says anything that would account for the difference — no token, no marker, no unnumbered model. The
+catalogue carries the packs' numbers, 36 and 29, and the discrepancy is left standing here rather than
+resolved by a guess.
+
+Deathrattle Skeletons stand in both boxes with identical characteristics and an identically named
+ability, `Skeleton Legion`, that does different things: in the Tomb Host it is an End of Any Turn
+ability returning D3 slain models, in the Bloodcrave Hunt it is a Your Combat Phase ability rolling a
+legion roll of D6 per slain model and returning one for each 6. The second box's `Grave-sand Shard`
+enhancement is written against that legion roll, so the two versions are not interchangeable.
+
+### Ossiarch Bonereapers — three boxes (added 2026-08-30)
+
+Kavalos Vanguard (`eng_18-02_aos_spearhead_ossiarch_bonereapers_kavalos_vanguard`, 4 pages, in print),
+Mortisan Elite (`eng_jun25_aos_spearhead_ossiarchbr_rules`, 4 pages, no longer in print) and
+Tithe-Reaper Echelon (`eng_aos_ossiarch_bonereapers_dec24`, 36 pages, no longer in print; the Spearhead
+part is on pages 30-36). 19, 9 and 27 models, all three agreeing with the inventory. Mortisan Elite is
+the smallest box of the collection so far at nine models across four units.
+
+**Kavalos Deathriders appear in two of the three boxes and are not the same warscroll.** Same statline
+(10" / 3 / 4+ / 1) and the same mount, but in Kavalos Vanguard they carry a `Kavalos Blade` (3/3+/4+/1/1)
+and can `Wheel About` after charging, while in Tithe-Reaper Echelon they carry a `Nadirite Spear`
+(3/3+/4+/1/1, Charge +1 Damage) and form a `Deathrider Wedge`. The clearest measurement yet that a
+warscroll belongs to its box and not to its faction — this time inside a single faction pack's own
+publisher.
+
+Both `Reserve Contingent` (Tithe-Reaper Echelon) and `Heralds of Nagash` (Mortisan Elite) are named
+headings **inside** the battle traits with a paragraph of their own, under which a single ability sits;
+they are carried as passive profiles, as `Spectral Procession` is in Nighthaunt. `Heralds of Nagash` is
+also the name of a Morghast Archai ability in the same box — a name is not an identity here either.
+
+Tithe-Reaper Echelon is the first box whose army rule mints a resource of its own (`Ossiarch Commands`,
+2 points per battle round), and four of its abilities carry `Ossiarch Command` in their Keywords field.
+Kavalos Vanguard, from the same faction, has no such rule at all.
+
+### Nighthaunt — two boxes (added 2026-08-30)
+
+Slasher Host (`eng_aos_nighthaunt_dec24`, 43 pages, no longer in print; the Spearhead part is on pages
+37-43) and Cursed Shacklehorde (`eng_29-04_aos_spearhead_nighthaunt_cursed_shacklehorde`, 4 pages, in
+print). 34 and 25 models, both agreeing with the inventory. Slasher Host is the largest box of the
+collection so far, and it reaches that size by fielding four warscrolls across six units: two units of
+Grimghast Reapers and two of Chainrasps, each pair identical.
+
+**The same ability name means different rules in different boxes.** Both boxes carry a battle trait
+called `Ethereal`: Cursed Shacklehorde's ignores *negative* modifiers to save rolls, Slasher Host's
+ignores *all* modifiers, positive and negative. A box's rules are its own down to the wording, and the
+name is no more an identity here than it is anywhere else in this format.
+
+Cursed Shacklehorde prints a named heading **inside** its battle traits — `SPECTRAL PROCESSION`, with a
+paragraph of its own, under which `Cackling Arrival` sits. It is carried as a passive profile like the
+`Regiment Abilities` and `Enhancements` headings are, for the same reason: without it, the reserve rule
+its ability depends on is nowhere in the data.
+
+Chainghasts carry `Ghastflails` as a ranged **and** a melee profile under one name; see the note on
+weapon child entries above.
+
+The text layer of the Spearhead PDF put the Move, Health, Save and Control values of the three
+warscrolls sharing page 4 in one undifferentiated run, in an order that follows neither the printed
+sequence of the warscrolls nor a single reading direction. Every statline of both boxes was read off
+the rendered page.
+
+### Flesh-Eater Courts — two boxes (added 2026-08-30)
+
+Carrion Retainers (`eng_aos_faction_flesh_eater_courts_apr_25`, 41 pages, no longer in print) and
+Charnel Watch (`eng_aug25_aos_spearhead_rules_fec`, 4 pages, in print). The first is a **full faction
+pack** whose Spearhead part sits on pages 35-41; the second is a Spearhead PDF of its own. 15 and 17
+models, both agreeing with the inventory.
+
+The two boxes each field an abhorrant vampire wielding the identically named and identically statted
+`Gory Talons and Fangs` (5/3+/3+/1/2), and everything around it differs: the Archregent is a 6" / 6
+health / 5+ save model **without** the Wizard keyword, the Gorewarden a 12" / 7 / 5+ model **with** it —
+and both cast a spell with a 2D6 casting roll regardless. A keyword line is per box, and so is what it
+omits.
+
+Charnel Watch is the first box of the collection built around a rotating army rule: `Delusions and
+Madness` picks one of four Delusions per battle round, two of which are printed as battle traits and
+two as the box's regiment abilities. All four carry the `Delusion` keyword in their own Keywords field,
+so the reader can tell which abilities the rotation selects between.
+
+The text layer of the Spearhead PDF printed `Delusion of the Sentinel` at the top of the battle traits
+block, where the page prints it under `Regiment Abilities` — the reordering the collection's first
+stage measured, met again.
 
 ### Slaves to Darkness — two boxes (added 2026-08-30)
 
