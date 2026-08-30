@@ -6,8 +6,8 @@ BattleScribe catalogue data for the fixed Spearhead boxes of Age of Sigmar, read
 - `Spearhead.gst` — the game system: profile types, the categories, one force entry.
 - one `.cat` file per faction, each holding the units of that faction's Spearheads.
 
-**This repository is not complete.** It is being filled one Grand Alliance at a time
-(ARMAM-275); Order, Chaos and Death are done, Destruction is not.
+**All 51 boxes are here.** They were collected one Grand Alliance at a time (ARMAM-275): Order
+(19), Chaos (14), Death (9) and Destruction (9), across 24 factions, 24 of them no longer in print.
 
 ## What this is, and what it is not
 
@@ -44,7 +44,18 @@ longer in print.
   which of its models carries what — or that one of them is a Godspeaker, or that its Gong Carrier is
   a token — that sentence is a rule, carried verbatim as a passive profile of that name, in the place
   the warscroll prints it. The weapon child entries state the same split as numbers; the sentence is
-  what the pack actually says, and the two are not the same thing.
+  what the pack actually says, and the two are not the same thing. **This is settled**: it was
+  carried this way from stage 1 onwards and left open until all 51 boxes had been read; it stays,
+  and a loadout line is never reconstructed from the weapon numbers where the pack does not print
+  one.
+- **A lead-in paragraph without a printed heading rides under the name of the ability it sets up.**
+  Some battle-traits pages open with a sentence putting a unit in reserve, then print the ability
+  that brings it back. Where that sentence carries a heading (`Spectral Procession`, `Nomadic
+  Warriors`, `Bullstomper`) the heading is the profile name; where it carries none — Bad Moon
+  Madmob and Ironjawz Bigmob — the profile takes the name of the ability below it, so two profiles
+  of that name stand in printed order. Inventing a heading would be inventing printed text, and
+  dropping the sentence would leave the ability referring to a reserve rule that is nowhere in the
+  data.
 
 ## The category ids are a contract
 
@@ -90,6 +101,107 @@ What the format buys is not interoperability. It is that the data lives outside 
 in its own repository, in plain XML that any text or XML tool can edit, on its own release cadence.
 
 ## Provenance
+
+### Sons of Behemat — one box (added 2026-08-30)
+
+Wallsmasher Stomp (`eng_aos_faction_pack_sons_of_behemat_feb25`, 21 pages, no longer in print; the
+Spearhead part is on pages 18-21). Three models in three units, agreeing with the inventory — the
+smallest box of the collection, and the only one whose every unit shares a single warscroll.
+
+Its battle traits carry the named heading `BULLSTOMPER`, whose paragraph does not set up a reserve
+but rewrites the general's keywords. It is carried as a passive profile like the other named
+headings.
+
+The faction pack's text layer drops the `h` of every `Th` ligature, so the warscroll's ranged weapon
+reads `Trowin' Rocks` there and `Throwin' Rocks` on the page. The catalogue carries the printed
+spelling, and the battle trait that refers to the weapon by name would otherwise have pointed at
+nothing.
+
+### Orruk Warclans — two boxes (added 2026-08-30)
+
+Ironjawz Bigmob (`eng_aos_spearhead_orruk_warclans_ironjawz_bigmob_jan25`, 4 pages, in print) and
+Swampskulka Gang (`eng_aos_faction_orruk_warclans_dec_24`, 50 pages, in print; the Spearhead part is
+on pages 43-50). 19 and 16 models, both agreeing with the inventory.
+
+The two boxes belong to different sub-factions of one faction — Ironjawz and Kruleboyz — and share
+nothing: not a unit, not a battle trait, not an enhancement. They sit in one catalogue because the
+inventory and the game system both call the faction Orruk Warclans.
+
+Ironjawz Bigmob prints the **second untitled lead-in paragraph** of the collection, after Bad Moon
+Madmob's: `Your Brutes are not set up during the deployment phase…`, with no heading, immediately
+before `'ERE WE GO!`. It is carried the same way — a passive profile under the name of the ability it
+sets up, so `'Ere We Go!` appears twice in printed order.
+
+`Killaboss on Great Gnashtoof` is printed as a title and a subtitle on two lines (`KILLABOSS` over
+`ON GREAT GNASHTOOF`). The entry carries the whole name, which is also the one the army list prints.
+
+One printed typo is carried verbatim: `if has not used a Move ability` (Pick 'Em Off).
+
+### Ogor Mawtribes — four boxes (added 2026-08-30)
+
+Scrapglutt (`eng_01-04_aos_spearhead_ogor_mawtribes_scrapglutt`, 4 pages, no longer in print),
+Tyrant's Bellow (`eng_aos_faction_pack_ogor_mawtribes_feb_25`, 40 pages, no longer in print; the
+Spearhead part is on pages 33-40), Warglutt Marauders (`eng_15-07_aos_spearhead_ogor_mawtribes_
+warglutt_marauders`, pages 1-4, in print) and Mawseeker Mob (the same PDF, pages 5-8, no longer in
+print). Three documents for four boxes.
+
+**The inventory misspells one of them.** It lists `Warglutt Maruders`; the pack prints `WARGLUTT
+MARAUDERS` on its own title page. The catalogue carries the pack's spelling, as it carries the pack's
+numbers.
+
+**Two of the four disagree with the inventory, and neither pack explains it.** Warglutt Marauders
+(11) and Mawseeker Mob (12) agree. Scrapglutt's army list reads Mantrappers + 2 + 2 + 4 Ironguts +
+12 Gnoblars + 1 Gnoblar Scraplauncher = 22 against the inventory's 31, and Tyrant's Bellow reads
+Tyrant + 2 Mournfang Pack + 3 + 3 Ogor Gluttons + 4 Leadbelchers + 1 Ironblaster = 14 against 18.
+Scrapglutt's tokens (3 Gnoblar, 1 Frost Sabre, 1 Trap) account for five of the first gap and nothing
+of the second. The catalogue carries 22 and 14.
+
+**A general can have no number at all.** Scrapglutt's army list names its general `Mantrappers with
+3 Gnoblar tokens, 1 Frost Sabre token and 1 Trap token` — no count. The warscroll settles it: a
+single Hero model whose companions are tokens, so the entry states one model. Its `Staying Useful`
+ability spends those tokens as ward saves, which is why they are on the army list at all.
+
+**The same unit in two boxes of one faction, and this time the statline moves too.** `Tyrant` stands
+in Warglutt Marauders at 6"/8/4+/**3** with Tyrant's Meatcleavers and `Roaring Warlord`, and in
+Tyrant's Bellow at 6"/8/4+/**5** with Ogor Pistols, a Thundermace, a Beastskewer Glaive and `Bully of
+the First Degree`. `Ironguts` stands in Warglutt Marauders at save **4+** with `Stomping Marauders`
+and in Scrapglutt at save **5+** with `Down to the Ironguts`. Stages 1 to 3 measured differing
+weapons, abilities and keywords; this is the first box pair where a characteristic differs.
+
+`Gluttons` (Warglutt Marauders) and `Ogor Gluttons` (Tyrant's Bellow) are not even named alike, share
+a statline, and differ in weapon name and ability. The entry carries each warscroll's own name.
+
+The faction pack's text layer drops the `h` of every `Th` ligature — it reads `Tundermace`, `Te`,
+`Tis` — on top of the usual scrambling of the statline. Every value here comes from the rendered
+image.
+
+Three printed typos are carried verbatim, because the pack is the source: `Add 2 to the this unit's
+control score` (Stomping Marauders), `add 3 the Attacks characteristic` (Frenzied Artillery) and
+`Roll a dice On a 3+` (No Slacking!).
+
+### Gloomspite Gitz — two boxes (added 2026-08-30)
+
+Bad Moon Madmob (`eng_01-04_aos_spearhead_gloomspite_gitz_bad_moon_madmob`, 8 pages, no longer in
+print) and Snarlpack Huntaz (`eng_01-04_aos_spearhead_gloomspite_gitz_snarlpack_hunters`, 4 pages, in
+print). Both boxes have a Spearhead PDF of their own, and both agree with the inventory: 34 models
+(1 + 10 + 10 + 5 + 5 + 3) and 11 (1 + 2 + 3 + 3 + 1 + 1).
+
+**A lead-in paragraph inside the battle traits can have no heading at all.** Bad Moon Madmob prints
+one sentence — that one Squig Hoppers unit is not set up during deployment and may use the ability
+below from the third battle round — with no title above it, immediately before `SQUIGALANCHE`. The
+named case is recorded for Nighthaunt and Ossiarch Bonereapers above; this is the first untitled one
+over 44 boxes. It is carried as a passive profile under the name of the ability it sets up, so that
+two profiles named `Squigalanche` stand in printed order — the reserve rule the ability depends on
+has to be somewhere in the data, and inventing a heading for it would be inventing printed text.
+
+The text layer misordered the enhancements of Snarlpack Huntaz (it reads Sunsteala Shard and Glare
+of Frazzlegit before Kunnin' as a Snarlfang, the page prints them the other way round) and put the
+battle trait last. Both of its warscroll pages carry two warscrolls side by side, so all four
+statlines arrive in one undifferentiated run. Every value here comes from the rendered image.
+
+Sunsteala Wheelas is the one unit whose army-list line and warscroll disagree in number: the list
+prints `1 Sunsteala Wheela`, the warscroll is titled `SUNSTEALA WHEELAS`. The entry carries the
+warscroll's name, as every other entry does.
 
 ### Soulblight Gravelords — two boxes (added 2026-08-30)
 
