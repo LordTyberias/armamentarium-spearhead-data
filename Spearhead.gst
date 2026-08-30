@@ -217,6 +217,12 @@
     <categoryEntry id="sph-cat::darkoath-raiders" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" />
     <categoryEntry id="sph-cat::bloodwind-legion" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" />
     <categoryEntry id="sph-faction::slaves-to-darkness" name="Slaves to Darkness" hidden="false" />
+    <categoryEntry id="sph-alliance::death" name="Death" hidden="false" />
+    <categoryEntry id="sph-faction::flesh-eater-courts" name="Flesh-Eater Courts" hidden="false" />
+    <categoryEntry id="sph-cat::carrion-retainers" name="Spearhead: Flesh-Eater Courts (Carrion Retainers)" hidden="false" />
+    <categoryEntry id="sph-cat::charnel-watch" name="Spearhead: Flesh-Eater Courts (Charnel Watch)" hidden="false" />
+    <categoryEntry id="sph-kw::serfs" name="Serfs" hidden="false" />
+    <categoryEntry id="sph-kw::knights" name="Knights" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">

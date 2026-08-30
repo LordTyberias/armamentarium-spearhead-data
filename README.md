@@ -88,6 +88,28 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Flesh-Eater Courts — two boxes (added 2026-08-30)
+
+Carrion Retainers (`eng_aos_faction_flesh_eater_courts_apr_25`, 41 pages, no longer in print) and
+Charnel Watch (`eng_aug25_aos_spearhead_rules_fec`, 4 pages, in print). The first is a **full faction
+pack** whose Spearhead part sits on pages 35-41; the second is a Spearhead PDF of its own. 15 and 17
+models, both agreeing with the inventory.
+
+The two boxes each field an abhorrant vampire wielding the identically named and identically statted
+`Gory Talons and Fangs` (5/3+/3+/1/2), and everything around it differs: the Archregent is a 6" / 6
+health / 5+ save model **without** the Wizard keyword, the Gorewarden a 12" / 7 / 5+ model **with** it —
+and both cast a spell with a 2D6 casting roll regardless. A keyword line is per box, and so is what it
+omits.
+
+Charnel Watch is the first box of the collection built around a rotating army rule: `Delusions and
+Madness` picks one of four Delusions per battle round, two of which are printed as battle traits and
+two as the box's regiment abilities. All four carry the `Delusion` keyword in their own Keywords field,
+so the reader can tell which abilities the rotation selects between.
+
+The text layer of the Spearhead PDF printed `Delusion of the Sentinel` at the top of the battle traits
+block, where the page prints it under `Regiment Abilities` — the reordering the collection's first
+stage measured, met again.
+
 ### Slaves to Darkness — two boxes (added 2026-08-30)
 
 Darkoath Raiders (`eng_01-04_aos_spearhead_slaves_to_darkness_darkoath_raiders`, 4 pages) and
