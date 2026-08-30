@@ -195,6 +195,10 @@
     <categoryEntry id="sph-cat::bitterbark-copse" name="Spearhead: Sylvaneth (Bitterbark Copse)" hidden="false" />
     <categoryEntry id="sph-cat::spitewing-flight" name="Spearhead: Sylvaneth (Spitewing Flight)" hidden="false" />
     <categoryEntry id="sph-faction::sylvaneth" name="Sylvaneth" hidden="false" />
+    <categoryEntry id="sph-cat::bloodbound-gore-pilgrims" name="Spearhead: Blades of Khorne (Bloodbound Gore Pilgrims)" hidden="false" />
+    <categoryEntry id="sph-cat::fangs-of-the-blood-god" name="Spearhead: Blades of Khorne (Fangs of the Blood God)" hidden="false" />
+    <categoryEntry id="sph-faction::blades-of-khorne" name="Blades of Khorne" hidden="false" />
+    <categoryEntry id="sph-alliance::chaos" name="Chaos" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -245,6 +249,10 @@
         <categoryLink id="7ecec3b4" name="Spearhead: Sylvaneth (Bitterbark Copse)" hidden="false" targetId="sph-cat::bitterbark-copse" />
         <categoryLink id="cdc5eb6f" name="Spearhead: Sylvaneth (Spitewing Flight)" hidden="false" targetId="sph-cat::spitewing-flight" />
         <categoryLink id="270a43d8" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" />
+        <categoryLink id="f5bda857" name="Spearhead: Blades of Khorne (Bloodbound Gore Pilgrims)" hidden="false" targetId="sph-cat::bloodbound-gore-pilgrims" />
+        <categoryLink id="ef479a9e" name="Spearhead: Blades of Khorne (Fangs of the Blood God)" hidden="false" targetId="sph-cat::fangs-of-the-blood-god" />
+        <categoryLink id="b7f10120" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" />
+        <categoryLink id="f0be801c" name="Chaos" hidden="false" targetId="sph-alliance::chaos" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>

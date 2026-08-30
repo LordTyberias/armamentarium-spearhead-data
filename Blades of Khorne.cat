@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="sph-catalogue::blades-of-khorne" name="Blades of Khorne" gameSystemId="sph1-6c4a-2e97-0001" revision="1" battleScribeVersion="2.03" authorName="Armamentarium" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="sph::bloodbound-gore-pilgrims::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="799b1b6c" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="8b14b882" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="34e1b93e" name="Spearhead: Blades of Khorne (Bloodbound Gore Pilgrims)" hidden="false" targetId="sph-cat::bloodbound-gore-pilgrims" primary="true" />
+        <categoryLink id="111ca93c" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" primary="false" />
+        <categoryLink id="f30baa54" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="8fe82db4" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="56abfbbf" name="The Blood Tithe" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Each time a unit is destroyed during the battle, you receive 1 blood tithe point.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3c40a752" name="Murderlust" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn, Any Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Spend 1 blood tithe point and pick up to D3 friendly units.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Each of those units can move D6&quot; (roll for each).</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="69db3610" name="Heads Must Roll" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn, Any Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Spend 3 blood tithe points and pick up to 3 friendly units.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Add 1 to the Rend characteristic of those units' melee weapons until the start of your next turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2c67eded" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="be96f44e" name="Favoured of Khorne" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn, Start of Your Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 2+, you receive 1 blood tithe point.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="db3eaca4" name="Blood-woken Runes" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Friendly units have Ward (5+) if they have used a Fight ability in the same phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d109fb65" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="35ea6692" name="Resanguination" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible friendly unit wholly within 16&quot; of your general, then make a chanting roll of D6.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 3+, Heal (D3) that unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="09fea17b" name="The Crimson Plate" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Your general has Ward (5+).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f280e2cb" name="Headhunter" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy Hero in combat with your general.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Your general has Strike-first this phase, but all attacks made by them this phase must target that enemy Hero.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="36626cbc" name="Unholy Flames" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible friendly unit wholly within 16&quot; of your general, then make a chanting roll of D6.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 4+, add 1 to the Rend characteristic of that unit's melee weapons until the start of your next turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::bloodbound-gore-pilgrims::01-slaughterpriest" name="Slaughterpriest" type="unit" hidden="false">
+      <constraints>
+        <constraint id="4daa67c2" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="2eaf997c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="787794c9" name="Spearhead: Blades of Khorne (Bloodbound Gore Pilgrims)" hidden="false" targetId="sph-cat::bloodbound-gore-pilgrims" primary="true" />
+        <categoryLink id="069aed54" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" primary="false" />
+        <categoryLink id="065d4c4e" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="4cfba6ae" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="87347cea" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="3c4e608a" name="Priest" hidden="false" targetId="sph-kw::priest" primary="false" />
+        <categoryLink id="f25f9234" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="4cf40017" name="Slaughterpriest" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">6</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f359b5e2" name="Hackblade and Wrath-hammer" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">4</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c88fdd55" name="Blood Boil" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible enemy unit within 16&quot; of this unit to be the target, then make a chanting roll of D6.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 4+, inflict D3 mortal damage on the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="922fb94b" name="Blood Sacrifice" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit within this unit's combat range to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 2+, inflict D3 mortal damage on the target and you gain 1 blood tithe point.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bloodbound-gore-pilgrims::01-slaughterpriest::hackblade-and-wrath-hammer" name="Hackblade and Wrath-hammer" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="166a487e" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="75a54594" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::bloodbound-gore-pilgrims::02-blood-warriors" name="Blood Warriors" type="unit" hidden="false">
+      <constraints>
+        <constraint id="3af947de" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="0857201f" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8574a7dc" name="Spearhead: Blades of Khorne (Bloodbound Gore Pilgrims)" hidden="false" targetId="sph-cat::bloodbound-gore-pilgrims" primary="true" />
+        <categoryLink id="d5936310" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" primary="false" />
+        <categoryLink id="f16de6de" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="771e9bed" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="4436faf6" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="68e5029a" name="Blood Warriors" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0e8c39c5" name="Goreaxe and Gorefist" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f48db72b" name="No Respite" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Each time a model in this unit is slain, you can pick an enemy unit in combat with this unit and roll a dice. On a 4+, inflict 1 mortal damage on that enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bloodbound-gore-pilgrims::02-blood-warriors::goreaxe-and-gorefist" name="Goreaxe and Gorefist" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="e16f88b2" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="0522b61b" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::bloodbound-gore-pilgrims::03-blood-warriors" name="Blood Warriors" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c130c146" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="90468876" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="26fba0c7" name="Spearhead: Blades of Khorne (Bloodbound Gore Pilgrims)" hidden="false" targetId="sph-cat::bloodbound-gore-pilgrims" primary="true" />
+        <categoryLink id="05105b82" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" primary="false" />
+        <categoryLink id="edf0ab04" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="eed06b91" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="f5bf6798" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="90897e16" name="Blood Warriors" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6ab2ca98" name="Goreaxe and Gorefist" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f8ec2916" name="No Respite" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Each time a model in this unit is slain, you can pick an enemy unit in combat with this unit and roll a dice. On a 4+, inflict 1 mortal damage on that enemy unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bloodbound-gore-pilgrims::03-blood-warriors::goreaxe-and-gorefist" name="Goreaxe and Gorefist" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="80aa8213" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="e96136bb" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::bloodbound-gore-pilgrims::04-bloodreavers" name="Bloodreavers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="a9f76eb0" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="7e9f3d5d" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4c0a48ba" name="Spearhead: Blades of Khorne (Bloodbound Gore Pilgrims)" hidden="false" targetId="sph-cat::bloodbound-gore-pilgrims" primary="true" />
+        <categoryLink id="5f993224" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" primary="false" />
+        <categoryLink id="7362cfd1" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="a4ea87a7" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="117a0b8c" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="5cabf74a" name="Bloodreavers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="724d88d8" name="Reaver Blades" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0d0ac413" name="Frenzied Devotion" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">If this unit is within 8&quot; of your general, you can return D3 slain models to this unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bloodbound-gore-pilgrims::04-bloodreavers::reaver-blades" name="Reaver Blades" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="17b9cd42" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="23764b38" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::bloodbound-gore-pilgrims::05-mighty-skullcrushers" name="Mighty Skullcrushers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2bb1ee44" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="cfe1a6dc" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8b6ec250" name="Spearhead: Blades of Khorne (Bloodbound Gore Pilgrims)" hidden="false" targetId="sph-cat::bloodbound-gore-pilgrims" primary="true" />
+        <categoryLink id="5244b64e" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" primary="false" />
+        <categoryLink id="ff95b01f" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="4cae7f81" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="772c2bfe" name="Cavalry" hidden="false" targetId="sph-kw::cavalry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="9c3a0bb1" name="Mighty Skullcrushers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">2+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="68436725" name="Bloodglaive" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Charge (+1 Damage)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="47f03de6" name="Juggernaut's Brazen Hooves" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">D3</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f0e53f44" name="Brass Stampede" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Charge Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">If this unit charged this phase, pick an enemy unit within 1&quot; of it to be the target, then roll a dice.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 2+, inflict 1 mortal damage on the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bloodbound-gore-pilgrims::05-mighty-skullcrushers::bloodglaive" name="Bloodglaive" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="2bc7cdc7" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="939ceba8" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::bloodbound-gore-pilgrims::05-mighty-skullcrushers::juggernauts-brazen-hooves" name="Juggernaut's Brazen Hooves" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="eb82456d" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="784fa053" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::fangs-of-the-blood-god::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="d91bb922" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="80314e24" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="514981ad" name="Spearhead: Blades of Khorne (Fangs of the Blood God)" hidden="false" targetId="sph-cat::fangs-of-the-blood-god" primary="true" />
+        <categoryLink id="1246e70f" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" primary="false" />
+        <categoryLink id="d4c1e843" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="96b0d68f" name="The Quarry" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Start of Battle Round</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">If no enemy units are the quarry, pick an enemy unit to be the quarry (you can pick an enemy unit in reserve).</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4f31c5a7" name="Blood-drenched" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn, End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit that slew any enemy models using a Fight ability this turn to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">For the rest of the battle, the target's melee weapons have Crit (Mortal).</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ec7ac7e2" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b6e94508" name="The Scent of Blood" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to hit rolls and add 1 to wound rolls for combat attacks that target an enemy unit that had any damage points allocated to it this turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aaecb6e3" name="Savagery Upon Savagery" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit in combat to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">For the rest of the turn, add 1 to the Attacks characteristic of the target's melee weapons. If the target is a Hero, add D3 to the Attacks characteristic of its melee weapons instead.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fbd16fcf" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="338e4a8c" name="Sustained by Gore" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Heal (D3) your general.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="13107155" name="Evasive Hunter" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Subtract 1 from hit rolls and wound rolls for shooting attacks that target your general.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6d606cf9" name="Killing Pounce" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Any Charge Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">For the rest of the turn, when making charge rolls for your general, you can roll an additional dice, to a maximum of 3, but if you do, they must finish that charge in combat with the quarry.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="65228976" name="Furious Bites" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">If your general is in combat with the quarry, inflict D3 mortal damage on the quarry.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::fangs-of-the-blood-god::01-karanak" name="Karanak" type="unit" hidden="false">
+      <constraints>
+        <constraint id="18347226" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6e047269" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4d995992" name="Spearhead: Blades of Khorne (Fangs of the Blood God)" hidden="false" targetId="sph-cat::fangs-of-the-blood-god" primary="true" />
+        <categoryLink id="308369a6" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" primary="false" />
+        <categoryLink id="b1cfcb5a" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="7ea4df5a" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="9f9bdf41" name="Beast" hidden="false" targetId="sph-kw::beast" primary="false" />
+        <categoryLink id="ec62aab1" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="9b52702e" name="Karanak" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">7</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="59f3ed00" name="Savage Maws and Goreslick Claws" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">6</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Anti-Hero (+1 Rend)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2866681a" name="Stalk the Prey" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">This unit can move D6&quot;. It cannot end that move in combat unless it was in combat at the start of that move and, if there is an enemy quarry on the battlefield, it must end that move closer to the quarry.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::fangs-of-the-blood-god::01-karanak::savage-maws-and-goreslick-claws" name="Savage Maws and Goreslick Claws" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="bb41ac47" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="113b2cb6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::fangs-of-the-blood-god::02-flesh-hounds" name="Flesh Hounds" type="unit" hidden="false">
+      <constraints>
+        <constraint id="716941bd" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="999ddfb0" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c9d73c56" name="Spearhead: Blades of Khorne (Fangs of the Blood God)" hidden="false" targetId="sph-cat::fangs-of-the-blood-god" primary="true" />
+        <categoryLink id="8b31bca0" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" primary="false" />
+        <categoryLink id="572588a5" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="224edf18" name="Beast" hidden="false" targetId="sph-kw::beast" primary="false" />
+        <categoryLink id="d6931371" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+        <categoryLink id="5b5e886d" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="72af2cb5" name="Flesh Hounds" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aaa90cb4" name="Blood-dark Claws" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">4</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="681fdd08" name="Unflagging Hunters" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to charge rolls for this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::fangs-of-the-blood-god::02-flesh-hounds::blood-dark-claws" name="Blood-dark Claws" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="4281cc58" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="e538919b" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::fangs-of-the-blood-god::03-flesh-hounds" name="Flesh Hounds" type="unit" hidden="false">
+      <constraints>
+        <constraint id="e7133007" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="b4e93e55" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="eefae3c3" name="Spearhead: Blades of Khorne (Fangs of the Blood God)" hidden="false" targetId="sph-cat::fangs-of-the-blood-god" primary="true" />
+        <categoryLink id="eceea7d9" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" primary="false" />
+        <categoryLink id="260f670a" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="947383ea" name="Beast" hidden="false" targetId="sph-kw::beast" primary="false" />
+        <categoryLink id="d503d615" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+        <categoryLink id="216fc02d" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="7778fd34" name="Flesh Hounds" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">8&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cff61e84" name="Blood-dark Claws" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">4</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="571c52e3" name="Unflagging Hunters" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to charge rolls for this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::fangs-of-the-blood-god::03-flesh-hounds::blood-dark-claws" name="Blood-dark Claws" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="028c543e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="4dda0439" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::fangs-of-the-blood-god::04-claws-of-karanak" name="Claws of Karanak" type="unit" hidden="false">
+      <constraints>
+        <constraint id="680653de" field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="a5eb987f" field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="89a726c0" name="Spearhead: Blades of Khorne (Fangs of the Blood God)" hidden="false" targetId="sph-cat::fangs-of-the-blood-god" primary="true" />
+        <categoryLink id="d6174af0" name="Blades of Khorne" hidden="false" targetId="sph-faction::blades-of-khorne" primary="false" />
+        <categoryLink id="a5ad25d2" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
+        <categoryLink id="35b59ee1" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="993c0c5a" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="8252cb2f" name="Claws of Karanak" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6a43bc5d" name="Weapons of the Hunt" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (2 Hits)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c7f1765b" name="Pack Hunters" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit in combat with both this unit and a friendly Flesh Hounds unit to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">For the rest of the turn, this unit's combat attacks that target that enemy unit score critical hits on unmodified hit rolls of 5+.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::fangs-of-the-blood-god::04-claws-of-karanak::weapons-of-the-hunt" name="Weapons of the Hunt" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="c81c3535" field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="1eaab6d8" field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
