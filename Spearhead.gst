@@ -210,6 +210,10 @@
     <categoryEntry id="sph-cat::bleak-host" name="Spearhead: Maggotkin of Nurgle (Bleak Host)" hidden="false" />
     <categoryEntry id="sph-cat::bubonic-cell" name="Spearhead: Maggotkin of Nurgle (Bubonic Cell)" hidden="false" />
     <categoryEntry id="sph-faction::maggotkin-of-nurgle" name="Maggotkin of Nurgle" hidden="false" />
+    <categoryEntry id="sph-cat::gnawfeast-clawpack" name="Spearhead: Skaven (Gnawfeast Clawpack)" hidden="false" />
+    <categoryEntry id="sph-cat::warpspark-clawpack" name="Spearhead: Skaven (Warpspark Clawpack)" hidden="false" />
+    <categoryEntry id="sph-cat::crixxits-kill-pack" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" />
+    <categoryEntry id="sph-faction::skaven" name="Skaven" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -275,6 +279,10 @@
         <categoryLink id="79e80562" name="Spearhead: Maggotkin of Nurgle (Bleak Host)" hidden="false" targetId="sph-cat::bleak-host" />
         <categoryLink id="cc290ce4" name="Spearhead: Maggotkin of Nurgle (Bubonic Cell)" hidden="false" targetId="sph-cat::bubonic-cell" />
         <categoryLink id="b189d1f6" name="Maggotkin of Nurgle" hidden="false" targetId="sph-faction::maggotkin-of-nurgle" />
+        <categoryLink id="d5e09374" name="Spearhead: Skaven (Gnawfeast Clawpack)" hidden="false" targetId="sph-cat::gnawfeast-clawpack" />
+        <categoryLink id="652afcfe" name="Spearhead: Skaven (Warpspark Clawpack)" hidden="false" targetId="sph-cat::warpspark-clawpack" />
+        <categoryLink id="1a809160" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" />
+        <categoryLink id="b8798889" name="Skaven" hidden="false" targetId="sph-faction::skaven" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>
