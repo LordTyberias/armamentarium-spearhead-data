@@ -247,6 +247,8 @@
     <categoryEntry id="sph-cat::swampskulka-gang" name="Spearhead: Orruk Warclans (Swampskulka Gang)" hidden="false" />
     <categoryEntry id="sph-faction::orruk-warclans" name="Orruk Warclans" hidden="false" />
     <categoryEntry id="sph-kw::brute" name="Brute" hidden="false" />
+    <categoryEntry id="sph-cat::wallsmasher-stomp" name="Spearhead: Sons of Behemat (Wallsmasher Stomp)" hidden="false" />
+    <categoryEntry id="sph-faction::sons-of-behemat" name="Sons of Behemat" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -331,6 +333,22 @@
         <categoryLink id="26f2c6dc" name="Spearhead: Orruk Warclans (Ironjawz Bigmob)" hidden="false" targetId="sph-cat::ironjawz-bigmob" />
         <categoryLink id="b97e0cf1" name="Spearhead: Orruk Warclans (Swampskulka Gang)" hidden="false" targetId="sph-cat::swampskulka-gang" />
         <categoryLink id="f19931fe" name="Orruk Warclans" hidden="false" targetId="sph-faction::orruk-warclans" />
+        <categoryLink id="1821f9ed" name="Spearhead: Sons of Behemat (Wallsmasher Stomp)" hidden="false" targetId="sph-cat::wallsmasher-stomp" />
+        <categoryLink id="ad8bddb7" name="Sons of Behemat" hidden="false" targetId="sph-faction::sons-of-behemat" />
+        <categoryLink id="c7aa30eb" name="Death" hidden="false" targetId="sph-alliance::death" />
+        <categoryLink id="cd173a2c" name="Flesh-Eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" />
+        <categoryLink id="72c0c338" name="Spearhead: Flesh-Eater Courts (Carrion Retainers)" hidden="false" targetId="sph-cat::carrion-retainers" />
+        <categoryLink id="b6064320" name="Spearhead: Flesh-Eater Courts (Charnel Watch)" hidden="false" targetId="sph-cat::charnel-watch" />
+        <categoryLink id="aa8ad782" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" />
+        <categoryLink id="4104a300" name="Spearhead: Nighthaunt (Cursed Shacklehorde)" hidden="false" targetId="sph-cat::cursed-shacklehorde" />
+        <categoryLink id="17333f29" name="Spearhead: Nighthaunt (Slasher Host)" hidden="false" targetId="sph-cat::slasher-host" />
+        <categoryLink id="8d26242d" name="Ossiarch Bonereapers" hidden="false" targetId="sph-faction::ossiarch-bonereapers" />
+        <categoryLink id="fc9d8b9e" name="Spearhead: Ossiarch Bonereapers (Kavalos Vanguard)" hidden="false" targetId="sph-cat::kavalos-vanguard" />
+        <categoryLink id="1d6e3b24" name="Spearhead: Ossiarch Bonereapers (Mortisan Elite)" hidden="false" targetId="sph-cat::mortisan-elite" />
+        <categoryLink id="2a4b6b9e" name="Spearhead: Ossiarch Bonereapers (Tithe-Reaper Echelon)" hidden="false" targetId="sph-cat::tithe-reaper-echelon" />
+        <categoryLink id="8cb93102" name="Soulblight Gravelords" hidden="false" targetId="sph-faction::soulblight-gravelords" />
+        <categoryLink id="e6a20999" name="Spearhead: Soulblight Gravelords (Bloodcrave Hunt)" hidden="false" targetId="sph-cat::bloodcrave-hunt" />
+        <categoryLink id="b1c7ed2a" name="Spearhead: Soulblight Gravelords (Deathrattle Tomb Host)" hidden="false" targetId="sph-cat::deathrattle-tomb-host" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>

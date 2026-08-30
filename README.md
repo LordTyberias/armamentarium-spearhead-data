@@ -6,8 +6,8 @@ BattleScribe catalogue data for the fixed Spearhead boxes of Age of Sigmar, read
 - `Spearhead.gst` — the game system: profile types, the categories, one force entry.
 - one `.cat` file per faction, each holding the units of that faction's Spearheads.
 
-**This repository is not complete.** It is being filled one Grand Alliance at a time
-(ARMAM-275); Order, Chaos and Death are done, Destruction is not.
+**All 51 boxes are here.** They were collected one Grand Alliance at a time (ARMAM-275): Order
+(19), Chaos (14), Death (9) and Destruction (9), across 24 factions, 24 of them no longer in print.
 
 ## What this is, and what it is not
 
@@ -44,7 +44,18 @@ longer in print.
   which of its models carries what — or that one of them is a Godspeaker, or that its Gong Carrier is
   a token — that sentence is a rule, carried verbatim as a passive profile of that name, in the place
   the warscroll prints it. The weapon child entries state the same split as numbers; the sentence is
-  what the pack actually says, and the two are not the same thing.
+  what the pack actually says, and the two are not the same thing. **This is settled**: it was
+  carried this way from stage 1 onwards and left open until all 51 boxes had been read; it stays,
+  and a loadout line is never reconstructed from the weapon numbers where the pack does not print
+  one.
+- **A lead-in paragraph without a printed heading rides under the name of the ability it sets up.**
+  Some battle-traits pages open with a sentence putting a unit in reserve, then print the ability
+  that brings it back. Where that sentence carries a heading (`Spectral Procession`, `Nomadic
+  Warriors`, `Bullstomper`) the heading is the profile name; where it carries none — Bad Moon
+  Madmob and Ironjawz Bigmob — the profile takes the name of the ability below it, so two profiles
+  of that name stand in printed order. Inventing a heading would be inventing printed text, and
+  dropping the sentence would leave the ability referring to a reserve rule that is nowhere in the
+  data.
 
 ## The category ids are a contract
 
@@ -90,6 +101,21 @@ What the format buys is not interoperability. It is that the data lives outside 
 in its own repository, in plain XML that any text or XML tool can edit, on its own release cadence.
 
 ## Provenance
+
+### Sons of Behemat — one box (added 2026-08-30)
+
+Wallsmasher Stomp (`eng_aos_faction_pack_sons_of_behemat_feb25`, 21 pages, no longer in print; the
+Spearhead part is on pages 18-21). Three models in three units, agreeing with the inventory — the
+smallest box of the collection, and the only one whose every unit shares a single warscroll.
+
+Its battle traits carry the named heading `BULLSTOMPER`, whose paragraph does not set up a reserve
+but rewrites the general's keywords. It is carried as a passive profile like the other named
+headings.
+
+The faction pack's text layer drops the `h` of every `Th` ligature, so the warscroll's ranged weapon
+reads `Trowin' Rocks` there and `Throwin' Rocks` on the page. The catalogue carries the printed
+spelling, and the battle trait that refers to the weapon by name would otherwise have pointed at
+nothing.
 
 ### Orruk Warclans — two boxes (added 2026-08-30)
 
