@@ -159,6 +159,42 @@
     <categoryEntry id="sph-kw::infantry" name="Infantry" hidden="false" />
     <categoryEntry id="sph-kw::fly" name="Fly" hidden="false" />
     <categoryEntry id="sph-kw::reinforcements" name="Reinforcements" hidden="false" />
+    <categoryEntry id="sph-cat::yndrastas-spearhead" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" />
+    <categoryEntry id="sph-kw::ward-6" name="Ward (6+)" hidden="false" />
+    <categoryEntry id="sph-kw::war-machine" name="War Machine" hidden="false" />
+    <categoryEntry id="sph-cat::fusil-platoon" name="Spearhead: Cities of Sigmar (Fusil Platoon)" hidden="false" />
+    <categoryEntry id="sph-cat::castellite-company" name="Spearhead: Cities of Sigmar (Castellite Company)" hidden="false" />
+    <categoryEntry id="sph-cat::sentinels-of-embergard" name="Spearhead: Cities of Sigmar (Sentinels of Embergard)" hidden="false" />
+    <categoryEntry id="sph-cat::zenestras-zealots" name="Spearhead: Cities of Sigmar (Zenestra's Zealots)" hidden="false" />
+    <categoryEntry id="sph-faction::cities-of-sigmar" name="Cities of Sigmar" hidden="false" />
+    <categoryEntry id="sph-kw::castelite" name="Castelite" hidden="false" />
+    <categoryEntry id="sph-kw::wizard" name="Wizard" hidden="false" />
+    <categoryEntry id="sph-kw::ward-4" name="Ward (4+)" hidden="false" />
+    <categoryEntry id="sph-cat::heartflayer-troupe" name="Spearhead: Daughters of Khaine (Heartflayer Troupe)" hidden="false" />
+    <categoryEntry id="sph-cat::khainite-shadow-coven" name="Spearhead: Daughters of Khaine (Khainite Shadow Coven)" hidden="false" />
+    <categoryEntry id="sph-faction::daughters-of-khaine" name="Daughters of Khaine" hidden="false" />
+    <categoryEntry id="sph-cat::saga-axeband" name="Spearhead: Fyreslayers (Saga Axeband)" hidden="false" />
+    <categoryEntry id="sph-faction::fyreslayers" name="Fyreslayers" hidden="false" />
+    <categoryEntry id="sph-cat::akhelian-tide-guard" name="Spearhead: Idoneth Deepkin (Akhelian Tide Guard)" hidden="false" />
+    <categoryEntry id="sph-cat::soulraid-hunt" name="Spearhead: Idoneth Deepkin (Soulraid Hunt)" hidden="false" />
+    <categoryEntry id="sph-faction::idoneth-deepkin" name="Idoneth Deepkin" hidden="false" />
+    <categoryEntry id="sph-cat::grundstok-trailblazers" name="Spearhead: Kharadron Overlords (Grundstok Trailblazers)" hidden="false" />
+    <categoryEntry id="sph-cat::skyhammer-task-force" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" />
+    <categoryEntry id="sph-faction::kharadron-overlords" name="Kharadron Overlords" hidden="false" />
+    <categoryEntry id="sph-cat::glittering-phalanx" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" />
+    <categoryEntry id="sph-cat::hurakan-vanguard" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" />
+    <categoryEntry id="sph-faction::lumineth-realm-lords" name="Lumineth Realm-Lords" hidden="false" />
+    <categoryEntry id="sph-kw::monster" name="Monster" hidden="false" />
+    <categoryEntry id="sph-kw::ward-5" name="Ward (5+)" hidden="false" />
+    <categoryEntry id="sph-cat::starscale-warhost" name="Spearhead: Seraphon (Starscale Warhost)" hidden="false" />
+    <categoryEntry id="sph-cat::sunblooded-prowlers" name="Spearhead: Seraphon (Sunblooded Prowlers)" hidden="false" />
+    <categoryEntry id="sph-faction::seraphon" name="Seraphon" hidden="false" />
+    <categoryEntry id="sph-kw::beast" name="Beast" hidden="false" />
+    <categoryEntry id="sph-kw::saurus" name="Saurus" hidden="false" />
+    <categoryEntry id="sph-kw::skink" name="Skink" hidden="false" />
+    <categoryEntry id="sph-cat::bitterbark-copse" name="Spearhead: Sylvaneth (Bitterbark Copse)" hidden="false" />
+    <categoryEntry id="sph-cat::spitewing-flight" name="Spearhead: Sylvaneth (Spitewing Flight)" hidden="false" />
+    <categoryEntry id="sph-faction::sylvaneth" name="Sylvaneth" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -173,6 +209,42 @@
         <categoryLink id="51ada155" name="Infantry" hidden="false" targetId="sph-kw::infantry" />
         <categoryLink id="d0f7d77d" name="Fly" hidden="false" targetId="sph-kw::fly" />
         <categoryLink id="53ec8137" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" />
+        <categoryLink id="5da2ee3b" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" targetId="sph-cat::yndrastas-spearhead" />
+        <categoryLink id="572a0249" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" />
+        <categoryLink id="e1b7a682" name="War Machine" hidden="false" targetId="sph-kw::war-machine" />
+        <categoryLink id="6240f34c" name="Spearhead: Cities of Sigmar (Fusil Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" />
+        <categoryLink id="1adf4ae5" name="Spearhead: Cities of Sigmar (Castellite Company)" hidden="false" targetId="sph-cat::castellite-company" />
+        <categoryLink id="d3420274" name="Spearhead: Cities of Sigmar (Sentinels of Embergard)" hidden="false" targetId="sph-cat::sentinels-of-embergard" />
+        <categoryLink id="1ea85b57" name="Spearhead: Cities of Sigmar (Zenestra's Zealots)" hidden="false" targetId="sph-cat::zenestras-zealots" />
+        <categoryLink id="8951ac12" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" />
+        <categoryLink id="2114cbcc" name="Castelite" hidden="false" targetId="sph-kw::castelite" />
+        <categoryLink id="b2f7fd7a" name="Wizard" hidden="false" targetId="sph-kw::wizard" />
+        <categoryLink id="103fb822" name="Ward (4+)" hidden="false" targetId="sph-kw::ward-4" />
+        <categoryLink id="849d5e94" name="Spearhead: Daughters of Khaine (Heartflayer Troupe)" hidden="false" targetId="sph-cat::heartflayer-troupe" />
+        <categoryLink id="a357dae5" name="Spearhead: Daughters of Khaine (Khainite Shadow Coven)" hidden="false" targetId="sph-cat::khainite-shadow-coven" />
+        <categoryLink id="02035d33" name="Daughters of Khaine" hidden="false" targetId="sph-faction::daughters-of-khaine" />
+        <categoryLink id="a350ac29" name="Spearhead: Fyreslayers (Saga Axeband)" hidden="false" targetId="sph-cat::saga-axeband" />
+        <categoryLink id="267e3f93" name="Fyreslayers" hidden="false" targetId="sph-faction::fyreslayers" />
+        <categoryLink id="e6f85903" name="Spearhead: Idoneth Deepkin (Akhelian Tide Guard)" hidden="false" targetId="sph-cat::akhelian-tide-guard" />
+        <categoryLink id="734b2f3b" name="Spearhead: Idoneth Deepkin (Soulraid Hunt)" hidden="false" targetId="sph-cat::soulraid-hunt" />
+        <categoryLink id="ff50933f" name="Idoneth Deepkin" hidden="false" targetId="sph-faction::idoneth-deepkin" />
+        <categoryLink id="97cdd88e" name="Spearhead: Kharadron Overlords (Grundstok Trailblazers)" hidden="false" targetId="sph-cat::grundstok-trailblazers" />
+        <categoryLink id="b6027245" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" targetId="sph-cat::skyhammer-task-force" />
+        <categoryLink id="17276999" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" />
+        <categoryLink id="bb70910d" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" />
+        <categoryLink id="8dc5ca16" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" />
+        <categoryLink id="cbd4a49b" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" />
+        <categoryLink id="970c6376" name="Monster" hidden="false" targetId="sph-kw::monster" />
+        <categoryLink id="8b99e9ea" name="Ward (5+)" hidden="false" targetId="sph-kw::ward-5" />
+        <categoryLink id="e78f63b1" name="Spearhead: Seraphon (Starscale Warhost)" hidden="false" targetId="sph-cat::starscale-warhost" />
+        <categoryLink id="a85c0161" name="Spearhead: Seraphon (Sunblooded Prowlers)" hidden="false" targetId="sph-cat::sunblooded-prowlers" />
+        <categoryLink id="3e6aecd9" name="Seraphon" hidden="false" targetId="sph-faction::seraphon" />
+        <categoryLink id="eb0229e6" name="Beast" hidden="false" targetId="sph-kw::beast" />
+        <categoryLink id="66719144" name="Saurus" hidden="false" targetId="sph-kw::saurus" />
+        <categoryLink id="c0b847df" name="Skink" hidden="false" targetId="sph-kw::skink" />
+        <categoryLink id="7ecec3b4" name="Spearhead: Sylvaneth (Bitterbark Copse)" hidden="false" targetId="sph-cat::bitterbark-copse" />
+        <categoryLink id="cdc5eb6f" name="Spearhead: Sylvaneth (Spitewing Flight)" hidden="false" targetId="sph-cat::spitewing-flight" />
+        <categoryLink id="270a43d8" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>

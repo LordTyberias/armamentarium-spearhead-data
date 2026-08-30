@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="sph-catalogue::sylvaneth" name="Sylvaneth" gameSystemId="sph1-6c4a-2e97-0001" revision="1" battleScribeVersion="2.03" authorName="Armamentarium" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="sph::bitterbark-copse::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2c47148b" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="2aca35c3" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="98d26075" name="Spearhead: Sylvaneth (Bitterbark Copse)" hidden="false" targetId="sph-cat::bitterbark-copse" primary="true" />
+        <categoryLink id="ce973752" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" primary="false" />
+        <categoryLink id="940a0a4a" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="16e147f9" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="fe05dfaf" name="Ley Lines" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn, End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Heal (1) each friendly unit that is within 3&quot; of any terrain features.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="23cf3781" name="Strike and Fade" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn, End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit that used a Fight ability this turn and is within 3&quot; of any terrain features, then roll a dice.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 2+, remove that unit from the battlefield and set it up again so that each model in the unit is within 3&quot; of any terrain features and more than 6&quot; from all enemy units.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2cac0ca1" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="130d9e0f" name="Vengeful Spirits of the Land" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn, End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit that is contesting an objective and roll a dice.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 4+, inflict D3 mortal damage on that enemy unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2ff21004" name="Walkers of the Hidden Paths" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn, Your Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit that is within 3&quot; of any terrain features and not in combat.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Remove that unit from the battlefield and set it up again more than 6&quot; from all enemy units. That unit cannot use Move abilities for the rest of the phase.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1b330195" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e75c5ca5" name="Regrowth" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible friendly unit wholly within 18&quot; of your general to be the target, then make a casting roll of 2D6.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 5+, Heal (D6) the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5e5286e3" name="Gnarled Warrior" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Ignore negative modifiers to save rolls for your general.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c9f28be6" name="Treesong" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible friendly unit wholly within 12&quot; of your general to be the target, then make a casting roll of 2D6.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 7+, add 1 to the Rend characteristic of the target unit's melee weapons until the start of your next turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="da519393" name="Seed of Rebirth" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">If your general would be destroyed, before removing them from play, roll a dice. On a 3+, your general is not destroyed and any remaining damage points inflicted on them have no effect. Then, Heal (1) your general. This unit cannot use this ability again for the rest of the battle.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::bitterbark-copse::01-branchwych" name="Branchwych" type="unit" hidden="false">
+      <constraints>
+        <constraint id="3ec25ab6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="dc4d35fb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3a09e1fc" name="Spearhead: Sylvaneth (Bitterbark Copse)" hidden="false" targetId="sph-cat::bitterbark-copse" primary="true" />
+        <categoryLink id="7d652a7d" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" primary="false" />
+        <categoryLink id="822941de" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="1d28b69f" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="3c2179c5" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="94e8311a" name="Wizard" hidden="false" targetId="sph-kw::wizard" primary="false" />
+        <categoryLink id="97863a8c" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="0305c811" name="Branchwych" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fdb9b5b0" name="Greenwood Scythe and Bittergrub" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">D3</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a0d996b4" name="Verdurous Harmony" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible friendly unit wholly within 18&quot; of this unit to be the target, then make a casting roll of 2D6.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 7+, you can return 1 slain model to the target unit. If you picked a Tree-Revenants unit, you can return D3 slain models instead of 1.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bitterbark-copse::01-branchwych::greenwood-scythe-and-bittergrub" name="Greenwood Scythe and Bittergrub" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="c304dd45" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="749d6b7b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::bitterbark-copse::02-treelord" name="Treelord" type="unit" hidden="false">
+      <constraints>
+        <constraint id="21a06b76" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="98c4abc0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a4958154" name="Spearhead: Sylvaneth (Bitterbark Copse)" hidden="false" targetId="sph-cat::bitterbark-copse" primary="true" />
+        <categoryLink id="1b149f2a" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" primary="false" />
+        <categoryLink id="4eed23bb" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="8f9aea0c" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="ec6f1ffd" name="Monster" hidden="false" targetId="sph-kw::monster" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="a7e4d89a" name="Treelord" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">14</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="47383549" name="Strangleroots" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">10&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">3</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">2+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">2</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="92a8b51c" name="Sweeping Blows" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">2+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c889dbf1" name="Massive Impaling Talons" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">2+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">2</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">3</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8884c3fe" name="Groundshaker" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit in combat with this unit to be the target, then roll a dice.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 4+, the target has Strike-last this phase.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0185db79" name="Battle Damaged" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">While this unit has 10 or more damage points, the Attacks characteristic of its Massive Impaling Talons is 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bitterbark-copse::02-treelord::strangleroots" name="Strangleroots" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="c08b1bff" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="1be0a6b4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::bitterbark-copse::02-treelord::sweeping-blows" name="Sweeping Blows" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="d7f3f4a6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="f8dc7e30" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::bitterbark-copse::02-treelord::massive-impaling-talons" name="Massive Impaling Talons" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="a89b3a7f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="f4219d3d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::bitterbark-copse::03-kurnoth-hunters" name="Kurnoth Hunters" type="unit" hidden="false">
+      <constraints>
+        <constraint id="e284f04f" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="66999247" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4f8931d2" name="Spearhead: Sylvaneth (Bitterbark Copse)" hidden="false" targetId="sph-cat::bitterbark-copse" primary="true" />
+        <categoryLink id="0baef7b5" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" primary="false" />
+        <categoryLink id="219c9cda" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="8035007e" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="7a6c1ba8" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="81763c5f" name="Kurnoth Hunters" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b82fb168" name="Kurnoth Greatbow" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">18&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">2</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a11f6ccc" name="Vicious Claws" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e6f44f2e" name="Envoys of the Everqueen" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">While this unit is contesting an objective, friendly units contesting that objective have Ward (6+).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bitterbark-copse::03-kurnoth-hunters::kurnoth-greatbow" name="Kurnoth Greatbow" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="3f2784d1" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="3ad563ed" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::bitterbark-copse::03-kurnoth-hunters::vicious-claws" name="Vicious Claws" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="25910974" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="2e17f266" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::bitterbark-copse::04-tree-revenants" name="Tree-Revenants" type="unit" hidden="false">
+      <constraints>
+        <constraint id="cdd6f3ec" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="cc50b8e1" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="801b8a61" name="Spearhead: Sylvaneth (Bitterbark Copse)" hidden="false" targetId="sph-cat::bitterbark-copse" primary="true" />
+        <categoryLink id="b480eb78" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" primary="false" />
+        <categoryLink id="42682848" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="92cb2bac" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="df1c0048" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="6744ca47" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="2e201c32" name="Tree-Revenants" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9c489201" name="Enchanted Blade" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="49568c12" name="Martial Memories" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Pick 1 of the following effects to apply to this unit this phase: Memories of War: Add 1 to hit rolls for attacks made by this unit. Memories of Peace: Add 1 to save rolls for this unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::bitterbark-copse::04-tree-revenants::enchanted-blade" name="Enchanted Blade" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="6e6f12d5" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="ea3a3ae5" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::spitewing-flight::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="dd1d8fe0" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="d3f2f419" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="68e73ceb" name="Spearhead: Sylvaneth (Spitewing Flight)" hidden="false" targetId="sph-cat::spitewing-flight" primary="true" />
+        <categoryLink id="50585a46" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" primary="false" />
+        <categoryLink id="2af2c056" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="02faf722" name="Target of Vengeance" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle Round (Army), Start of Battle Round</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">If there is no enemy quarry on the battlefield, pick an enemy unit on the battlefield to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">The target is the quarry for the rest of the battle.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="06f12117" name="Song of the Hunt" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">You gain 1 chord each time an enemy quarry is destroyed. The following cumulative effects apply depending on the number of chords you have. 1 chord, Simple: Add 1 to run rolls and charge rolls for friendly units while they are within 9&quot; of the enemy quarry. 2 chords, Tuneful: Add 1 to hit rolls for friendly units' attacks while they are within 9&quot; of the enemy quarry. 3+ chords, Melodic: Add 1 to wound rolls for friendly units' attacks while they are within 9&quot; of the enemy quarry.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d2ab0487" name="Airborne Cohesion" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Friendly units have a coherency range of 2&quot;.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="69c7fcb6" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="269b2bf3" name="Leaves on the Wind" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle (Army), End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit that is in combat to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">The target can immediately use the 'Retreat' ability as if it were your movement phase and no mortal damage is inflicted on it if it does so.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="66f3b9c6" name="Lifebringers" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Heal (D3) each friendly unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2966bf5c" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cca8f627" name="Head of the Hunt" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to the Rend characteristic of your general's melee weapons while the enemy quarry is within 9&quot; of and visible to them.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ccebae5a" name="Zephyrkin" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Reaction: You declared a Fight ability for your general</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">If your general charged this turn, they can move up to 2D6&quot; after that Fight ability has been resolved. They cannot end that move in combat.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="97e04483" name="Bold Spirit" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle (Army), Any Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">For the rest of the turn, add 1 to wound rolls for friendly units' combat attacks while they are within your general's combat range.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dedffab5" name="Cunning Pursuer" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">While your general is in combat, add 1 to charge rolls for friendly units wholly within 12&quot; of them. Add 2 instead while your general is in combat with the quarry.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::spitewing-flight::01-arch-revenant" name="Arch-Revenant" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c64d0108" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="260d5ce4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e93f4b2c" name="Spearhead: Sylvaneth (Spitewing Flight)" hidden="false" targetId="sph-cat::spitewing-flight" primary="true" />
+        <categoryLink id="03eae678" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" primary="false" />
+        <categoryLink id="5c7d936f" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="25978f11" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="ab85f43f" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="d5d04b54" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="9f2c5422" name="Arch-Revenant" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">12&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">6</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="36ce526a" name="Arch-Revenant's Glaive" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d68fb50b" name="Heartwood Hunting Horn" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible friendly unit wholly within 12&quot; of this unit to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Until the start of your next turn, when determining which effects of the 'Song of the Hunt' ability apply to the target, you count as having 1 additional chord.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::spitewing-flight::01-arch-revenant::arch-revenant-s-glaive" name="Arch-Revenant's Glaive" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="00bfebc8" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="70d17910" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::spitewing-flight::02-gossamid-archers" name="Gossamid Archers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="ddcd11e8" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="af62d724" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="dd846ba3" name="Spearhead: Sylvaneth (Spitewing Flight)" hidden="false" targetId="sph-cat::spitewing-flight" primary="true" />
+        <categoryLink id="e96f1297" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" primary="false" />
+        <categoryLink id="6b6df53f" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="361ed3d9" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="bb96b9e6" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="b283c5cd" name="Gossamid Archers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">12&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="356a47ff" name="Gossamid Bow" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">12&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aeaf90a9" name="Cruel Talons" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">1</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7f58266e" name="Zephyrspites" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Reaction: You declared a Shoot ability for this unit</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">After that Shoot ability has been resolved, this unit can move up to D6&quot;. It cannot move into combat during any part of that move.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f">Move</characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::spitewing-flight::02-gossamid-archers::gossamid-bow" name="Gossamid Bow" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="872a2fa6" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="7d3312e6" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::spitewing-flight::02-gossamid-archers::cruel-talons" name="Cruel Talons" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="0bf8f840" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="e3701e48" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::spitewing-flight::03-spiterider-lancers" name="Spiterider Lancers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="410b9fee" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="0dac9675" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9127a7bc" name="Spearhead: Sylvaneth (Spitewing Flight)" hidden="false" targetId="sph-cat::spitewing-flight" primary="true" />
+        <categoryLink id="0a453c69" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" primary="false" />
+        <categoryLink id="6c5c31c0" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="3228860e" name="Cavalry" hidden="false" targetId="sph-kw::cavalry" primary="false" />
+        <categoryLink id="6df37b3f" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="5eafd9fb" name="Spiterider Lancers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">12&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d3d35d01" name="Spiterider Lance" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Charge (+1 Damage)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="25141a71" name="Dragonspite's Mandibles" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fa0e3290" name="Spiterider Charge" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Charge Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">If this unit charged this phase, pick a visible enemy unit within 1&quot; of it to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a D3. Add 1 to the roll if the target is the enemy quarry. On a 2+, inflict an amount of mortal damage on the target equal to the roll.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::spitewing-flight::03-spiterider-lancers::spiterider-lance" name="Spiterider Lance" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="8b7acae7" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="53f91bfa" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::spitewing-flight::03-spiterider-lancers::dragonspite-s-mandibles" name="Dragonspite's Mandibles" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="ac436627" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="88bbeef5" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::spitewing-flight::04-revenant-seekers" name="Revenant Seekers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="7a272d93" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="bed77a74" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c752ee29" name="Spearhead: Sylvaneth (Spitewing Flight)" hidden="false" targetId="sph-cat::spitewing-flight" primary="true" />
+        <categoryLink id="0d87e735" name="Sylvaneth" hidden="false" targetId="sph-faction::sylvaneth" primary="false" />
+        <categoryLink id="08e2ce54" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="c1b526b2" name="Cavalry" hidden="false" targetId="sph-kw::cavalry" primary="false" />
+        <categoryLink id="39bdfaf5" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="a5ee479c" name="Revenant Seekers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">12&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aaef2c0a" name="Seeker's Sickle" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Mortal)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3095badb" name="Dragonspite's Mandibles" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="41495835" name="Deafening Drone" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">If this unit did not charge this turn, pick an enemy unit in combat with it to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. If the roll exceeds the target's Control characteristic, subtract 1 from the Attacks characteristic of the target's melee weapons for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::spitewing-flight::04-revenant-seekers::seeker-s-sickle" name="Seeker's Sickle" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="d32a2ec3" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="b5b2efc6" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::spitewing-flight::04-revenant-seekers::dragonspite-s-mandibles" name="Dragonspite's Mandibles" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="497d719f" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="911c52c2" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

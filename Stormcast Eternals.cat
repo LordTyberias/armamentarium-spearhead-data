@@ -1,7 +1,104 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <catalogue id="sph-catalogue::stormcast-eternals" name="Stormcast Eternals" gameSystemId="sph1-6c4a-2e97-0001" revision="1" battleScribeVersion="2.03" authorName="Armamentarium" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry id="sph::vigilant-brotherhood::00-lord-vigilant-on-gryph-stalker" name="Lord-Vigilant on Gryph-stalker" type="unit" hidden="false">
+    <selectionEntry id="sph::vigilant-brotherhood::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f696f243" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="140a156b" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a9af6c3b" name="Spearhead: Stormcast Eternals (Vigilant Brotherhood)" hidden="false" targetId="sph-cat::vigilant-brotherhood" primary="true" />
+        <categoryLink id="b4b76364" name="Stormcast Eternals" hidden="false" targetId="sph-faction::stormcast-eternals" primary="false" />
+        <categoryLink id="be895f9c" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="d3da87e7" name="Holy Orders" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">During the battle, you can use the following abilities:</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9aa1dcea" name="Shield of Azyr" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn, Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Until the start of your next turn, that unit has Ward (5+).</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="03f87809" name="Storm Charge" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Your Charge Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit that is not in combat.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">That unit can use Charge abilities this turn even if it used a Run ability in the same turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0305e84e" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1640b3fd" name="Strike Where Needed" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Reaction: You declared a Retreat ability</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">No mortal damage is inflicted on that unit by that Retreat ability. In addition, that unit can still use Charge abilities this turn even though it used a Retreat ability.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b">The unit using that Retreat ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="850a2d31" name="Blaze of Glory" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit that is in combat.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Until the end of the phase, each time a model in that unit is slain, make a vengeance roll of D6. On a 4+, inflict 1 mortal damage on an enemy unit in combat with that unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ab3eb2bf" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9c642022" name="Hallowed Scrolls" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Your general has Ward (5+).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="137ce522" name="Morrda's Talon" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Your general's Hallowed Greataxe has Crit (Mortal).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2c4eed46" name="Quicksilver Draught" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Your general has Strike-first this phase.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bdb9ef95" name="Null Pendant" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Roll a dice for each enemy unit contesting the same objective as your general.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 2+, subtract the roll from the control score of that enemy unit this turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::vigilant-brotherhood::01-lord-vigilant-on-gryph-stalker" name="Lord-Vigilant on Gryph-stalker" type="unit" hidden="false">
       <constraints>
         <constraint id="73f01fc0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
         <constraint id="e4bbcd03" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
@@ -62,13 +159,13 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="sph::vigilant-brotherhood::00-lord-vigilant-on-gryph-stalker::hallowed-greataxe" name="Hallowed Greataxe" type="upgrade" hidden="false">
+        <selectionEntry id="sph::vigilant-brotherhood::01-lord-vigilant-on-gryph-stalker::hallowed-greataxe" name="Hallowed Greataxe" type="upgrade" hidden="false">
           <constraints>
             <constraint id="0142d8e3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
             <constraint id="9fc823ac" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="sph::vigilant-brotherhood::00-lord-vigilant-on-gryph-stalker::gryph-stalker-s-beak-and-talons" name="Gryph-stalker's Beak and Talons" type="upgrade" hidden="false">
+        <selectionEntry id="sph::vigilant-brotherhood::01-lord-vigilant-on-gryph-stalker::gryph-stalker-s-beak-and-talons" name="Gryph-stalker's Beak and Talons" type="upgrade" hidden="false">
           <constraints>
             <constraint id="004dda0d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
             <constraint id="119d2269" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
@@ -76,7 +173,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="sph::vigilant-brotherhood::01-lord-veritant" name="Lord-Veritant" type="unit" hidden="false">
+    <selectionEntry id="sph::vigilant-brotherhood::02-lord-veritant" name="Lord-Veritant" type="unit" hidden="false">
       <constraints>
         <constraint id="09683fc4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
         <constraint id="320602ec" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
@@ -135,13 +232,13 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="sph::vigilant-brotherhood::01-lord-veritant::staff-of-abjuration" name="Staff of Abjuration" type="upgrade" hidden="false">
+        <selectionEntry id="sph::vigilant-brotherhood::02-lord-veritant::staff-of-abjuration" name="Staff of Abjuration" type="upgrade" hidden="false">
           <constraints>
             <constraint id="bbeec5e4" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
             <constraint id="df499d01" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="sph::vigilant-brotherhood::01-lord-veritant::judgement-blade" name="Judgement Blade" type="upgrade" hidden="false">
+        <selectionEntry id="sph::vigilant-brotherhood::02-lord-veritant::judgement-blade" name="Judgement Blade" type="upgrade" hidden="false">
           <constraints>
             <constraint id="2b9b6bfb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
             <constraint id="15a14f99" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
@@ -149,7 +246,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="sph::vigilant-brotherhood::02-prosecutors" name="Prosecutors" type="unit" hidden="false">
+    <selectionEntry id="sph::vigilant-brotherhood::03-prosecutors" name="Prosecutors" type="unit" hidden="false">
       <constraints>
         <constraint id="026f0f29" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
         <constraint id="eaffe116" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
@@ -206,7 +303,7 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="sph::vigilant-brotherhood::02-prosecutors::stormcall-javelin" name="Stormcall Javelin" type="upgrade" hidden="false">
+        <selectionEntry id="sph::vigilant-brotherhood::03-prosecutors::stormcall-javelin" name="Stormcall Javelin" type="upgrade" hidden="false">
           <constraints>
             <constraint id="ec28fa9a" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
             <constraint id="d7992b8c" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
@@ -214,7 +311,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry id="sph::vigilant-brotherhood::03-liberators" name="Liberators" type="unit" hidden="false">
+    <selectionEntry id="sph::vigilant-brotherhood::04-liberators" name="Liberators" type="unit" hidden="false">
       <constraints>
         <constraint id="19877ae0" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
         <constraint id="8e9bc19a" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
@@ -263,16 +360,450 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="sph::vigilant-brotherhood::03-liberators::warhammer" name="Warhammer" type="upgrade" hidden="false">
+        <selectionEntry id="sph::vigilant-brotherhood::04-liberators::warhammer" name="Warhammer" type="upgrade" hidden="false">
           <constraints>
             <constraint id="a9d54035" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
             <constraint id="1394aa31" field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
-        <selectionEntry id="sph::vigilant-brotherhood::03-liberators::grandhammer" name="Grandhammer" type="upgrade" hidden="false">
+        <selectionEntry id="sph::vigilant-brotherhood::04-liberators::grandhammer" name="Grandhammer" type="upgrade" hidden="false">
           <constraints>
             <constraint id="ae4a8b46" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
             <constraint id="c7b0d190" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::yndrastas-spearhead::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="a991907b" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="13d61070" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="77bd4c46" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" targetId="sph-cat::yndrastas-spearhead" primary="true" />
+        <categoryLink id="01418738" name="Stormcast Eternals" hidden="false" targetId="sph-faction::stormcast-eternals" primary="false" />
+        <categoryLink id="abe4c611" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="930332b7" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="8e06ae4d" name="Scions of the Storm" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Yndrasta and your Annihilators unit are not set up during the deployment phase. Instead, from the third battle round onwards, they can use the following ability:</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="acee8361" name="Lightning-Strike Arrival" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Set up this unit anywhere on the battlefield more than 6&quot; from all enemy units.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f">Core</characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="93210e5d" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f50497a3" name="Drive Them Back" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">End of Any Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick any number of friendly units that are both contesting an objective and in combat.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Each of those units can make a pile-in move (Core Rules, 15.3). For each unit that did so, pick an enemy unit within 1&quot; of it and roll a dice. On a 4+, inflict 1 mortal damage on that enemy unit.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9c35b1d2" name="Defend to the Last" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Friendly units have Ward (6+) while they are contesting an objective you control.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f1617837" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="63a28e73" name="The Prime Huntress" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">The Damage characteristic of Thengavar (Yndrasta's spear) is 2D6 for attacks that target a Monster.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="27322dd6" name="Strike with the Tempest's Rage" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Your general has Strike-first if they charged in the same turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="82767d05" name="Dazzling Radiance" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Your Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick your general to use this ability if they were set up this phase.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">You can return 1 slain model to each friendly unit wholly within 12&quot; of your general.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7189c46c" name="Hawk of the Celestial Skies" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Until the end of the phase, add 1 to hit rolls for attacks made by friendly units while they are wholly within 12&quot; of your general.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::yndrastas-spearhead::01-yndrasta" name="Yndrasta, the Celestial Spear" type="unit" hidden="false">
+      <constraints>
+        <constraint id="3ce67a15" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="6eb56232" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="dad877a5" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" targetId="sph-cat::yndrastas-spearhead" primary="true" />
+        <categoryLink id="f5205294" name="Stormcast Eternals" hidden="false" targetId="sph-faction::stormcast-eternals" primary="false" />
+        <categoryLink id="83387c1c" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="2f75b9ae" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="c8968297" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="953ce6b2" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="a5a58f21" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="931d43ba" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="7dd39d80" name="Yndrasta, the Celestial Spear" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">12&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">8</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2ce8703e" name="Thengavar" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">12&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">1</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">2+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">2</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">4</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Shoot in Combat</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="616e9e57" name="Blade of the High Heavens" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">5</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">2</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">3</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ddac1c17" name="Champion of Sigmar" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">This unit has Ward (5+) this phase.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::yndrastas-spearhead::01-yndrasta::thengavar" name="Thengavar" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="4e7542db" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="3a6039d1" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::yndrastas-spearhead::01-yndrasta::blade-of-the-high-heavens" name="Blade of the High Heavens" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="62c4fbdb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="a1a2accb" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::yndrastas-spearhead::02-knight-vexillor" name="Knight-Vexillor" type="unit" hidden="false">
+      <constraints>
+        <constraint id="84b28ae0" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="aa9a003f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="565b74a1" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" targetId="sph-cat::yndrastas-spearhead" primary="true" />
+        <categoryLink id="925d8fe3" name="Stormcast Eternals" hidden="false" targetId="sph-faction::stormcast-eternals" primary="false" />
+        <categoryLink id="ca5509cf" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="740e0f48" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="c0aa66fa" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="b01b2728" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="0204358b" name="Knight-Vexillor" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">6</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fd419c36" name="Sigmarite Warblade" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">4</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="04781f84" name="Banner of the Reforged" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit wholly within 12&quot; of this unit to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Heal (D3) the target. In addition, add 3 to that unit's control score until the start of your next turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::yndrastas-spearhead::02-knight-vexillor::sigmarite-warblade" name="Sigmarite Warblade" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="11d83e41" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="d9d60862" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::yndrastas-spearhead::03-annihilators" name="Annihilators" type="unit" hidden="false">
+      <constraints>
+        <constraint id="03c06817" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="769084c8" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d1f3ceb8" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" targetId="sph-cat::yndrastas-spearhead" primary="true" />
+        <categoryLink id="eafa8b35" name="Stormcast Eternals" hidden="false" targetId="sph-faction::stormcast-eternals" primary="false" />
+        <categoryLink id="189f8ad4" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="f2630f7d" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="89456adb" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="43b98365" name="Annihilators" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">4&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">3</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">2+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6efa687c" name="Meteoric Hammer" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">2</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d3ccd98c" name="Force of a Falling Star" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Charge Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">If this unit charged this phase and the unmodified charge roll was 8+, pick an enemy unit within 1&quot; of it to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">The target has Strike-last this turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::yndrastas-spearhead::03-annihilators::meteoric-hammer" name="Meteoric Hammer" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="74b26da0" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="01188b5c" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::yndrastas-spearhead::04-vanquishers" name="Vanquishers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="f65e8eb3" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="78d56d88" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b2dfa7ff" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" targetId="sph-cat::yndrastas-spearhead" primary="true" />
+        <categoryLink id="624ae3e0" name="Stormcast Eternals" hidden="false" targetId="sph-faction::stormcast-eternals" primary="false" />
+        <categoryLink id="7e87a08a" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="69afef07" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="9db7ab4e" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="8de71024" name="Vanquishers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a5c7e666" name="Celestial Greatsword" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="007e273a" name="Lightning Strikes" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to the Damage characteristic of this unit's Celestial Greatswords for attacks that target an enemy unit that has 5 or more models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::yndrastas-spearhead::04-vanquishers::celestial-greatsword" name="Celestial Greatsword" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="b7cb427e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="025074d7" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::yndrastas-spearhead::05-vanquishers" name="Vanquishers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="744a57cf" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="33ff0200" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c744fcb1" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" targetId="sph-cat::yndrastas-spearhead" primary="true" />
+        <categoryLink id="8f2c554f" name="Stormcast Eternals" hidden="false" targetId="sph-faction::stormcast-eternals" primary="false" />
+        <categoryLink id="aace7fac" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="68150eea" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="1ab4362f" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="49d8a761" name="Vanquishers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">5&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8d7f1b7a" name="Celestial Greatsword" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ee085924" name="Lightning Strikes" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to the Damage characteristic of this unit's Celestial Greatswords for attacks that target an enemy unit that has 5 or more models.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::yndrastas-spearhead::05-vanquishers::celestial-greatsword" name="Celestial Greatsword" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="7c8968f4" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="d43e30be" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::yndrastas-spearhead::06-stormstrike-chariot" name="Stormstrike Chariot" type="unit" hidden="false">
+      <constraints>
+        <constraint id="5c60816c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="c0a4560a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3e4519bb" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" targetId="sph-cat::yndrastas-spearhead" primary="true" />
+        <categoryLink id="02751e99" name="Stormcast Eternals" hidden="false" targetId="sph-faction::stormcast-eternals" primary="false" />
+        <categoryLink id="fee1acb9" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="561780b9" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="8378c305" name="War Machine" hidden="false" targetId="sph-kw::war-machine" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="30956f6c" name="Stormstrike Chariot" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">10&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">10</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">3+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="572858fa" name="Great Stormbow" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">18&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5b0c420f" name="Stormstrike Axe" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b2a75d1b" name="Gryph-chargers' Beaks and Claws" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">6</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6bd07c97" name="Azyr Unleashed" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Charge Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">If this unit charged this phase, pick an enemy unit within 1&quot; of it to be the target and roll a dice.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 2+, inflict D3 mortal damage on the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::yndrastas-spearhead::06-stormstrike-chariot::great-stormbow" name="Great Stormbow" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="1da26949" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="d52abfa5" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::yndrastas-spearhead::06-stormstrike-chariot::stormstrike-axe" name="Stormstrike Axe" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="f2ced5cf" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="1c644099" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::yndrastas-spearhead::06-stormstrike-chariot::gryph-chargers-beaks-and-claws" name="Gryph-chargers' Beaks and Claws" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="fb382909" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="9ada24da" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
           </constraints>
         </selectionEntry>
       </selectionEntries>

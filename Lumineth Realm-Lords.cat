@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<catalogue id="sph-catalogue::lumineth-realm-lords" name="Lumineth Realm-Lords" gameSystemId="sph1-6c4a-2e97-0001" revision="1" battleScribeVersion="2.03" authorName="Armamentarium" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="sph::glittering-phalanx::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="bc1a1953" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="62e0bffb" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f1265193" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
+        <categoryLink id="841bf173" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="411d3845" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="5f923443" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="ee1da63c" name="Facets of War" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle Round, Start of Battle Round</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">You must use this ability at the start of the battle round. Pick 1 Facet of War ability. That Facet of War ability can be used this battle round but the other cannot.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d6c6b16c" name="Shining Company" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e">Facet of War</characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Subtract 1 from hit rolls for attacks that target friendly units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ada090fb" name="Power of Hysh" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 2+, until the start of your next turn, attacks made by that unit score critical hits on unmodified hit rolls of 5+.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f">Facet of War</characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f2230f3d" name="Lightning Reactions" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">When players are alternating picking units to use a Fight ability, when it is your turn to pick a unit, you can pick 2 units instead of 1. Resolve the second Fight ability immediately after the first.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8808acfa" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ce9673b0" name="Arcane Prowess" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to casting rolls for your general.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="44561015" name="Heightened Reflexes" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Add 1 to save rolls for friendly units that use a Fight ability immediately after another friendly unit because of the 'Lightning Reactions' ability, until the end of the phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9f3cb6c0" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="826b9e29" name="Overwhelming Heat" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible enemy unit within 24&quot; of your general, then make a casting roll of 2D6.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 7+, halve the Move characteristic of that unit until the start of your next turn and roll a dice. If the roll equals or exceeds that unit's Save characteristic, inflict D3 mortal damage on it.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d5c578b5" name="Protection of Hysh" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible friendly unit wholly within 12&quot; of your general to be the target, then make a casting roll of 2D6.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 7+, the target has Ward (5+) until the start of your next turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="87084f13" name="Waystone" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Remove your general from the battlefield and set them up again anywhere on the battlefield more than 6&quot; from all enemy units.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f">Core</characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7a88b1f1" name="Speed of Hysh" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible friendly unit wholly within 18&quot; of your general, then make a casting roll of 2D6.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 5+, double the Move characteristic of that unit until the start of your next turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::glittering-phalanx::01-scinari-cathallar" name="Scinari Cathallar" type="unit" hidden="false">
+      <constraints>
+        <constraint id="85ff3648" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="38652d4c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1c85d2eb" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
+        <categoryLink id="6f101afb" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="a89c5585" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="b8dce6e3" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="60a3eebe" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="eb573f22" name="Wizard" hidden="false" targetId="sph-kw::wizard" primary="false" />
+        <categoryLink id="ec08458a" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="1b90dfa1" name="Scinari Cathallar" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">6+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5012e7dc" name="Despairing Touch" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">D3</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8a7f1d51" name="Darkness of the Soul" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit within 12&quot; of this unit to be the target, then roll a dice.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 3+, subtract D6 from the control score of the target unit this turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::glittering-phalanx::01-scinari-cathallar::despairing-touch" name="Despairing Touch" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="2cccad11" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="f1458d7b" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::glittering-phalanx::02-vanari-auralan-sentinels" name="Vanari Auralan Sentinels" type="unit" hidden="false">
+      <constraints>
+        <constraint id="d6bb66ef" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="8a712116" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="bf12883f" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
+        <categoryLink id="4687fb4c" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="07b709ec" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="cd752e3f" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="4ccd86c6" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="f0492148" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="77f88a35" name="Vanari Auralan Sentinels" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="48c26f08" name="Auralan Bow" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">18&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a93e01ed" name="Vanari Dagger" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">1</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f8d882f8" name="Lofted Shots" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Shooting Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Until the end of the phase, add 6&quot; to the Range characteristic of this unit's Auralan Bows but subtract 1 from hit rolls for this unit's shooting attacks.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::glittering-phalanx::02-vanari-auralan-sentinels::auralan-bow" name="Auralan Bow" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="c470e0fa" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="7207dea7" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::glittering-phalanx::02-vanari-auralan-sentinels::vanari-dagger" name="Vanari Dagger" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="9effdad6" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="bfa727f2" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::glittering-phalanx::03-vanari-auralan-sentinels" name="Vanari Auralan Sentinels" type="unit" hidden="false">
+      <constraints>
+        <constraint id="dc799f62" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="35065a63" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1387c1f0" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
+        <categoryLink id="23ac6298" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="20df0836" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="58e903b1" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="25c1ffe8" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="7f50b066" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="94eb246a" name="Vanari Auralan Sentinels" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="88eb3982" name="Auralan Bow" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">18&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">Crit (Auto-wound)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="13cbac98" name="Vanari Dagger" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">1</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d3ea368c" name="Lofted Shots" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Shooting Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Until the end of the phase, add 6&quot; to the Range characteristic of this unit's Auralan Bows but subtract 1 from hit rolls for this unit's shooting attacks.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::glittering-phalanx::03-vanari-auralan-sentinels::auralan-bow" name="Auralan Bow" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="66cf2b85" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="c48d2370" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::glittering-phalanx::03-vanari-auralan-sentinels::vanari-dagger" name="Vanari Dagger" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="db2a5402" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="3f46c48f" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::glittering-phalanx::04-vanari-auralan-wardens" name="Vanari Auralan Wardens" type="unit" hidden="false">
+      <constraints>
+        <constraint id="c6b556cc" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="e15c1d81" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3968a0f1" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
+        <categoryLink id="ac61dd23" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="c4a89006" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="51468080" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="14ecf5b9" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="5a29c92c" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="b65513bf" name="Vanari Auralan Wardens" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="57c2a98c" name="Warden's Pike" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Mortal), Anti-charge (+1 Rend)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fba83153" name="Moonfire Flask" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle, Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit in combat with this unit and that charged this turn to be the target, then roll a dice.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 2+, inflict D3 mortal damage on the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::glittering-phalanx::04-vanari-auralan-wardens::warden-s-pike" name="Warden's Pike" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="bd9b49e5" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="cc9c6b2a" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::glittering-phalanx::05-vanari-bladelords" name="Vanari Bladelords" type="unit" hidden="false">
+      <constraints>
+        <constraint id="d3eb6e3e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="2ef0e67e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9341ea61" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
+        <categoryLink id="23b94a54" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="ed0e6177" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="8442ace8" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
+        <categoryLink id="d729e8b3" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="dc6dee48" name="Vanari Bladelords" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">2</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e0175895" name="Sunmetal Greatblade: Perfect Strike" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">1</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">See below</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">See below</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">See below</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">See below</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8e3fc4b6" name="Sunmetal Greatblade: Flurry of Blows" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Crit (Mortal), Anti-Infantry (+1 Rend)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7ed57b0b" name="Swordmasters" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Each time this unit uses a Fight ability, you must pick either the Perfect Strike or Flurry of Blows weapon characteristics for all the attacks it makes with its Sunmetal Greatblade. In addition: Do not use the attack sequence for an attack made with Perfect Strike. Instead, roll a dice. On a 2+, inflict 1 mortal damage on the target unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fad4752f" name="Guardians" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">While your general is wholly within this unit's combat range, both this unit and your general have Ward (5+).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::glittering-phalanx::05-vanari-bladelords::sunmetal-greatblade" name="Sunmetal Greatblade" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="9805c2c7" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="fe34cef9" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::hurakan-vanguard::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
+      <constraints>
+        <constraint id="1ef80968" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="4b3e7eda" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="2ec2ffba" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
+        <categoryLink id="dd89be6e" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="bace716e" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="6dbd2cd4" name="Storm Brewing" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Deployment Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a battlefield edge to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">That battlefield edge is leeward. For the rest of the battle, each time a friendly Ride the Hurricane ability is used, after that ability has been resolved, change the leeward battlefield edge to the next edge clockwise.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b13c82ef" name="Pulled by the Winds" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), Any Movement Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a friendly unit that is not in combat to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">The target can move D6&quot; but must end that move closer to the leeward battlefield edge. It can pass through the combat ranges of enemy units but cannot end that move in combat.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f">Ride the Hurricane</characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fc129092" name="Gale Force" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Turn (Army), Reaction: You declared an Attack ability</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Add 1 to hit rolls for attacks made as part of that Attack ability if the target of that ability is closer to the leeward battlefield edge than the unit using this ability.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f">Ride the Hurricane</characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b">The unit using that Attack ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c0b708e9" name="Regiment Abilities" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Pick 1 of the following regiment abilities.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5ff8562f" name="Lifted Debris" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit that is closer to the leeward battlefield edge than the large terrain feature within friendly territory to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a number of dice equal to the current battle round number. For each 3+, inflict 1 mortal damage on the target.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f">Ride the Hurricane</characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1446c0e3" name="Roaring Headwind" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle (Army), Enemy Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">For the rest of the turn, each time the target uses a Move ability, it must end that move closer to the leeward battlefield edge.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="29d13e81" name="Enhancements" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Give your general 1 of the following enhancements.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1bb6c48a" name="Scattered to the Winds" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Subtract 1 from the control scores of enemy units within 6&quot; of your general for each friendly Ride the Hurricane ability used this battle round.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="17c6549f" name="Wind Whisperer" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Once Per Battle (Army), Any Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a battlefield edge to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Change the leeward battlefield edge to the target battlefield edge.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dd29507b" name="Temple Guardians" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">While any friendly Infantry units are within your general's combat range, both your general and those Infantry units have Ward (5+).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="855f6d90" name="Curved Shots" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">You can measure the range and visibility of your general's shooting attacks from any point on the leeward battlefield edge.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="sph::hurakan-vanguard::01-hurakan-windmage" name="Hurakan Windmage" type="unit" hidden="false">
+      <constraints>
+        <constraint id="2eeaec50" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="da8d2a9f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d68e5c3c" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
+        <categoryLink id="47c20540" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="3a00e3e2" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="de95f319" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
+        <categoryLink id="b7c3e436" name="Wizard" hidden="false" targetId="sph-kw::wizard" primary="false" />
+        <categoryLink id="dfa55fe5" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="e934f8f5" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="fee7d492" name="Hurakan Windmage" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">12&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">5</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">5+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="028aeb7a" name="Windblast Vortex" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">12&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">1</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">2+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">2</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">D3</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4b83cfa6" name="Aspiragillum" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">3</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">1</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">D3</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1edcb596" name="Guide the Gusts" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible friendly unit wholly within 12&quot; of this unit to be the target, then make a casting roll of 2D6.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">On a 6+, for the rest of the turn: The target can use Retreat abilities and still use Shoot and/or Charge abilities later in the turn. No mortal damage is inflicted on the target by Retreat abilities.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::hurakan-vanguard::01-hurakan-windmage::windblast-vortex" name="Windblast Vortex" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="828c1b8a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="c0c71bcd" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::hurakan-vanguard::01-hurakan-windmage::aspiragillum" name="Aspiragillum" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="1cff5950" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="713bfbf6" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::hurakan-vanguard::02-hurakan-windchargers" name="Hurakan Windchargers" type="unit" hidden="false">
+      <constraints>
+        <constraint id="715f4c0e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="b7841d0f" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f994f015" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
+        <categoryLink id="2b9217e4" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="b4b73387" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="0ccc3a8b" name="Cavalry" hidden="false" targetId="sph-kw::cavalry" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="2a914fc1" name="Hurakan Windchargers" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">14&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">3</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0d1f9353" name="Windcharger Bow" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">12&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">3</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">3+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">4+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">1</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">1</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="df711eb5" name="Windcharger Blade" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">1</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">4+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8a665fc0" name="Treerunner's Claws" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">5+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">3+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Companion</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="566cad8a" name="Leap into the Storm" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">End of Your Turn</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">If this unit is not in combat, remove it from the battlefield and set it up again wholly within 3&quot; of the leeward battlefield edge and more than 6&quot; from all enemy units.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f">Ride the Hurricane</characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::hurakan-vanguard::02-hurakan-windchargers::windcharger-bow" name="Windcharger Bow" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="ca6bf6cb" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="f74b0769" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::hurakan-vanguard::02-hurakan-windchargers::windcharger-blade" name="Windcharger Blade" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="00b89157" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="22bdda3a" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::hurakan-vanguard::02-hurakan-windchargers::treerunner-s-claws" name="Treerunner's Claws" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="f42d004b" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="8ae2f6dc" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::hurakan-vanguard::03-vanari-auralan-wardens" name="Vanari Auralan Wardens" type="unit" hidden="false">
+      <constraints>
+        <constraint id="8b461f86" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="9ebf81b3" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="96dfb9c0" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
+        <categoryLink id="6d0df3b2" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="247386c9" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="6b939ca5" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
+        <categoryLink id="1c7ec33d" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="733e9dce" name="Vanari Auralan Wardens" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">6&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">1</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6c7d445a" name="Warden Pike and Blade" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">2</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">Anti-charge (+1 Rend), Crit (Mortal)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f229d65d" name="Wall of Blades" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Combat Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">If this unit did not charge this turn and is in combat with an enemy unit that charged this turn, roll a dice. Add 1 to the roll if that enemy unit is Cavalry. On a 3+, this unit has Strike-first for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::hurakan-vanguard::03-vanari-auralan-wardens::warden-pike-and-blade" name="Warden Pike and Blade" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="ef58b303" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="b6987c27" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="sph::hurakan-vanguard::04-hurakan-spirit-of-the-wind" name="Hurakan Spirit of the Wind" type="unit" hidden="false">
+      <constraints>
+        <constraint id="22e0de18" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+        <constraint id="0badcef3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5e94f2e8" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
+        <categoryLink id="3a264f29" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="1c13d61b" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
+        <categoryLink id="9048f8d7" name="Monster" hidden="false" targetId="sph-kw::monster" primary="false" />
+        <categoryLink id="67b9885e" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />
+        <categoryLink id="3f880fc3" name="Ward (5+)" hidden="false" targetId="sph-kw::ward-5" primary="false" />
+      </categoryLinks>
+      <profiles>
+        <profile id="052b4479" name="Hurakan Spirit of the Wind" typeId="ff03-376e-972f-8ab2" typeName="Unit" hidden="false">
+          <characteristics>
+            <characteristic name="Move" typeId="fed0-d1b3-1bb8-c501">18&quot;</characteristic>
+            <characteristic name="Health" typeId="96be-54ae-ce7b-10b7">8</characteristic>
+            <characteristic name="Save" typeId="1981-ef09-96f6-7aa9">4+</characteristic>
+            <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">5</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3074a6b8" name="Bow of the Wind's Vengeance" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">15&quot;</characteristic>
+            <characteristic name="Atk" typeId="aa17-4296-2887-e05d">4</characteristic>
+            <characteristic name="Hit" typeId="194d-aeb6-5ba7-83b4">2+</characteristic>
+            <characteristic name="Wnd" typeId="d3d5-9dc6-13de-8d1">3+</characteristic>
+            <characteristic name="Rnd" typeId="d03f-a9ae-3eec-755">2</characteristic>
+            <characteristic name="Dmg" typeId="96c2-d0a5-ea1e-653b">2</characteristic>
+            <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ce6f92f3" name="Swirling Shards" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+          <characteristics>
+            <characteristic name="Atk" typeId="60e-35aa-31ed-e488">6</characteristic>
+            <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">2+</characteristic>
+            <characteristic name="Wnd" typeId="61c1-22cc-40af-2847">4+</characteristic>
+            <characteristic name="Rnd" typeId="eccc-10fa-6958-fb73">-</characteristic>
+            <characteristic name="Dmg" typeId="e948-9c71-12a6-6be4">1</characteristic>
+            <characteristic name="Ability" typeId="eda3-7332-5db1-4159">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="aa16e6a0" name="Eye of the Storm" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
+          <characteristics>
+            <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e"></characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Subtract 1 from hit rolls for attacks that target friendly units while they are wholly within 6&quot; of this unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4faae876" name="Hurricane Winds" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
+          <characteristics>
+            <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Any Shooting Phase</characteristic>
+            <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick an enemy unit that had any damage points allocated to it this turn by this unit's shooting attacks to be the target.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 3+, the target has Strike-last for the rest of the turn.</characteristic>
+            <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
+            <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry id="sph::hurakan-vanguard::04-hurakan-spirit-of-the-wind::bow-of-the-wind-s-vengeance" name="Bow of the Wind's Vengeance" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="520c2d6c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="cf9d0261" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+        <selectionEntry id="sph::hurakan-vanguard::04-hurakan-spirit-of-the-wind::swirling-shards" name="Swirling Shards" type="upgrade" hidden="false">
+          <constraints>
+          <constraint id="ab7c5b89" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
+          <constraint id="321b1bab" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
