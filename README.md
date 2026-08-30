@@ -91,6 +91,30 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
+### Gloomspite Gitz — two boxes (added 2026-08-30)
+
+Bad Moon Madmob (`eng_01-04_aos_spearhead_gloomspite_gitz_bad_moon_madmob`, 8 pages, no longer in
+print) and Snarlpack Huntaz (`eng_01-04_aos_spearhead_gloomspite_gitz_snarlpack_hunters`, 4 pages, in
+print). Both boxes have a Spearhead PDF of their own, and both agree with the inventory: 34 models
+(1 + 10 + 10 + 5 + 5 + 3) and 11 (1 + 2 + 3 + 3 + 1 + 1).
+
+**A lead-in paragraph inside the battle traits can have no heading at all.** Bad Moon Madmob prints
+one sentence — that one Squig Hoppers unit is not set up during deployment and may use the ability
+below from the third battle round — with no title above it, immediately before `SQUIGALANCHE`. The
+named case is recorded for Nighthaunt and Ossiarch Bonereapers above; this is the first untitled one
+over 44 boxes. It is carried as a passive profile under the name of the ability it sets up, so that
+two profiles named `Squigalanche` stand in printed order — the reserve rule the ability depends on
+has to be somewhere in the data, and inventing a heading for it would be inventing printed text.
+
+The text layer misordered the enhancements of Snarlpack Huntaz (it reads Sunsteala Shard and Glare
+of Frazzlegit before Kunnin' as a Snarlfang, the page prints them the other way round) and put the
+battle trait last. Both of its warscroll pages carry two warscrolls side by side, so all four
+statlines arrive in one undifferentiated run. Every value here comes from the rendered image.
+
+Sunsteala Wheelas is the one unit whose army-list line and warscroll disagree in number: the list
+prints `1 Sunsteala Wheela`, the warscroll is titled `SUNSTEALA WHEELAS`. The entry carries the
+warscroll's name, as every other entry does.
+
 ### Soulblight Gravelords — two boxes (added 2026-08-30)
 
 Deathrattle Tomb Host (`eng_01-04_aos_spearhead_soulblight_gravelords_deathrattle_tomb_host`, 4 pages,

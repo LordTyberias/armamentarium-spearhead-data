@@ -234,6 +234,10 @@
     <categoryEntry id="sph-cat::bloodcrave-hunt" name="Spearhead: Soulblight Gravelords (Bloodcrave Hunt)" hidden="false" />
     <categoryEntry id="sph-kw::vampire" name="Vampire" hidden="false" />
     <categoryEntry id="sph-cat::deathrattle-tomb-host" name="Spearhead: Soulblight Gravelords (Deathrattle Tomb Host)" hidden="false" />
+    <categoryEntry id="sph-alliance::destruction" name="Destruction" hidden="false" />
+    <categoryEntry id="sph-cat::bad-moon-madmob" name="Spearhead: Gloomspite Gitz (Bad Moon Madmob)" hidden="false" />
+    <categoryEntry id="sph-cat::snarlpack-huntaz" name="Spearhead: Gloomspite Gitz (Snarlpack Huntaz)" hidden="false" />
+    <categoryEntry id="sph-faction::gloomspite-gitz" name="Gloomspite Gitz" hidden="false" />
   </categoryEntries>
   <forceEntries>
     <forceEntry id="sph-force::spearhead" name="Spearhead" hidden="false">
@@ -306,6 +310,10 @@
         <categoryLink id="48384df6" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" targetId="sph-cat::darkoath-raiders" />
         <categoryLink id="ee70a668" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" targetId="sph-cat::bloodwind-legion" />
         <categoryLink id="663c267b" name="Slaves to Darkness" hidden="false" targetId="sph-faction::slaves-to-darkness" />
+        <categoryLink id="5ad3e02e" name="Destruction" hidden="false" targetId="sph-alliance::destruction" />
+        <categoryLink id="83270144" name="Spearhead: Gloomspite Gitz (Bad Moon Madmob)" hidden="false" targetId="sph-cat::bad-moon-madmob" />
+        <categoryLink id="cb9675f7" name="Spearhead: Gloomspite Gitz (Snarlpack Huntaz)" hidden="false" targetId="sph-cat::snarlpack-huntaz" />
+        <categoryLink id="e5e38786" name="Gloomspite Gitz" hidden="false" targetId="sph-faction::gloomspite-gitz" />
       </categoryLinks>
     </forceEntry>
   </forceEntries>
