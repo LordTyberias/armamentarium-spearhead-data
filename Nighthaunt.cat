@@ -67,7 +67,7 @@
           <characteristics>
             <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">Your Hero Phase</characteristic>
             <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb">Pick a visible enemy unit within 6&quot; of your general to be the target.</characteristic>
-            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 3+, the target must immediately use a Retreat ability as if it were the enemy movement phase.</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Roll a dice. On a 3+, the target must immediately use a Retreat ability as if it were the enemy movement phase. Immediately after that ability has been resolved, if the target is in combat, inflict 2D3 mortal damage on it.</characteristic>
             <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
             <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
           </characteristics>

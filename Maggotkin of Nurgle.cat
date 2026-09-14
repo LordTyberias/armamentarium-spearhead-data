@@ -38,7 +38,7 @@
           <characteristics>
             <characteristic name="Timing" typeId="652c-3d84-4e7-14f4">End of Any Turn</characteristic>
             <characteristic name="Declare" typeId="bad3-f9c5-ba46-18cb"></characteristic>
-            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Spend any number of your disease points. For each disease point you spend, pick an enemy unit that is in combat with any of your units and roll a dice. On a 5+, inflict 1 mortal damage on that unit (you can pick the same enemy unit more than once).</characteristic>
+            <characteristic name="Effect" typeId="b6f1-ba36-6cd-3b03">Spend any number of your disease points. For each disease point you spend, pick an enemy unit that is in combat with any of your units and roll a dice. On a 5+, inflict 1 mortal damage on that unit (you can pick the same unit more than once).</characteristic>
             <characteristic name="Keywords" typeId="12e8-3214-7d8f-1d0f"></characteristic>
             <characteristic name="Used By" typeId="1b32-c9d6-3106-166b"></characteristic>
           </characteristics>

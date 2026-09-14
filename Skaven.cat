@@ -879,7 +879,7 @@
         <constraint id="3e5d9fb3" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="41e02288" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" primary="true" />
+        <categoryLink id="41e02288" name="Spearhead: Skaven (Crixxit's Kill-Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" primary="true" />
         <categoryLink id="f7a42532" name="Skaven" hidden="false" targetId="sph-faction::skaven" primary="false" />
         <categoryLink id="25e0d7e2" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
       </categoryLinks>
@@ -958,7 +958,7 @@
         <constraint id="d13c4413" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="fc28e4b5" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" primary="true" />
+        <categoryLink id="fc28e4b5" name="Spearhead: Skaven (Crixxit's Kill-Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" primary="true" />
         <categoryLink id="f9a2ddd6" name="Skaven" hidden="false" targetId="sph-faction::skaven" primary="false" />
         <categoryLink id="42a8b51a" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
         <categoryLink id="a96bca3e" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
@@ -1009,7 +1009,7 @@
         <constraint id="7abe5954" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="06bcc042" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" primary="true" />
+        <categoryLink id="06bcc042" name="Spearhead: Skaven (Crixxit's Kill-Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" primary="true" />
         <categoryLink id="97341219" name="Skaven" hidden="false" targetId="sph-faction::skaven" primary="false" />
         <categoryLink id="c3780f78" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
         <categoryLink id="b8bfec4f" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
@@ -1057,7 +1057,7 @@
         <constraint id="aa3dd2cf" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="d8a600c5" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" primary="true" />
+        <categoryLink id="d8a600c5" name="Spearhead: Skaven (Crixxit's Kill-Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" primary="true" />
         <categoryLink id="f6dac42e" name="Skaven" hidden="false" targetId="sph-faction::skaven" primary="false" />
         <categoryLink id="48794554" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
         <categoryLink id="fb2d44d0" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
@@ -1108,7 +1108,7 @@
         <constraint id="cf1f63d8" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="b4fb3287" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" primary="true" />
+        <categoryLink id="b4fb3287" name="Spearhead: Skaven (Crixxit's Kill-Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" primary="true" />
         <categoryLink id="25f98d0d" name="Skaven" hidden="false" targetId="sph-faction::skaven" primary="false" />
         <categoryLink id="865a57ce" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
         <categoryLink id="36f67957" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
@@ -1159,7 +1159,7 @@
         <constraint id="4208b2db" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="99afbbc8" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" primary="true" />
+        <categoryLink id="99afbbc8" name="Spearhead: Skaven (Crixxit's Kill-Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" primary="true" />
         <categoryLink id="c875849b" name="Skaven" hidden="false" targetId="sph-faction::skaven" primary="false" />
         <categoryLink id="dd67ab6b" name="Chaos" hidden="false" targetId="sph-alliance::chaos" primary="false" />
         <categoryLink id="56e44d39" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />

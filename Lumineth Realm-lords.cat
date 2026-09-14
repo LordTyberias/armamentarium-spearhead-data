@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<catalogue id="sph-catalogue::lumineth-realm-lords" name="Lumineth Realm-Lords" gameSystemId="sph1-6c4a-2e97-0001" revision="1" battleScribeVersion="2.03" authorName="Armamentarium" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="sph-catalogue::lumineth-realm-lords" name="Lumineth Realm-lords" gameSystemId="sph1-6c4a-2e97-0001" revision="1" battleScribeVersion="2.03" authorName="Armamentarium" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="sph::glittering-phalanx::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
       <constraints>
@@ -7,8 +7,8 @@
         <constraint id="62e0bffb" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="f1265193" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
-        <categoryLink id="841bf173" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="f1265193" name="Spearhead: Lumineth Realm-lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
+        <categoryLink id="841bf173" name="Lumineth Realm-lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
         <categoryLink id="411d3845" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="5f923443" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
       </categoryLinks>
@@ -25,7 +25,7 @@
         <profile id="d6c6b16c" name="Shining Company" typeId="907f-a48-6a04-f788" typeName="Ability (Passive)" hidden="false">
           <characteristics>
             <characteristic name="Keywords" typeId="b977-7c5e-33b2-428e">Facet of War</characteristic>
-            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Subtract 1 from hit rolls for attacks that target friendly units.</characteristic>
+            <characteristic name="Effect" typeId="fd7f-888d-3257-a12b">Subtract 1 from hit rolls that target friendly units.</characteristic>
           </characteristics>
         </profile>
         <profile id="ada090fb" name="Power of Hysh" typeId="59b6-d47a-a68a-5dcc" typeName="Ability (Activated)" hidden="false">
@@ -111,8 +111,8 @@
         <constraint id="38652d4c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="1c85d2eb" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
-        <categoryLink id="6f101afb" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="1c85d2eb" name="Spearhead: Lumineth Realm-lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
+        <categoryLink id="6f101afb" name="Lumineth Realm-lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
         <categoryLink id="a89c5585" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="b8dce6e3" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
         <categoryLink id="60a3eebe" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
@@ -163,8 +163,8 @@
         <constraint id="8a712116" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="bf12883f" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
-        <categoryLink id="4687fb4c" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="bf12883f" name="Spearhead: Lumineth Realm-lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
+        <categoryLink id="4687fb4c" name="Lumineth Realm-lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
         <categoryLink id="07b709ec" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="cd752e3f" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
         <categoryLink id="4ccd86c6" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
@@ -231,8 +231,8 @@
         <constraint id="35065a63" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="1387c1f0" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
-        <categoryLink id="23ac6298" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="1387c1f0" name="Spearhead: Lumineth Realm-lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
+        <categoryLink id="23ac6298" name="Lumineth Realm-lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
         <categoryLink id="20df0836" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="58e903b1" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
         <categoryLink id="25c1ffe8" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
@@ -299,8 +299,8 @@
         <constraint id="e15c1d81" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="3968a0f1" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
-        <categoryLink id="ac61dd23" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="3968a0f1" name="Spearhead: Lumineth Realm-lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
+        <categoryLink id="ac61dd23" name="Lumineth Realm-lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
         <categoryLink id="c4a89006" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="51468080" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
         <categoryLink id="14ecf5b9" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
@@ -350,8 +350,8 @@
         <constraint id="2ef0e67e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="9341ea61" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
-        <categoryLink id="23b94a54" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="9341ea61" name="Spearhead: Lumineth Realm-lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" primary="true" />
+        <categoryLink id="23b94a54" name="Lumineth Realm-lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
         <categoryLink id="ed0e6177" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="8442ace8" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
         <categoryLink id="d729e8b3" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
@@ -413,8 +413,8 @@
         <constraint id="4b3e7eda" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="2ec2ffba" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
-        <categoryLink id="dd89be6e" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="2ec2ffba" name="Spearhead: Lumineth Realm-lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
+        <categoryLink id="dd89be6e" name="Lumineth Realm-lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
         <categoryLink id="bace716e" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
       </categoryLinks>
       <profiles>
@@ -510,8 +510,8 @@
         <constraint id="da8d2a9f" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="d68e5c3c" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
-        <categoryLink id="47c20540" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="d68e5c3c" name="Spearhead: Lumineth Realm-lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
+        <categoryLink id="47c20540" name="Lumineth Realm-lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
         <categoryLink id="3a00e3e2" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="de95f319" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
         <categoryLink id="b7c3e436" name="Wizard" hidden="false" targetId="sph-kw::wizard" primary="false" />
@@ -579,8 +579,8 @@
         <constraint id="b7841d0f" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="f994f015" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
-        <categoryLink id="2b9217e4" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="f994f015" name="Spearhead: Lumineth Realm-lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
+        <categoryLink id="2b9217e4" name="Lumineth Realm-lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
         <categoryLink id="b4b73387" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="0ccc3a8b" name="Cavalry" hidden="false" targetId="sph-kw::cavalry" primary="false" />
       </categoryLinks>
@@ -661,8 +661,8 @@
         <constraint id="9ebf81b3" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="96dfb9c0" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
-        <categoryLink id="6d0df3b2" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="96dfb9c0" name="Spearhead: Lumineth Realm-lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
+        <categoryLink id="6d0df3b2" name="Lumineth Realm-lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
         <categoryLink id="247386c9" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="6b939ca5" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
         <categoryLink id="1c7ec33d" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
@@ -711,8 +711,8 @@
         <constraint id="0badcef3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="5e94f2e8" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
-        <categoryLink id="3a264f29" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
+        <categoryLink id="5e94f2e8" name="Spearhead: Lumineth Realm-lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" primary="true" />
+        <categoryLink id="3a264f29" name="Lumineth Realm-lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" primary="false" />
         <categoryLink id="1c13d61b" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="9048f8d7" name="Monster" hidden="false" targetId="sph-kw::monster" primary="false" />
         <categoryLink id="67b9885e" name="Fly" hidden="false" targetId="sph-kw::fly" primary="false" />

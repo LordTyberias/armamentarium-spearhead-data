@@ -104,7 +104,7 @@
             <characteristic name="Control" typeId="6c6f-8510-9ce1-fc6e">2</characteristic>
           </characteristics>
         </profile>
-        <profile id="b6636b2d" name="Keldrisaith" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
+        <profile id="b6636b2d" name="Keldrisaíth" typeId="1fd-a42f-41d3-fe05" typeName="Ranged Weapon" hidden="false">
           <characteristics>
             <characteristic name="Rng" typeId="c6b5-908c-a604-1a98">12&quot;</characteristic>
             <characteristic name="Atk" typeId="aa17-4296-2887-e05d">2</characteristic>
@@ -115,7 +115,7 @@
             <characteristic name="Ability" typeId="d793-3dd7-9c13-741e">-</characteristic>
           </characteristics>
         </profile>
-        <profile id="db0df1f1" name="Keldrisaith" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
+        <profile id="db0df1f1" name="Keldrisaíth" typeId="9074-76b6-9e2f-81e3" typeName="Melee Weapon" hidden="false">
           <characteristics>
             <characteristic name="Atk" typeId="60e-35aa-31ed-e488">6</characteristic>
             <characteristic name="Hit" typeId="26dc-168-b2fd-cb93">3+</characteristic>
@@ -145,7 +145,7 @@
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry id="sph::heartflayer-troupe::01-melusai-ironscale::keldrisaith" name="Keldrisaith" type="upgrade" hidden="false">
+        <selectionEntry id="sph::heartflayer-troupe::01-melusai-ironscale::keldrisaith" name="Keldrisaíth" type="upgrade" hidden="false">
           <constraints>
           <constraint id="2073188c" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="min" />
           <constraint id="a8cfea87" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
