@@ -145,6 +145,7 @@
         <constraint id="16e735c6" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
+      <categoryLink id="b7e1a204" name="Reinforcements" hidden="false" targetId="sph-kw::reinforcements" primary="false" />
         <categoryLink id="a9dfc272" name="Spearhead: Orruk Warclans (Ironjawz Bigmob)" hidden="false" targetId="sph-cat::ironjawz-bigmob" primary="true" />
         <categoryLink id="8d4997e8" name="Orruk Warclans" hidden="false" targetId="sph-faction::orruk-warclans" primary="false" />
         <categoryLink id="2702f385" name="Destruction" hidden="false" targetId="sph-alliance::destruction" primary="false" />

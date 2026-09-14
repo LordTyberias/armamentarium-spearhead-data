@@ -7,7 +7,7 @@
         <constraint id="e0dac095" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="6f4ba8b2" name="Spearhead: Cities of Sigmar (Fusil Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" primary="true" />
+        <categoryLink id="6f4ba8b2" name="Spearhead: Cities of Sigmar (Fusil-Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" primary="true" />
         <categoryLink id="25bd0141" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" primary="false" />
         <categoryLink id="ef1f72db" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="6696ad8b" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
@@ -90,7 +90,7 @@
         <constraint id="8a6a1a7d" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="b938ad91" name="Spearhead: Cities of Sigmar (Fusil Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" primary="true" />
+        <categoryLink id="b938ad91" name="Spearhead: Cities of Sigmar (Fusil-Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" primary="true" />
         <categoryLink id="94391c29" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" primary="false" />
         <categoryLink id="510ce90d" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="b6e80b12" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
@@ -159,7 +159,7 @@
         <constraint id="b593d157" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="4a5401f9" name="Spearhead: Cities of Sigmar (Fusil Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" primary="true" />
+        <categoryLink id="4a5401f9" name="Spearhead: Cities of Sigmar (Fusil-Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" primary="true" />
         <categoryLink id="9b250795" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" primary="false" />
         <categoryLink id="09ffd62e" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="e486b872" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
@@ -211,7 +211,7 @@
         <constraint id="09de971f" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="99ea72b4" name="Spearhead: Cities of Sigmar (Fusil Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" primary="true" />
+        <categoryLink id="99ea72b4" name="Spearhead: Cities of Sigmar (Fusil-Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" primary="true" />
         <categoryLink id="47c16e4d" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" primary="false" />
         <categoryLink id="1152453c" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="d549222e" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
@@ -286,7 +286,7 @@
         <constraint id="c7b94f05" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="77f391d7" name="Spearhead: Cities of Sigmar (Fusil Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" primary="true" />
+        <categoryLink id="77f391d7" name="Spearhead: Cities of Sigmar (Fusil-Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" primary="true" />
         <categoryLink id="2ec8d38f" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" primary="false" />
         <categoryLink id="30e1bb20" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="bcb9334c" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
@@ -361,7 +361,7 @@
         <constraint id="1029c3ce" field="selections" scope="parent" value="11" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="de414bef" name="Spearhead: Cities of Sigmar (Fusil Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" primary="true" />
+        <categoryLink id="de414bef" name="Spearhead: Cities of Sigmar (Fusil-Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" primary="true" />
         <categoryLink id="2d31523c" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" primary="false" />
         <categoryLink id="081983a3" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="bbb9756c" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
@@ -444,7 +444,7 @@
         <constraint id="26893a7f" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="cea75677" name="Spearhead: Cities of Sigmar (Castellite Company)" hidden="false" targetId="sph-cat::castellite-company" primary="true" />
+        <categoryLink id="cea75677" name="Spearhead: Cities of Sigmar (Castelite Company)" hidden="false" targetId="sph-cat::castellite-company" primary="true" />
         <categoryLink id="80b7d11b" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" primary="false" />
         <categoryLink id="89bce666" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="d0e6b005" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
@@ -524,7 +524,7 @@
         <constraint id="2317e718" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="a0d9fa3d" name="Spearhead: Cities of Sigmar (Castellite Company)" hidden="false" targetId="sph-cat::castellite-company" primary="true" />
+        <categoryLink id="a0d9fa3d" name="Spearhead: Cities of Sigmar (Castelite Company)" hidden="false" targetId="sph-cat::castellite-company" primary="true" />
         <categoryLink id="d45925ff" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" primary="false" />
         <categoryLink id="b7eb1ede" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="be398a62" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
@@ -608,7 +608,7 @@
         <constraint id="63e1e1ac" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="686ca384" name="Spearhead: Cities of Sigmar (Castellite Company)" hidden="false" targetId="sph-cat::castellite-company" primary="true" />
+        <categoryLink id="686ca384" name="Spearhead: Cities of Sigmar (Castelite Company)" hidden="false" targetId="sph-cat::castellite-company" primary="true" />
         <categoryLink id="ebbff9b3" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" primary="false" />
         <categoryLink id="f8016e50" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="3bd9f69a" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
@@ -659,7 +659,7 @@
         <constraint id="805de787" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="5c9d5db8" name="Spearhead: Cities of Sigmar (Castellite Company)" hidden="false" targetId="sph-cat::castellite-company" primary="true" />
+        <categoryLink id="5c9d5db8" name="Spearhead: Cities of Sigmar (Castelite Company)" hidden="false" targetId="sph-cat::castellite-company" primary="true" />
         <categoryLink id="f3f21ef0" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" primary="false" />
         <categoryLink id="68517f2a" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="9d331ae9" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
@@ -710,7 +710,7 @@
         <constraint id="9c71813e" field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="8644d340" name="Spearhead: Cities of Sigmar (Castellite Company)" hidden="false" targetId="sph-cat::castellite-company" primary="true" />
+        <categoryLink id="8644d340" name="Spearhead: Cities of Sigmar (Castelite Company)" hidden="false" targetId="sph-cat::castellite-company" primary="true" />
         <categoryLink id="c5909caa" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" primary="false" />
         <categoryLink id="3b6e7a03" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="8d45344d" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
@@ -777,7 +777,7 @@
         <constraint id="141838f3" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="663b661d" name="Spearhead: Cities of Sigmar (Castellite Company)" hidden="false" targetId="sph-cat::castellite-company" primary="true" />
+        <categoryLink id="663b661d" name="Spearhead: Cities of Sigmar (Castelite Company)" hidden="false" targetId="sph-cat::castellite-company" primary="true" />
         <categoryLink id="5f4a52d6" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" primary="false" />
         <categoryLink id="ff49571f" name="Order" hidden="false" targetId="sph-alliance::order" primary="false" />
         <categoryLink id="c9199fb1" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />

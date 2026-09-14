@@ -273,7 +273,7 @@ warscrolls sharing page 4 in one undifferentiated run, in an order that follows 
 sequence of the warscrolls nor a single reading direction. Every statline of both boxes was read off
 the rendered page.
 
-### Flesh-Eater Courts — two boxes (added 2026-08-30)
+### Flesh-eater Courts — two boxes (added 2026-08-30)
 
 Carrion Retainers (`eng_aos_faction_flesh_eater_courts_apr_25`, 41 pages, no longer in print) and
 Charnel Watch (`eng_aug25_aos_spearhead_rules_fec`, 4 pages, in print). The first is a **full faction
@@ -316,11 +316,11 @@ differently shaped documents.
 Gnawfeast Clawpack and Warpspark Clawpack **share one PDF**
 (`eng_01-04_aos_spearhead_skaven_gnawfeast_clawpack`, 15 pages: Gnawfeast on 1-8, Warpspark on
 9-15) — the inventory links Warpspark to a second file
-(`rules-downloads/.../eng_skaven_spearhead.pdf`) that was not needed. Crixxit's Kill Pack sits on
+(`rules-downloads/.../eng_skaven_spearhead.pdf`) that was not needed. Crixxit's Kill-Pack sits on
 pages 5-8 of the City of Ash gaming pack, whose pages 1-4 are the Order box Sentinels of Embergard
 read in stage 1: **one gaming pack, two Grand Alliances**, as recorded there.
 
-Model counts: 26 and 25 agree with the inventory. Crixxit's Kill Pack does not — 22 against the
+Model counts: 26 and 25 agree with the inventory. Crixxit's Kill-Pack does not — 22 against the
 inventory's 24 — and the pack says why in its own army list: *Each unit of Gutter Runners has 1 Bomb
 Rat token*. Two tokens, two models of difference. The catalogue carries 22.
 
@@ -421,7 +421,7 @@ Sunblooded Prowlers is the largest gap so far between the inventory's model coun
 
 Its general is a **unit of three models**, which the pack itself flags in a designer's note.
 
-### Lumineth Realm-Lords — two boxes (added 2026-08-29)
+### Lumineth Realm-lords — two boxes (added 2026-08-29)
 
 Glittering Phalanx (`eng_01-04_aos_spearhead_lumineth_realmlords_glittering_phalanx`, no longer in
 print) and Hurakan Vanguard (`eng_04-02_aos_spearhead_lumineth_realmlords`, in print).
@@ -489,8 +489,8 @@ four separate profiles would keep the abilities and lose the round they belong t
 
 | Box | Faction pack | In print |
 |---|---|---|
-| Fusil Platoon | `eng_01-04_aos_spearhead_cities_of_sigmar_fusil_platoon` | no |
-| Castellite Company | `eng_01-04_aos_spearhead_cities_of_sigmar_castelite_company` | no |
+| Fusil-Platoon | `eng_01-04_aos_spearhead_cities_of_sigmar_fusil_platoon` | no |
+| Castelite Company | `eng_01-04_aos_spearhead_cities_of_sigmar_castelite_company` | no |
 | Sentinels of Embergard | `eng_15-04_aos_spearhead_city_of_ash_gaming_pack` | yes |
 | Zenestra's Zealots | `eng_13-05_aos_spearhead_cities_of_sigmar_zenestra-s_zealots` | yes |
 
@@ -502,7 +502,7 @@ Four things measured while transcribing these:
   Zenestra's Zealots the inventory names Pontifex Zenestra; the pack names the Freeguild Marshal
   and Relic Envoy. The catalogue follows the pack, as it does for every other value.
 - **The model counts differ by one wherever a box contains a token**, and always in the same
-  direction: the inventory counts the token as a model. Fusil Platoon 24 against 23 (Blackpowder
+  direction: the inventory counts the token as a model. Fusil-Platoon 24 against 23 (Blackpowder
   Squire), Sentinels of Embergard 18 against 17 (Thexa), Zenestra's Zealots 19 against 18 (Relic
   Envoy). The catalogue carries the pack's counts.
 - **Where a unit's weapons are split across its models, the carrier counts follow the printed
@@ -545,6 +545,60 @@ Two things measured while transcribing, recorded here because the next reader wi
 - Its **box rules** were added later, with the Order stage: battle traits, regiment abilities and
   enhancements from pages 10 and 11, on the box-rules row described above. They were left out at
   first because how they map onto a catalogue's shapes was still open.
+
+## Checked against the official app (2026-09-14)
+
+Every box was transcribed by hand from the printed faction packs. That set had
+never been read back, so it was checked twice over: against the official Age of
+Sigmar app (`com.gamesworkshop.aos4`, version 1.37.0, build 86), harvested from
+the device with `uiautomator`, and against the faction packs themselves, whose
+text layer was read directly rather than from a screenshot.
+
+**The values hold.** 824 statline values and 1929 weapon values were read back;
+not one statline differs. What the check did find were names and two rule texts,
+and it found them because a third source could settle the argument: where the
+app and this catalogue disagree, the printed pack decides, since it is the
+source this catalogue was written from. Where the pack agrees with the
+catalogue and the app differs, the app is simply *newer* — its
+`Addenda, Errata and FAQs` section carries changes published after the pack.
+
+Corrected here:
+
+| What | Was | Now | Evidence |
+|---|---|---|---|
+| Box name | `Castellite Company` | `Castelite Company` | pack prints `Castelite` 4x, `Castellite` never |
+| Box name | `Fusil Platoon` | `Fusil-Platoon` | pack hyphenates |
+| Box name | `Crixxit's Kill Pack` | `Crixxit's Kill-Pack` | pack hyphenates |
+| Faction | `Flesh-Eater Courts` | `Flesh-eater Courts` | pack 73x, and `BSData/age-of-sigmar-4th` 98x |
+| Faction | `Lumineth Realm-Lords` | `Lumineth Realm-lords` | pack, and `BSData/age-of-sigmar-4th` 60x |
+| Weapon | `Keldrisaith` | `Keldrisaíth` | pack prints the accent 3x |
+| Rule | `Shining Company` | dropped `for attacks` | app errata |
+| Rule | `Nurgle's Embrace` | dropped `enemy` in the last sentence | app errata |
+| Rule | `Unholy Visage` | added the missing final sentence | app errata |
+| Rule | `Royal Imperative` | `.` to `:` before the list | pack |
+| Rule | `Beast of the Dark Jungles` | `.` to `:` before the list | pack |
+| Keyword | Brute Ragerz | added `REINFORCEMENTS` | app errata |
+
+**Not corrected, on purpose.** `Tithe-Reaper Echelon` stays capitalised: the
+pack prints it that way three times and the app is the one that lowercases it.
+Five weapon names the app spells differently — `Long Fusil`,
+`Rapid-fire Rivet Gun`, `Kavalos Blades`, `Gutseer's Tools`,
+`Mounrfang's Tusks` — stay as they are, because the pack backs this catalogue
+in every one of them; the last is a typo in the app. Unit names keep their
+plain form where the app appends a token or a loadout
+(`Blissbarb Archers with 1 Blissbrew Homonculus`): a token is not a model, which
+is the rule this catalogue already follows for model counts.
+
+**No id changed.** Every correction above touches a `name` attribute or a rule
+text. The one structural change is a single `categoryLink` for the errata'd
+keyword.
+
+**Open, and left open.** Where a box's rules are printed as a table, the app
+renders them as a picture and the device cannot read them back; those rules are
+marked unverified rather than guessed at. The same goes for the lead-in
+sentences that name which unit starts in reserve — the pack carries them, this
+catalogue carries some and not others, and settling that is a format decision
+rather than a correction.
 
 ## Licence
 

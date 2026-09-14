@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<catalogue id="sph-catalogue::flesh-eater-courts" name="Flesh-Eater Courts" gameSystemId="sph1-6c4a-2e97-0001" revision="1" battleScribeVersion="2.03" authorName="Armamentarium" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="sph-catalogue::flesh-eater-courts" name="Flesh-eater Courts" gameSystemId="sph1-6c4a-2e97-0001" revision="1" battleScribeVersion="2.03" authorName="Armamentarium" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="sph::carrion-retainers::00-battle-traits" name="Battle Traits" type="unit" hidden="false">
       <constraints>
@@ -7,8 +7,8 @@
         <constraint id="78921f18" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="c376d307" name="Spearhead: Flesh-Eater Courts (Carrion Retainers)" hidden="false" targetId="sph-cat::carrion-retainers" primary="true" />
-        <categoryLink id="cef46700" name="Flesh-Eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
+        <categoryLink id="c376d307" name="Spearhead: Flesh-eater Courts (Carrion Retainers)" hidden="false" targetId="sph-cat::carrion-retainers" primary="true" />
+        <categoryLink id="cef46700" name="Flesh-eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
         <categoryLink id="05416ced" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
         <categoryLink id="24981751" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
       </categoryLinks>
@@ -99,8 +99,8 @@
         <constraint id="20b96a45" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="8b3f8f65" name="Spearhead: Flesh-Eater Courts (Carrion Retainers)" hidden="false" targetId="sph-cat::carrion-retainers" primary="true" />
-        <categoryLink id="3a8554dc" name="Flesh-Eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
+        <categoryLink id="8b3f8f65" name="Spearhead: Flesh-eater Courts (Carrion Retainers)" hidden="false" targetId="sph-cat::carrion-retainers" primary="true" />
+        <categoryLink id="3a8554dc" name="Flesh-eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
         <categoryLink id="def474bc" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
         <categoryLink id="06b36c08" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
         <categoryLink id="a7a7ab18" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
@@ -151,8 +151,8 @@
         <constraint id="5f8723f0" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="66a3bcb1" name="Spearhead: Flesh-Eater Courts (Carrion Retainers)" hidden="false" targetId="sph-cat::carrion-retainers" primary="true" />
-        <categoryLink id="22abbd5e" name="Flesh-Eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
+        <categoryLink id="66a3bcb1" name="Spearhead: Flesh-eater Courts (Carrion Retainers)" hidden="false" targetId="sph-cat::carrion-retainers" primary="true" />
+        <categoryLink id="22abbd5e" name="Flesh-eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
         <categoryLink id="fdcf7e44" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
         <categoryLink id="1f920859" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
         <categoryLink id="cc61ce30" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
@@ -200,8 +200,8 @@
         <constraint id="4fe4c2c8" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="1c8e4514" name="Spearhead: Flesh-Eater Courts (Carrion Retainers)" hidden="false" targetId="sph-cat::carrion-retainers" primary="true" />
-        <categoryLink id="cb9c1195" name="Flesh-Eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
+        <categoryLink id="1c8e4514" name="Spearhead: Flesh-eater Courts (Carrion Retainers)" hidden="false" targetId="sph-cat::carrion-retainers" primary="true" />
+        <categoryLink id="cb9c1195" name="Flesh-eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
         <categoryLink id="7be558f7" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
         <categoryLink id="7b6b82dc" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
         <categoryLink id="3b25b01b" name="Cavalry" hidden="false" targetId="sph-kw::cavalry" primary="false" />
@@ -265,8 +265,8 @@
         <constraint id="6a6b5d53" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="2d30b91b" name="Spearhead: Flesh-Eater Courts (Carrion Retainers)" hidden="false" targetId="sph-cat::carrion-retainers" primary="true" />
-        <categoryLink id="307f9481" name="Flesh-Eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
+        <categoryLink id="2d30b91b" name="Spearhead: Flesh-eater Courts (Carrion Retainers)" hidden="false" targetId="sph-cat::carrion-retainers" primary="true" />
+        <categoryLink id="307f9481" name="Flesh-eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
         <categoryLink id="92d46eb2" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
         <categoryLink id="197f5c99" name="Legends" hidden="false" targetId="sph-flag::legends" primary="false" />
         <categoryLink id="ded64622" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
@@ -333,8 +333,8 @@
         <constraint id="bc04f4c0" field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="5a2af3cf" name="Spearhead: Flesh-Eater Courts (Charnel Watch)" hidden="false" targetId="sph-cat::charnel-watch" primary="true" />
-        <categoryLink id="2f9ef2d0" name="Flesh-Eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
+        <categoryLink id="5a2af3cf" name="Spearhead: Flesh-eater Courts (Charnel Watch)" hidden="false" targetId="sph-cat::charnel-watch" primary="true" />
+        <categoryLink id="2f9ef2d0" name="Flesh-eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
         <categoryLink id="a2bb09d4" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
       </categoryLinks>
       <profiles>
@@ -430,8 +430,8 @@
         <constraint id="205ac43a" field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="56f43d94" name="Spearhead: Flesh-Eater Courts (Charnel Watch)" hidden="false" targetId="sph-cat::charnel-watch" primary="true" />
-        <categoryLink id="24633e65" name="Flesh-Eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
+        <categoryLink id="56f43d94" name="Spearhead: Flesh-eater Courts (Charnel Watch)" hidden="false" targetId="sph-cat::charnel-watch" primary="true" />
+        <categoryLink id="24633e65" name="Flesh-eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
         <categoryLink id="8b6d72ab" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
         <categoryLink id="8eedcff4" name="Hero" hidden="false" targetId="sph-kw::hero" primary="false" />
         <categoryLink id="1b1724e9" name="Wizard" hidden="false" targetId="sph-kw::wizard" primary="false" />
@@ -483,8 +483,8 @@
         <constraint id="7016524a" field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="15f4a3f0" name="Spearhead: Flesh-Eater Courts (Charnel Watch)" hidden="false" targetId="sph-cat::charnel-watch" primary="true" />
-        <categoryLink id="ad39e87f" name="Flesh-Eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
+        <categoryLink id="15f4a3f0" name="Spearhead: Flesh-eater Courts (Charnel Watch)" hidden="false" targetId="sph-cat::charnel-watch" primary="true" />
+        <categoryLink id="ad39e87f" name="Flesh-eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
         <categoryLink id="b359a971" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
         <categoryLink id="d60795de" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
         <categoryLink id="abf81c53" name="Serfs" hidden="false" targetId="sph-kw::serfs" primary="false" />
@@ -534,8 +534,8 @@
         <constraint id="c3bb2cb4" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="875ecb4a" name="Spearhead: Flesh-Eater Courts (Charnel Watch)" hidden="false" targetId="sph-cat::charnel-watch" primary="true" />
-        <categoryLink id="8b3329ab" name="Flesh-Eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
+        <categoryLink id="875ecb4a" name="Spearhead: Flesh-eater Courts (Charnel Watch)" hidden="false" targetId="sph-cat::charnel-watch" primary="true" />
+        <categoryLink id="8b3329ab" name="Flesh-eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
         <categoryLink id="8b7c0a5c" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
         <categoryLink id="a01da96d" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
         <categoryLink id="0be10d1c" name="Knights" hidden="false" targetId="sph-kw::knights" primary="false" />
@@ -586,8 +586,8 @@
         <constraint id="6558384a" field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" type="max" />
       </constraints>
       <categoryLinks>
-        <categoryLink id="e9d8c09b" name="Spearhead: Flesh-Eater Courts (Charnel Watch)" hidden="false" targetId="sph-cat::charnel-watch" primary="true" />
-        <categoryLink id="1c83c788" name="Flesh-Eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
+        <categoryLink id="e9d8c09b" name="Spearhead: Flesh-eater Courts (Charnel Watch)" hidden="false" targetId="sph-cat::charnel-watch" primary="true" />
+        <categoryLink id="1c83c788" name="Flesh-eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" primary="false" />
         <categoryLink id="bc3a03fe" name="Death" hidden="false" targetId="sph-alliance::death" primary="false" />
         <categoryLink id="e663c7e5" name="Infantry" hidden="false" targetId="sph-kw::infantry" primary="false" />
         <categoryLink id="fa98d8c4" name="Knights" hidden="false" targetId="sph-kw::knights" primary="false" />

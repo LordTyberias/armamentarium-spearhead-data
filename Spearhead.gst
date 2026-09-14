@@ -162,8 +162,8 @@
     <categoryEntry id="sph-cat::yndrastas-spearhead" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" />
     <categoryEntry id="sph-kw::ward-6" name="Ward (6+)" hidden="false" />
     <categoryEntry id="sph-kw::war-machine" name="War Machine" hidden="false" />
-    <categoryEntry id="sph-cat::fusil-platoon" name="Spearhead: Cities of Sigmar (Fusil Platoon)" hidden="false" />
-    <categoryEntry id="sph-cat::castellite-company" name="Spearhead: Cities of Sigmar (Castellite Company)" hidden="false" />
+    <categoryEntry id="sph-cat::fusil-platoon" name="Spearhead: Cities of Sigmar (Fusil-Platoon)" hidden="false" />
+    <categoryEntry id="sph-cat::castellite-company" name="Spearhead: Cities of Sigmar (Castelite Company)" hidden="false" />
     <categoryEntry id="sph-cat::sentinels-of-embergard" name="Spearhead: Cities of Sigmar (Sentinels of Embergard)" hidden="false" />
     <categoryEntry id="sph-cat::zenestras-zealots" name="Spearhead: Cities of Sigmar (Zenestra's Zealots)" hidden="false" />
     <categoryEntry id="sph-faction::cities-of-sigmar" name="Cities of Sigmar" hidden="false" />
@@ -181,9 +181,9 @@
     <categoryEntry id="sph-cat::grundstok-trailblazers" name="Spearhead: Kharadron Overlords (Grundstok Trailblazers)" hidden="false" />
     <categoryEntry id="sph-cat::skyhammer-task-force" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" />
     <categoryEntry id="sph-faction::kharadron-overlords" name="Kharadron Overlords" hidden="false" />
-    <categoryEntry id="sph-cat::glittering-phalanx" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" />
-    <categoryEntry id="sph-cat::hurakan-vanguard" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" />
-    <categoryEntry id="sph-faction::lumineth-realm-lords" name="Lumineth Realm-Lords" hidden="false" />
+    <categoryEntry id="sph-cat::glittering-phalanx" name="Spearhead: Lumineth Realm-lords (Glittering Phalanx)" hidden="false" />
+    <categoryEntry id="sph-cat::hurakan-vanguard" name="Spearhead: Lumineth Realm-lords (Hurakan Vanguard)" hidden="false" />
+    <categoryEntry id="sph-faction::lumineth-realm-lords" name="Lumineth Realm-lords" hidden="false" />
     <categoryEntry id="sph-kw::monster" name="Monster" hidden="false" />
     <categoryEntry id="sph-kw::ward-5" name="Ward (5+)" hidden="false" />
     <categoryEntry id="sph-cat::starscale-warhost" name="Spearhead: Seraphon (Starscale Warhost)" hidden="false" />
@@ -212,15 +212,15 @@
     <categoryEntry id="sph-faction::maggotkin-of-nurgle" name="Maggotkin of Nurgle" hidden="false" />
     <categoryEntry id="sph-cat::gnawfeast-clawpack" name="Spearhead: Skaven (Gnawfeast Clawpack)" hidden="false" />
     <categoryEntry id="sph-cat::warpspark-clawpack" name="Spearhead: Skaven (Warpspark Clawpack)" hidden="false" />
-    <categoryEntry id="sph-cat::crixxits-kill-pack" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" />
+    <categoryEntry id="sph-cat::crixxits-kill-pack" name="Spearhead: Skaven (Crixxit's Kill-Pack)" hidden="false" />
     <categoryEntry id="sph-faction::skaven" name="Skaven" hidden="false" />
     <categoryEntry id="sph-cat::darkoath-raiders" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" />
     <categoryEntry id="sph-cat::bloodwind-legion" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" />
     <categoryEntry id="sph-faction::slaves-to-darkness" name="Slaves to Darkness" hidden="false" />
     <categoryEntry id="sph-alliance::death" name="Death" hidden="false" />
-    <categoryEntry id="sph-faction::flesh-eater-courts" name="Flesh-Eater Courts" hidden="false" />
-    <categoryEntry id="sph-cat::carrion-retainers" name="Spearhead: Flesh-Eater Courts (Carrion Retainers)" hidden="false" />
-    <categoryEntry id="sph-cat::charnel-watch" name="Spearhead: Flesh-Eater Courts (Charnel Watch)" hidden="false" />
+    <categoryEntry id="sph-faction::flesh-eater-courts" name="Flesh-eater Courts" hidden="false" />
+    <categoryEntry id="sph-cat::carrion-retainers" name="Spearhead: Flesh-eater Courts (Carrion Retainers)" hidden="false" />
+    <categoryEntry id="sph-cat::charnel-watch" name="Spearhead: Flesh-eater Courts (Charnel Watch)" hidden="false" />
     <categoryEntry id="sph-kw::serfs" name="Serfs" hidden="false" />
     <categoryEntry id="sph-kw::knights" name="Knights" hidden="false" />
     <categoryEntry id="sph-faction::nighthaunt" name="Nighthaunt" hidden="false" />
@@ -266,8 +266,8 @@
         <categoryLink id="5da2ee3b" name="Spearhead: Stormcast Eternals (Yndrasta's Spearhead)" hidden="false" targetId="sph-cat::yndrastas-spearhead" />
         <categoryLink id="572a0249" name="Ward (6+)" hidden="false" targetId="sph-kw::ward-6" />
         <categoryLink id="e1b7a682" name="War Machine" hidden="false" targetId="sph-kw::war-machine" />
-        <categoryLink id="6240f34c" name="Spearhead: Cities of Sigmar (Fusil Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" />
-        <categoryLink id="1adf4ae5" name="Spearhead: Cities of Sigmar (Castellite Company)" hidden="false" targetId="sph-cat::castellite-company" />
+        <categoryLink id="6240f34c" name="Spearhead: Cities of Sigmar (Fusil-Platoon)" hidden="false" targetId="sph-cat::fusil-platoon" />
+        <categoryLink id="1adf4ae5" name="Spearhead: Cities of Sigmar (Castelite Company)" hidden="false" targetId="sph-cat::castellite-company" />
         <categoryLink id="d3420274" name="Spearhead: Cities of Sigmar (Sentinels of Embergard)" hidden="false" targetId="sph-cat::sentinels-of-embergard" />
         <categoryLink id="1ea85b57" name="Spearhead: Cities of Sigmar (Zenestra's Zealots)" hidden="false" targetId="sph-cat::zenestras-zealots" />
         <categoryLink id="8951ac12" name="Cities of Sigmar" hidden="false" targetId="sph-faction::cities-of-sigmar" />
@@ -285,9 +285,9 @@
         <categoryLink id="97cdd88e" name="Spearhead: Kharadron Overlords (Grundstok Trailblazers)" hidden="false" targetId="sph-cat::grundstok-trailblazers" />
         <categoryLink id="b6027245" name="Spearhead: Kharadron Overlords (Skyhammer Task Force)" hidden="false" targetId="sph-cat::skyhammer-task-force" />
         <categoryLink id="17276999" name="Kharadron Overlords" hidden="false" targetId="sph-faction::kharadron-overlords" />
-        <categoryLink id="bb70910d" name="Spearhead: Lumineth Realm-Lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" />
-        <categoryLink id="8dc5ca16" name="Spearhead: Lumineth Realm-Lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" />
-        <categoryLink id="cbd4a49b" name="Lumineth Realm-Lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" />
+        <categoryLink id="bb70910d" name="Spearhead: Lumineth Realm-lords (Glittering Phalanx)" hidden="false" targetId="sph-cat::glittering-phalanx" />
+        <categoryLink id="8dc5ca16" name="Spearhead: Lumineth Realm-lords (Hurakan Vanguard)" hidden="false" targetId="sph-cat::hurakan-vanguard" />
+        <categoryLink id="cbd4a49b" name="Lumineth Realm-lords" hidden="false" targetId="sph-faction::lumineth-realm-lords" />
         <categoryLink id="970c6376" name="Monster" hidden="false" targetId="sph-kw::monster" />
         <categoryLink id="8b99e9ea" name="Ward (5+)" hidden="false" targetId="sph-kw::ward-5" />
         <categoryLink id="e78f63b1" name="Spearhead: Seraphon (Starscale Warhost)" hidden="false" targetId="sph-cat::starscale-warhost" />
@@ -316,7 +316,7 @@
         <categoryLink id="b189d1f6" name="Maggotkin of Nurgle" hidden="false" targetId="sph-faction::maggotkin-of-nurgle" />
         <categoryLink id="d5e09374" name="Spearhead: Skaven (Gnawfeast Clawpack)" hidden="false" targetId="sph-cat::gnawfeast-clawpack" />
         <categoryLink id="652afcfe" name="Spearhead: Skaven (Warpspark Clawpack)" hidden="false" targetId="sph-cat::warpspark-clawpack" />
-        <categoryLink id="1a809160" name="Spearhead: Skaven (Crixxit's Kill Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" />
+        <categoryLink id="1a809160" name="Spearhead: Skaven (Crixxit's Kill-Pack)" hidden="false" targetId="sph-cat::crixxits-kill-pack" />
         <categoryLink id="b8798889" name="Skaven" hidden="false" targetId="sph-faction::skaven" />
         <categoryLink id="48384df6" name="Spearhead: Slaves to Darkness (Darkoath Raiders)" hidden="false" targetId="sph-cat::darkoath-raiders" />
         <categoryLink id="ee70a668" name="Spearhead: Slaves to Darkness (Bloodwind Legion)" hidden="false" targetId="sph-cat::bloodwind-legion" />
@@ -336,9 +336,9 @@
         <categoryLink id="1821f9ed" name="Spearhead: Sons of Behemat (Wallsmasher Stomp)" hidden="false" targetId="sph-cat::wallsmasher-stomp" />
         <categoryLink id="ad8bddb7" name="Sons of Behemat" hidden="false" targetId="sph-faction::sons-of-behemat" />
         <categoryLink id="c7aa30eb" name="Death" hidden="false" targetId="sph-alliance::death" />
-        <categoryLink id="cd173a2c" name="Flesh-Eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" />
-        <categoryLink id="72c0c338" name="Spearhead: Flesh-Eater Courts (Carrion Retainers)" hidden="false" targetId="sph-cat::carrion-retainers" />
-        <categoryLink id="b6064320" name="Spearhead: Flesh-Eater Courts (Charnel Watch)" hidden="false" targetId="sph-cat::charnel-watch" />
+        <categoryLink id="cd173a2c" name="Flesh-eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" />
+        <categoryLink id="72c0c338" name="Spearhead: Flesh-eater Courts (Carrion Retainers)" hidden="false" targetId="sph-cat::carrion-retainers" />
+        <categoryLink id="b6064320" name="Spearhead: Flesh-eater Courts (Charnel Watch)" hidden="false" targetId="sph-cat::charnel-watch" />
         <categoryLink id="aa8ad782" name="Nighthaunt" hidden="false" targetId="sph-faction::nighthaunt" />
         <categoryLink id="4104a300" name="Spearhead: Nighthaunt (Cursed Shacklehorde)" hidden="false" targetId="sph-cat::cursed-shacklehorde" />
         <categoryLink id="17333f29" name="Spearhead: Nighthaunt (Slasher Host)" hidden="false" targetId="sph-cat::slasher-host" />
