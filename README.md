@@ -6,8 +6,9 @@ BattleScribe catalogue data for the fixed Spearhead boxes of Age of Sigmar, read
 - `Spearhead.gst` — the game system: profile types, the categories, one force entry.
 - one `.cat` file per faction, each holding the units of that faction's Spearheads.
 
-**All 51 boxes are here.** They were collected one Grand Alliance at a time (ARMAM-275): Order
-(19), Chaos (14), Death (9) and Destruction (9), across 24 factions, 24 of them no longer in print.
+**All 52 boxes are here.** The first 51 were collected one Grand Alliance at a time (ARMAM-275);
+Stone Lobbas followed on its release (ARMAM-489). Order (19), Chaos (14), Death (9) and
+Destruction (10), across 24 factions, 24 of them no longer in print.
 
 ## What this is, and what it is not
 
@@ -102,7 +103,37 @@ in its own repository, in plain XML that any text or XML tool can edit, on its o
 
 ## Provenance
 
-### Sons of Behemat — one box (added 2026-08-30)
+### Sons of Behemat — Stone Lobbas (added 2026-10-05, ARMAM-489)
+
+Stone Lobbas (`eng_09-09_warhammer_age_of_sigmar_spearhead_sons_of_behemat_stone_lobbas`, 2 pages, in
+print), released with the September 2026 battletome and linked from the reference inventory like every
+other box. Three models in three units — a general Rock-hurler and two more — agreeing with the
+inventory; every unit shares the one warscroll, as in Wallsmasher Stomp.
+
+Its battle traits open with the named heading `BOULDER BASHER`, which rewrites the general's keywords
+the way `BULLSTOMPER` does; it is carried the same way, flavour sentence included.
+
+The text layer of page 2 scrambles the six abilities under `Regiment Abilities` and `Enhancements`;
+every value here comes from the rendered page. The enhancements stand two by two and are carried left
+to right, top to bottom, as Wallsmasher Stomp's are.
+
+**Checked against the official app** (`com.gamesworkshop.aos4` 1.38.1, build 88, harvested with
+`uiautomator` on 2026-10-05). The statline, all three weapon profiles and every rule text agree, and the
+box carries no errata. The app differs from the pack in five places, and the pack decides each, as it
+does for every other box:
+
+| What | Pack (carried) | App |
+|---|---|---|
+| Warscroll name | `Rock-hurler` | `Rock-hurlers` |
+| Weapon | `Massive Club and Rocks` | `Massive Clubs and Rocks` |
+| Battle trait | `Close One Eye!` | `Close One Eye` |
+| `Boulder Basher` | flavour sentence, then the rule | the rule alone |
+| Enhancement order | row by row | column by column |
+
+The app's unit details read `3 models` on the one warscroll, while both its composition and the pack's
+list three units of one Rock-hurler each; the catalogue carries the three units.
+
+### Sons of Behemat — Wallsmasher Stomp (added 2026-08-30)
 
 Wallsmasher Stomp (`eng_aos_faction_pack_sons_of_behemat_feb25`, 21 pages, no longer in print; the
 Spearhead part is on pages 18-21). Three models in three units, agreeing with the inventory — the

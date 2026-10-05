@@ -248,6 +248,7 @@
     <categoryEntry id="sph-faction::orruk-warclans" name="Orruk Warclans" hidden="false" />
     <categoryEntry id="sph-kw::brute" name="Brute" hidden="false" />
     <categoryEntry id="sph-cat::wallsmasher-stomp" name="Spearhead: Sons of Behemat (Wallsmasher Stomp)" hidden="false" />
+    <categoryEntry id="sph-cat::stone-lobbas" name="Spearhead: Sons of Behemat (Stone Lobbas)" hidden="false" />
     <categoryEntry id="sph-faction::sons-of-behemat" name="Sons of Behemat" hidden="false" />
   </categoryEntries>
   <forceEntries>
@@ -334,6 +335,7 @@
         <categoryLink id="b97e0cf1" name="Spearhead: Orruk Warclans (Swampskulka Gang)" hidden="false" targetId="sph-cat::swampskulka-gang" />
         <categoryLink id="f19931fe" name="Orruk Warclans" hidden="false" targetId="sph-faction::orruk-warclans" />
         <categoryLink id="1821f9ed" name="Spearhead: Sons of Behemat (Wallsmasher Stomp)" hidden="false" targetId="sph-cat::wallsmasher-stomp" />
+        <categoryLink id="f377c159" name="Spearhead: Sons of Behemat (Stone Lobbas)" hidden="false" targetId="sph-cat::stone-lobbas" />
         <categoryLink id="ad8bddb7" name="Sons of Behemat" hidden="false" targetId="sph-faction::sons-of-behemat" />
         <categoryLink id="c7aa30eb" name="Death" hidden="false" targetId="sph-alliance::death" />
         <categoryLink id="cd173a2c" name="Flesh-eater Courts" hidden="false" targetId="sph-faction::flesh-eater-courts" />
